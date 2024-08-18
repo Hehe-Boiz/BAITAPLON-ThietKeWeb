@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* ========= Common ========== */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    width: 70vw;
+    max-width: calc(70vw - 48px);
+    min-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 4px;
+    font-family: "ITC Bauhaus";
+    user-select: none; 
+    cursor: pointer;
+}
+/* ========= Navbar ========== */
+header {
+    /* background-color: #282366; */
+    /* background-color: #2b2b2b; */
+    background: #272727;
+    color: white ;
+    padding-top: 10px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    padding: 12px 0;
+}
+
+
+.navbar .logo {
+    font-size: 3rem;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+.navbar ul a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 8px 14px;
+    margin-left: 20px;
+}
+
+.navbar .premium a {
+    color: gold;
+}
+.navbar .actions {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar .action-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.navbar .action-btn:hover {
+    background-color: #d8d5d5;
+}
+
+/* ========= Hero ========== */
+main{
+    overflow-x: hidden;
+    /* position: relative; */ 
+}
+
+.hero-wrap {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 76px);
+    background: linear-gradient(-150deg, #222222 15%, #373737 70%, #3c4859 94%);
+}
+
+.hero .info {
+    width: 51%;
+}
+
+.title {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.19;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    color: #969393; 
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.78;
+}
+
+.hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 18px 16px;
+    border-radius: 12px;
+    background: #fff;
+    color: black;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.image1 {
+    filter: brightness(85%);
+    position: absolute;
+    max-width: 1300px;
+    width: 50%;
+    min-width: 750px; 
+    right: -200px;
+    bottom: 90px;
+    transition: transform 0.3s ease;
+    transform: translate(10px, -70px) rotate(-10deg);
+    z-index: 2;
+}
+
+.image2 {
+    filter: brightness(80%);
+    position: absolute;
+    max-width: 1300px;
+    width: 50%;
+    min-width: 700px; 
+    right: -200px;
+    bottom: 90px;
+    transition: transform 0.3s ease;
+    transform: translate(-100px, 10px) rotate(-10deg);
+    z-index: 3;
+}
+.image1:hover{
+    transform: scale(1.15);
+    z-index: 4;
+}
+
+.image2:hover{
+    transform: scale(1.15);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 20vh solid #fff; /* Màu của tam giác */
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 95px;
+    z-index: 10;
+}
+
+.square{
+    height: 95px;
+    width: 100vw;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}

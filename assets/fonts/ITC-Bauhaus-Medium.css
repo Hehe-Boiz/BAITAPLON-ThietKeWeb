@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'ITC Bauhaus';
+    src: url('ITC-Bauhaus-Medium/BauhausITCbyBT-Medium.woff2') format('woff2'),
+        url('ITC-Bauhaus-Medium/BauhausITCbyBT-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
