@@ -5,8 +5,6 @@
 html,
 body {
     scroll-behavior: smooth;
-    
-    overflow-x: hidden;
 }
 
 html {
@@ -36,7 +34,7 @@ a {
     font-size: 2.5rem;
     padding-top: 4px;
     font-family: "ITC Bauhaus";
-    user-select: none; 
+    user-select: none;
     cursor: pointer;
 }
 /* ========= Navbar ========== */
@@ -44,18 +42,17 @@ header {
     /* background-color: #282366; */
     /* background-color: #2b2b2b; */
     background: #272727;
-    color: white ;
+    color: white;
     padding-top: 10px;
     position: sticky;
-    top: -26px;
-    z-index: 1;
+    top: -10px;
+    z-index: 10;
 }
 
 .navbar {
     display: flex;
     padding: 12px 0;
 }
-
 
 .navbar .logo {
     font-size: 3rem;
@@ -64,14 +61,15 @@ header {
 .navbar ul {
     display: flex;
     align-items: center;
-    margin-left: 200px;
+    margin-left: 170px;
 }
 
 .navbar ul a {
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     padding: 8px 14px;
     margin-left: 20px;
+    letter-spacing: 1.5;
 }
 
 .navbar .premium a {
@@ -100,15 +98,13 @@ header {
     transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .navbar .action-btn:hover {
     background-color: #d8d5d5;
 }
 
 /* ========= Hero ========== */
-main{
-    overflow-x: hidden;
-    /* position: relative; */ 
+main {
+    overflow: hidden;
 }
 
 .hero-wrap {
@@ -135,7 +131,7 @@ main{
 
 .hero .desc {
     margin-top: 30px;
-    color: #969393; 
+    color: #969393;
     font-size: 1.9rem;
     font-weight: 400;
     line-height: 1.78;
@@ -154,16 +150,20 @@ main{
     font-weight: 500;
 }
 
+
+
 .image1 {
+    box-shadow: -25px -19px 16px 0px rgba(0,0,0,0.1);
     filter: brightness(85%);
     position: absolute;
     max-width: 1300px;
     width: 50%;
-    min-width: 750px; 
-    right: -200px;
+    min-width: 750px;
+    /* right: -200px; */
+    left: calc(100vw - 500px);
     bottom: 90px;
     transition: transform 0.3s ease;
-    transform: translate(10px, -70px) rotate(-10deg);
+    transform: translate(10px, -90px) rotate(-10deg);
     z-index: 2;
 }
 
@@ -172,35 +172,37 @@ main{
     position: absolute;
     max-width: 1300px;
     width: 50%;
-    min-width: 700px; 
-    right: -200px;
+    min-width: 700px;
+    /* right: -200px; */
+    
+    left: calc(100vw - 500px);
     bottom: 90px;
     transition: transform 0.3s ease;
     transform: translate(-100px, 10px) rotate(-10deg);
     z-index: 3;
 }
-.image1:hover{
-    transform: scale(1.15);
+.image1:hover {
+    transform: scale(1.15) rotate(-10deg);
     z-index: 4;
 }
 
-.image2:hover{
-    transform: scale(1.15);
+.image2:hover {
+    transform: scale(1.15) rotate(-10deg);
 }
 
 .triangle {
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 20vh solid #fff; /* Màu của tam giác */
+    border-bottom: 20vh solid #fff; 
     position: absolute;
     right: 0;
     left: 0;
     bottom: 95px;
-    z-index: 10;
+    z-index: 5;
 }
 
-.square{
+.square {
     height: 95px;
     width: 100vw;
     background-color: #ffffff;
@@ -208,5 +210,58 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 5;
+}
+
+/* ========= Vision ========== */
+.vision {
+    margin-top: 10px;
+    padding: 93px 0 79px;
+}
+
+.vision .logo{
+    font-size: 2.2rem;
+    color: black;
+}
+
+.vision .sub-title {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: black;
+}
+
+.vision .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    border-radius: 999px;
+    background: black;
+}
+
+.vision .desc {
+    width: 459px;
+    max-width: 100%;
+    margin-top: 40px;
+    color: #5a6473;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.875;
+}
+
+canvas {
+    background-color: #fcf9f9;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.vision .row {
+    display: flex;
+    justify-content: space-between;
 }
