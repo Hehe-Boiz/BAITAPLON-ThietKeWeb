@@ -37,6 +37,12 @@ a {
     user-select: none;
     cursor: pointer;
 }
+
+.bold {
+    color: black;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
 /* ========= Navbar ========== */
 header {
     /* background-color: #282366; */
@@ -120,6 +126,7 @@ main {
 
 .hero .info {
     width: 51%;
+    padding-bottom: 80px;
 }
 
 .title {
@@ -138,7 +145,8 @@ main {
 }
 
 .hero-cta {
-    min-width: 170px;
+    position: relative;
+    min-width: 150px;
     margin-top: 40px;
     display: inline-block;
     padding: 18px 16px;
@@ -148,12 +156,30 @@ main {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 500;
+    z-index: 10;
 }
 
+.hero .container {
+    position: relative;
+}
 
+.hero-demo {
+    position: relative;
+    min-width: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 18px 16px;
+    border-radius: 12px;
+    background: #222222;
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
 
 .image1 {
-    box-shadow: -25px -19px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: -25px -19px 16px 0px rgba(0, 0, 0, 0.1);
     filter: brightness(85%);
     position: absolute;
     max-width: 1300px;
@@ -174,7 +200,7 @@ main {
     width: 50%;
     min-width: 700px;
     /* right: -200px; */
-    
+
     left: calc(100vw - 500px);
     bottom: 90px;
     transition: transform 0.3s ease;
@@ -194,7 +220,7 @@ main {
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 20vh solid #fff; 
+    border-bottom: 20vh solid #fff;
     position: absolute;
     right: 0;
     left: 0;
@@ -219,14 +245,14 @@ main {
     padding: 93px 0 79px;
 }
 
-.vision .logo{
-    font-size: 2.2rem;
+.vision .logo {
+    font-size: 2.4rem;
     color: black;
 }
 
 .vision .sub-title {
     position: relative;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     font-weight: 600;
     line-height: 1;
     color: black;
@@ -255,8 +281,8 @@ main {
 }
 
 canvas {
-    background-color: #fcf9f9;
-    border: 1px solid #ddd;
+    background-color: #f1f1f2;
+    border: 1px #ddd;
     margin-top: 20px;
     border-radius: 10px;
 }
@@ -264,4 +290,90 @@ canvas {
 .vision .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+/* ========= Course ========== */
+
+.course {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.course .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course img {
+    display: block;
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.course .info{
+    width: 50%;
+    padding: 70px 0 60px 100px;
+}
+
+.course .logo {
+    color: black;
+    font-size: 3.5rem;
+}
+
+.course .sub-title {
+    position: relative;
+    width: 369px;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.29; /* 128.571% */
+}
+
+.course .sub-title::before {
+    position: absolute;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.course .info .desc {
+    width: 350px;
+    margin-top: 20px;
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88; /* 187.5% */
+}
+/* ========= Rate ========== */
+.rate {
+    margin-top: 70px;
+    padding: 43px 0 64px;
+}
+
+.rate .logo {
+    color: black;
+    font-size: 3rem;
+}
+
+.rate .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate .desc {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.rate .row-desc {
+    margin-top: 23px;
 }
