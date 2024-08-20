@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========= Common ========== */
+a {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.content {
+    width: 70vw;
+    max-width: calc(70vw - 48px);
+    min-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 4px;
+    font-family: "ITC Bauhaus";
+    user-select: none;
+    cursor: pointer;
+}
+
+.bold {
+    color: black;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+/* ========= Navbar ========== */
+header {
+    /* background-color: #282366; */
+    /* background-color: #2b2b2b; */
+    background: #272727;
+    color: white;
+    padding-top: 10px;
+    position: sticky;
+    top: -10px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    padding: 12px 0;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 3rem;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    /* margin-left: 170px; */
+}
+
+.navbar ul a {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 8px 14px;
+    margin-left: 20px;
+    letter-spacing: 1.5;
+}
+
+.navbar ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    bottom: 0;
+    left: 10%;
+}
+
+.navbar ul > .premium > a::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: gold;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    bottom: 0;
+    left: 10%;
+}
+
+.navbar li:hover > a::before {
+    transform: scaleX(0.5);
+}
+
+.navbar .premium {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    height: 40px;
+    width: 40px;
+    background-color: #ffd90063;
+    border-radius: 50%;
+}
+.navbar .actions {
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+}
+
+.navbar .action-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 18px;
+}
+
+.navbar .action-btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .action-btn:hover {
+    background-color: #d8d5d5;
+}

@@ -73,11 +73,42 @@ header {
 }
 
 .navbar ul a {
+    position: relative;
     font-size: 1.6rem;
     font-weight: 400;
     padding: 8px 14px;
     margin-left: 20px;
     letter-spacing: 1.5;
+}
+
+.navbar ul > li > a::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    bottom: 0;
+    left: 10%;
+}
+
+.navbar ul > .premium > a::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 3px;
+    background-color: gold;
+    border-radius: 999px;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+    bottom: 0;
+    left: 10%;
+}
+
+.navbar li:hover > a::before {
+    transform: scaleX(0.5);
 }
 
 .navbar .premium a {
@@ -92,7 +123,6 @@ header {
 .navbar .action-link {
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--primary-color);
 }
 
 .navbar .action-btn {
