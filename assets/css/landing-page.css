@@ -124,17 +124,20 @@ main {
     justify-content: center;
     height: calc(100vh - 76px);
     background: linear-gradient(-150deg, #222222 15%, #373737 70%, #3c4859 94%);
+    overflow: hidden;
 }
 
 .hero .info {
     width: 51%;
-    padding-bottom: 80px;
+    padding-bottom: 150px;
+    position: relative;
+    z-index: 5;
 }
 
 .title {
     color: #fff;
     font-size: 4.2rem;
-    font-weight: 700;
+    font-weight: 650;
     line-height: 1.19;
 }
 
@@ -244,6 +247,14 @@ main {
     z-index: 5;
 }
 
+.bck {
+    max-width: 800px;
+    width: 70vh;
+    position: absolute;
+    left: -15%;
+    bottom: 5%;
+    z-index: 1;
+}
 /* ========= Vision ========== */
 .vision {
     margin-top: 10px;
@@ -297,7 +308,7 @@ canvas {
     justify-content: space-between;
     align-items: center;
 }
-/* ========= Course ========== */
+/* ========= About Us ========== */
 
 .course {
     margin-top: 75px;
@@ -312,15 +323,16 @@ canvas {
 
 .course img {
     display: block;
-    width: 400px;
-    height: 460px;
+    width: 500px;
+    height: 560px;
     border-radius: 12px;
     object-fit: cover;
+    margin-left: auto;
 }
 
 .course .info {
     width: 50%;
-    padding: 70px 0 60px 100px;
+    padding: 70px 0 60px 135px;
 }
 
 .course .logo {
@@ -330,9 +342,9 @@ canvas {
 
 .course .sub-title {
     position: relative;
-    width: 369px;
+    width: 469px;
     color: black;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-weight: 600;
     line-height: 1.29; /* 128.571% */
 }
@@ -349,10 +361,10 @@ canvas {
 }
 
 .course .info .desc {
-    width: 350px;
+    width: 400px;
     margin-top: 20px;
     color: #5a6473;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.88; /* 187.5% */
 }
@@ -390,11 +402,11 @@ canvas {
 
 .comment .items {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
+    /* justify-content: nowrap; */
+    align-items: stretch;
+    gap: 30px;
     margin: 0 -15px;
-    padding: 25px 15px;
+    padding: 50px 15px 25px;
     padding-bottom: 35px;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -403,11 +415,7 @@ canvas {
 }
 
 .comment .items li {
-    min-width: 33%;
-    height: 100%;
-}
-
-.comment .items .item {
+    min-width: 32%;
     position: relative;
     background: rgb(236, 233, 233);
     padding: 30px;
@@ -415,16 +423,17 @@ canvas {
     padding-left: 40px;
     border-radius: 14px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .comment .items .avatar {
     width: 150px;
     position: absolute;
-    top: 0;
+    top: -20px;
     left: 50%;
     transform: translate(15px, -25px) translateX(-55%);
     border-radius: 14px;
+    z-index: 1;
 }
 
 .comment .items .colum {
@@ -434,7 +443,6 @@ canvas {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    flex-shrink: 1;
 }
 
 .comment .items .rate-item {
@@ -456,4 +464,81 @@ canvas {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+/* ========= Footer ========== */
+footer {
+    padding: 50px 0 58px;
+    margin-top: 200px;
+    background-color: #272727;
+    color: #969393
+}
+
+footer .row {
+    display: flex;
+}
+
+footer .row-top {
+    gap: 185px; 
+    justify-content: space-between;
+}
+
+footer .heading {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+footer .list,
+footer .desc {
+    margin-top: 42px;
+}
+
+footer .item {
+    margin-top: 18px;
+}
+
+footer .item a,
+footer .desc {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+footer .desc {
+    white-space: normal;
+    line-height: 1.75;
+}
+
+footer .social {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer .social-link img {
+    width: 27px;
+    height: 27px
+}
+
+footer .social-link + .social-link {
+    margin-left: 12px;
+}
+
+footer .row-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 81px;
+}
+
+footer .logo {
+    font-size: 3rem;
+}
+
+footer .copyright {
+    color: #c2c2c2;
+    font-size: 1.6rem;
+    font-weight: 400;
 }
