@@ -1,0 +1,47 @@
+.roadmap {
+    width: 100vw;
+    /* height: calc( 100vh - 79px ); */
+    height: calc( 200vh - 79px );
+    background-color: rgb(33, 32, 32);
+}
+
+.box {
+    width: 200px; /* Kích thước cho foreignObject */
+    height: 70px;
+}
+
+.card {
+    height: 62px;
+    background-color: rgb(63, 75, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    border-radius: 12px;
+}
+
+.subject {
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+progress {
+    -webkit-appearance: none;
+    background-color: #fff;
+    height: 6px;
+    border-radius: 999px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #fff; /* Màu nền của thanh tiến độ */
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 999px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50; /* Màu của thanh tiến độ */
+    border-radius: 999px;
+}
