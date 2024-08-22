@@ -1,20 +1,17 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-function load(selector, path) {
-    const cached = localStorage.getItem(path);
-    if (cached) {
-        $(selector).innerHTML = cached;
-    }
-
-    fetch(path)
-        .then((res) => res.text())
-        .then((html) => {
-            if (html !== cached) {
-                $(selector).innerHTML = html;
-                localStorage.setItem(path, html);
-            }
-        })
-        .finally(() => {
-            window.dispatchEvent(new Event("template-loaded"));
-        });
-}
+// ============= Check ==============
+let checks = document.querySelectorAll(".check");
+checks.forEach(function (check) {
+    check.addEventListener("click", function () {
+        let icon = check.querySelector("i.fa-solid.fa-check");
+        if (icon ) {
+            // Nếu đã có, loại bỏ thẻ <i>
+            icon.remove();
+            check.classList.remove('is-success');
+        } else {
+            const newElement = document.createElement("i");
+            newElement.classList.add("fa-solid", "fa-check");
+            check.classList.add('is-success')
+            check.appendChild(newElement);
+        }
+    });
+});

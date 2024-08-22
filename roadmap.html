@@ -26,7 +26,7 @@
             referrerpolicy="no-referrer"
         />
 
-        <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/load.js"></script>
         <title>CodemeM</title>
     </head>
     <body>
@@ -52,32 +52,50 @@
             <script>
                 load("#map", "./map.html");
             </script>
+            <div class="wrap-all"></div>
             <div class="tab">
-                <h2 class="title">Arrays & Hashing</h2>
-                <p class="desc">Prerequisites</p>
-                <div class="wrap">
-                    <div class="row">
-                        <input type="checkbox">
-                        <p class="name"></p>
+                <div class="content-tab">
+                    <span class="esc">Esc</span>
+                    <h2 class="title">Arrays & Hashing</h2>
+
+                    <div class="colum">
+                        <p class="desc">Prerequisites</p>
+                        <div class="wrap">
+                            <div class="row row-vid">
+                                <span class="check"></span>
+                                <a class="vid"
+                                    ><img
+                                        class="play"
+                                        src="assets/icons/play.svg"
+                                        alt=""
+                                    />
+                                    <p class="name">Arrays</p></a
+                                >
+                            </div>
+                        </div>
                     </div>
-                </div>
-                    
-                <div class="row">
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-                <div class="practice">
-                    <div>
-                        <input type="checkbox" />
-                        <a class="prb"></a>
-                        <p class="diff"></p>
-                        <p class="lan"></p>
+                    <div class="row row-top-table">
+                        <div class="sub-row">
+                            <p>Trạng thái</p>
+                            <p>Vấn đề</p>
+                        </div>
+                        <div class="sub-row">
+                            <p>Độ khó</p>
+                            <p>Ngôn ngữ</p>
+                        </div>
+                    </div>
+                    <div class="practice">
+                        <div>
+                            <span class="check"></span>
+                            <a class="prb">Contains Duplicate </a>
+                            <p class="diff">Easy</p>
+                            <p class="lan"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <script src="assets/js/roadmap.js"></script>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

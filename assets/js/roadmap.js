@@ -1,35 +1,28 @@
 // // ============ Thay đổi kích thước ===============
-// function adjustSVG() {
-//     const svg = document.querySelector(".graph");
-//     // Lấy kích thước hiện tại của SVG
-//     const rect = svg.getBoundingClientRect();
-//     const widthSVG = rect.width;
-//     const heightSVG = rect.height;
+function adjustSVG() {
+    const svg = document.querySelector(".graph");
+    // Lấy kích thước hiện tại của SVG
+    const heightSVG = 1700;
+    const viewportHeight = window.innerHeight ;
+    let scaleY = viewportHeight / heightSVG;
 
-//     // Lấy kích thước của khung nhìn (viewport)
-//     const viewportWidth = window.innerWidth;
-//     const viewportHeight = window.innerHeight -130;
+    // console.log(`viewportWidth: ${viewportWidth}`)
+    console.log(`viewportHeight: ${viewportHeight}`)
+    // console.log(`scaleX: ${scaleX}`)
+    console.log(`scaleY: ${scaleY}`)
+    let scale = scaleY
+    if (heightSVG < viewportHeight){
+        scale = scale + 1
+    }
+    else {
+        scale = scale + 0.05
+    }
+    console.log(`scale: ${scale}`)
+    const matrix = `matrix(${scale} 0 0 ${scale} 0 0)`;
 
-//     // Tính tỷ lệ thu phóng (scale) theo cả chiều rộng và chiều cao
-//     let scaleX = viewportWidth / widthSVG;
-//     let scaleY = viewportHeight / heightSVG;
-//     console.log(scaleX)
-//     console.log(scaleY)
+    svg.setAttribute("transform", matrix);
+}
 
-//     const scale = Math.min(scaleX, scaleY);
-
-//     // Chọn tỷ lệ nhỏ hơn để đảm bảo SVG không bị méo
-//     const minScale = 0.4; // Tỷ lệ thu nhỏ tối thiểu
-//     const maxScale = 0.8; // Tỷ lệ phóng to tối đa
-//     const finalScale = Math.max(minScale, Math.min(maxScale, scale));
-
-//     console.log(finalScale)
-
-//     // Thiết lập ma trận transform để giữ đúng tỷ lệ
-//     const matrix = `matrix(${finalScale} 0 0 ${finalScale} 0 0)`;
-//     svg.setAttribute("transform", matrix);
-// }
-
-// // Gọi hàm khi trang tải và khi cửa sổ thay đổi kích thước
-// window.addEventListener("load", adjustSVG);
-// window.addEventListener("resize", adjustSVG);
+// Gọi hàm khi trang tải và khi cửa sổ thay đổi kích thước
+window.addEventListener("load", adjustSVG);
+window.addEventListener("resize", adjustSVG);
