@@ -1,8 +1,26 @@
-.roadmap {
+body {
+    overflow-x: hidden;
+}
+.view {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 79px);
     width: 100vw;
-    /* height: calc( 100vh - 79px ); */
-    height: calc( 200vh - 79px );
     background-color: rgb(33, 32, 32);
+    /* background-color: rgb(33, 32, 32); */
+}
+
+svg {
+    margin-left: 290px;
+    background-color: rgb(33, 32, 32);
+}
+
+.graph {
+    transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+} 
+
+.line {
+    fill: rgb(33, 32, 32);
 }
 
 .box {
@@ -44,4 +62,10 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     background-color: #4caf50; /* Màu của thanh tiến độ */
     border-radius: 999px;
+}
+/* ========= Tab ========= */
+.tab {
+    width: 70%;
+    background-color: #fff;
+    /* color : white */
 }

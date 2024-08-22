@@ -1,4 +1,4 @@
-
+// ============ Biểu đồ ===============
 let isRepeating = true;
 const canvas = document.getElementById("chart");
 const ctx = canvas.getContext("2d");
@@ -182,3 +182,4 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(canvas);
+
