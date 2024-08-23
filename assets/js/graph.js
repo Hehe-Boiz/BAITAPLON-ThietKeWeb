@@ -23,7 +23,7 @@ function drawChart() {
     const padding = 50;
     const chartWidth = canvas.width - padding * 2;
     const chartHeight = canvas.height - padding * 2;
-    const maxYValue = 95; // Giá trị lớn nhất của trục Y
+    const maxYValue = 100; // Giá trị lớn nhất của trục Y
     const scaleX = chartWidth / (data.labels.length - 1);
     const scaleY = chartHeight / maxYValue;
 

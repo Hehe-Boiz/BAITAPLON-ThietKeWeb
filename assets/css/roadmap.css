@@ -85,10 +85,9 @@ progress::-webkit-progress-value {
     /* color : white */
     overflow: auto;
     padding-bottom: 100px;
-    /* transition: all .4s ease;
     opacity: 0;
     visibility: hidden;
-    transform: translate(100%); */
+    transform: translate(100%); 
 }
 
 .content-tab {
@@ -101,10 +100,12 @@ progress::-webkit-progress-value {
     top: 30px;
     left: 40px;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 1.8rem;
     background-color: #fff;
     color:rgb(33, 32, 32);
     position: absolute;
+    font-weight: 600;
 }
 
 .tab .title {
@@ -268,6 +269,8 @@ table .center {
 .center-prb {
     justify-content: flex-start !important;
     align-items: flex-start;
+    font-weight: 500;
+    font-size: 1.7rem;
 }
 
 th {
