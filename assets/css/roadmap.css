@@ -183,7 +183,7 @@ progress::-webkit-progress-value {
     border: 2px solid #7a7a7a;
     background: rgba(0, 0, 0, 0);
     border-radius: 4px;
-    /* transition: background .15s ease-out; */
+    transition: all .15s ease-out;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
@@ -199,7 +199,7 @@ progress::-webkit-progress-value {
     border: 2px solid #7a7a7a;
     background: rgba(0, 0, 0, 0);
     border-radius: 4px;
-    /* transition: background .15s ease-out; */
+    transition: all .15s ease-out;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */

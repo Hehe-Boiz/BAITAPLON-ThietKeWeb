@@ -227,7 +227,7 @@ main {
     left: calc(100vw - 500px);
     bottom: 90px;
     transition: transform 0.3s ease;
-    transform: translate(10px, -90px) rotate(-10deg);
+    transform: translate(-20px, -110px) rotate(-10deg);
     z-index: 2;
 }
 
@@ -242,16 +242,18 @@ main {
     left: calc(100vw - 500px);
     bottom: 90px;
     transition: transform 0.3s ease;
-    transform: translate(-100px, 10px) rotate(-10deg);
+    transform: translate(-150px, 10px) rotate(-10deg);
     z-index: 3;
 }
 .image1:hover {
     transform: scale(1.15) rotate(-10deg);
+    transition: all  .4s ease;
     z-index: 4;
 }
 
 .image2:hover {
     transform: scale(1.15) rotate(-10deg);
+    transition: all  .4s ease;
 }
 
 .triangle {
@@ -428,6 +430,27 @@ canvas {
 /* ========= Comment ========== */
 .comment {
     margin-top: 100px;
+}
+
+.comment .sub-title {
+    position: relative;
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 50px 0 100px;
+    text-align: center;
+}
+
+.comment .sub-title::before {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    border-radius: 12px;
+    background: black;
+    transform: translateX(-50%);
 }
 
 .comment .items {

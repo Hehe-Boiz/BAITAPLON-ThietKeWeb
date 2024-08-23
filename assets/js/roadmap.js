@@ -123,3 +123,5 @@ cards.forEach(function (card) {
     // Initial call to set progress based on the current state
     updateProgress(card);
 });
+
+//Tải nội dung từ file json ở phần tab

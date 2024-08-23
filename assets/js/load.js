@@ -1,3 +1,4 @@
+//Tải file lên
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 function load(selector, path) {
