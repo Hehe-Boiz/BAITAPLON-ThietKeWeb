@@ -52,29 +52,72 @@
             <script>
                 load("#map", "./map.html");
             </script>
-            <div class="wrap-all"></div>
-            <div class="tab">
-                <div class="content-tab">
-                    <span class="esc">Esc</span>
-                    <h2 class="title">Arrays & Hashing</h2>
+            <div class="wrap-all">
+                <div class="tab">
+                    <div class="content-tab">
+                        <span class="esc">Esc</span>
+                        <h2 class="title">Arrays & Hashing</h2>
 
-                    <div class="colum">
-                        <p class="desc">Prerequisites</p>
-                        <div class="wrap">
-                            <div class="row row-vid">
-                                <span class="check"></span>
-                                <a class="vid"
-                                    ><img
-                                        class="play"
-                                        src="assets/icons/play.svg"
-                                        alt=""
-                                    />
-                                    <p class="name">Arrays</p></a
-                                >
+                        <div class="colum">
+                            <p class="desc">Prerequisites</p>
+                            <div class="wrap">
+                                <div class="row row-vid">
+                                    <span class="check-pre"
+                                        ><i class="fa-solid fa-check"></i
+                                    ></span>
+                                    <a class="vid"
+                                        ><img
+                                            class="play"
+                                            src="assets/icons/play.svg"
+                                            alt=""
+                                        />
+                                        <p class="name">Dynamic Arrays</p></a
+                                    >
+                                </div>
+                                <div class="row row-vid">
+                                    <span class="check-pre"
+                                        ><i class="fa-solid fa-check"></i
+                                    ></span>
+                                    <a class="vid"
+                                        ><img
+                                            class="play"
+                                            src="assets/icons/play.svg"
+                                            alt=""
+                                        />
+                                        <p class="name">Hash Usage</p></a
+                                    >
+                                </div>
+                                <div class="row row-vid">
+                                    <span class="check-pre"
+                                        ><i class="fa-solid fa-check"></i
+                                    ></span>
+                                    <a class="vid"
+                                        ><img
+                                            class="play"
+                                            src="assets/icons/play.svg"
+                                            alt=""
+                                        />
+                                        <p class="name">
+                                            Hash Implementation
+                                        </p></a
+                                    >
+                                </div>
+                                <div class="row row-vid">
+                                    <span class="check-pre"
+                                        ><i class="fa-solid fa-check"></i
+                                    ></span>
+                                    <a class="vid"
+                                        ><img
+                                            class="play"
+                                            src="assets/icons/play.svg"
+                                            alt=""
+                                        />
+                                        <p class="name">PreFix Sums</p></a
+                                    >
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row row-top-table">
+                        <!-- <div class="row row-top-table">
                         <div class="sub-row">
                             <p>Trạng thái</p>
                             <p>Vấn đề</p>
@@ -91,6 +134,185 @@
                             <p class="diff">Easy</p>
                             <p class="lan"></p>
                         </div>
+                    </div> -->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Trạng thái</th>
+                                    <th class="prb">
+                                        <div class="prb">Vấn đề</div>
+                                    </th>
+                                    <th>Độ khó</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Contains Duplicate</a>
+                                        </div>
+                                    </td>
+                                    <td><div class="center easy">Easy</div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Valid Anagram</a>
+                                        </div>
+                                    </td>
+                                    <td><div class="center easy">Easy</div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Two Sum</a>
+                                        </div>
+                                    </td>
+                                    <td><div class="center easy">Easy</div></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Group Anagrams </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Top K Frequent Elements</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Encode and Decode Strings </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Product of Array Except Self</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Valid Sudoku </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="center">
+                                            <span class="check"
+                                                ><i
+                                                    class="fa-solid fa-check"
+                                                ></i
+                                            ></span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center center-prb">
+                                            <a>Longest Consecutive Sequence</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="center medium">Medium</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

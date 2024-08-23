@@ -16,7 +16,6 @@ svg {
     background-color: rgb(33, 32, 32);
 }
 
-
 .line {
     fill: rgb(33, 32, 32);
 }
@@ -70,7 +69,6 @@ progress::-webkit-progress-value {
     right: 0;
     background-color: #00000080;
     z-index: 900;
-    
 }
 .tab {
     position: fixed;
@@ -84,6 +82,9 @@ progress::-webkit-progress-value {
     z-index: 1000;
     background-color: #2b2929;
     /* color : white */
+    overflow: auto;
+    padding-bottom: 100px;
+    transition: all .4s ease;
 }
 
 .content-tab {
@@ -92,8 +93,18 @@ progress::-webkit-progress-value {
     width: 90%;
 }
 
+.tab .esc {
+    top: 30px;
+    left: 40px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    color:rgb(33, 32, 32);
+    position: absolute;
+}
 
 .tab .title {
+    margin-top: 20px;
     text-align: center;
     font-size: 2.4rem;
     font-weight: 600;
@@ -103,20 +114,23 @@ progress::-webkit-progress-value {
     display: flex;
     align-items: center;
 }
-.wrap{
+.wrap {
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
 }
 
 .row-vid {
     padding: 10px 30px 10px 20px;
     width: 600px;
     justify-content: space-between;
-    box-shadow: 0 .5em 1em -.125em #0a0a0a1a, 0 0 0 1px #0a0a0a05;
+    box-shadow: 0 0.5em 1em -0.125em #0a0a0a1a, 0 0 0 1px #0a0a0a05;
     background-color: #202225;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
+.row-vid + .row-vid {
+    margin-top: 10px;
+}
 
 .colum {
     margin: 80px auto 60px auto;
@@ -133,7 +147,9 @@ progress::-webkit-progress-value {
 }
 
 .colum .vid {
+    width: 300px;
     padding: 10px;
+    gap: 50px;
     align-items: center;
     display: flex;
     background-color: #0c0c0c6a;
@@ -142,6 +158,7 @@ progress::-webkit-progress-value {
 
 .colum .name {
     font-size: 1.7rem;
+    font-weight: 500;
 }
 
 .colum .play {
@@ -152,7 +169,7 @@ progress::-webkit-progress-value {
     margin-left: 10px;
 }
 
-.row-vid .check{
+.check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,21 +179,49 @@ progress::-webkit-progress-value {
     background: rgba(0, 0, 0, 0);
     border-radius: 4px;
     /* transition: background .15s ease-out; */
-}
-.row-vid .check i{
-    color: white;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 
-.row-vid .is-success{
+.check-pre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #7a7a7a;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    /* transition: background .15s ease-out; */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.check-pre i,
+.check i {
+    opacity: 0;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.is-complete {
+    background-color: #214b52;
+}
+
+.row-vid .is-success {
     border-color: #5c605e;
     background-color: #5c605e;
 }
 
-.is-success{
+.is-success {
     border-color: #48c78e;
     background-color: #48c78e;
 }
-
+/* 
 .row .sub-row {
     margin: 20px 0 40px;
     display: flex;
@@ -199,7 +244,58 @@ progress::-webkit-progress-value {
     border-top: 2px solid rgb(137, 133, 133);
     margin-left: auto;
     margin-right: auto;;
+} */
+
+/* ========= Table ========= */
+table {
+    width: 100%;
+    padding: 10px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
 }
 
+table .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.center-prb {
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
 
+th {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.2rem;
+}
+
+th .prb {
+    text-align: left;
+}
+
+tr {
+    border-bottom: 2px solid #5e5e5e;
+}
+
+td {
+    padding: 1.8rem;
+    font-size: 1.6rem;
+}
+
+td .easy {
+    color: rgba(0, 184, 163, 1);
+    font-weight: 500;
+}
+
+td .medium {
+    color: rgba(255, 192, 30, 1);
+    font-weight: 500;
+}
+
+td .hard {
+    color: rgba(255, 55, 95, 1);
+    font-weight: 500;
+}
