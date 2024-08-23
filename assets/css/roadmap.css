@@ -68,7 +68,8 @@ progress::-webkit-progress-value {
     left: 0;
     right: 0;
     background-color: #00000080;
-    z-index: 900;
+    z-index: 800;
+    visibility: hidden;
 }
 .tab {
     position: fixed;
@@ -84,7 +85,10 @@ progress::-webkit-progress-value {
     /* color : white */
     overflow: auto;
     padding-bottom: 100px;
-    transition: all .4s ease;
+    /* transition: all .4s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(100%); */
 }
 
 .content-tab {
@@ -298,4 +302,19 @@ td .medium {
 td .hard {
     color: rgba(255, 55, 95, 1);
     font-weight: 500;
+}
+/*  ========= Tab ========= */
+/* ẩn */
+.off {
+    visibility: hidden ;
+    opacity : 0 ;
+    transform: translate(100%);
+    transition: all  .4s ease;
+}
+/* hiện  */
+.active {
+    visibility: visible;
+    opacity : 1;
+    transform: translate(0);
+    transition: all  .4s ease;
 }

@@ -44,16 +44,3 @@ checkspre.forEach(function (check) {
     });
 });
 
-// ============= Tab ==============
-// ẩn tab
-let esc = document.querySelector(".esc");
-esc.addEventListener("click", function () {
-    let tab = esc.closest(".tab");
-    let bck = esc.closest(".wrap-all");
-    tab.style.opacity = "0";
-    tab.style.visibility = "hidden";
-    tab.style.transform = "translate(100%)";
-    tab.style.transition= "all  .4s ease";
-
-    bck.style.visibility = "hidden";
-});
