@@ -31,13 +31,48 @@ document.addEventListener("click", function (event) {
     }
 });
 
+const topic = document.querySelector(".topics .wrap-name");
+const opitiontopic = document.querySelector(".wrapall");
+const imgtopic = topic.querySelector("img");
+
+// Bắt sự kiện click vào nút
+topic.addEventListener("click", function (event) {
+    if (
+        opitiontopic.style.opacity === "0" ||
+        opitiontopic.style.visibility === "hidden"
+    ) {
+        opitiontopic.style.opacity = "1";
+        opitiontopic.style.visibility = "visible";
+        opitiontopic.style.transition = "all  .4s ease";
+        imgtopic.style.transform="rotate(180deg)"
+    } else {
+        opitiontopic.style.opacity = "0";
+        opitiontopic.style.visibility = "hidden";
+        opitiontopic.style.transition = "all  .4s ease";
+        imgtopic.style.transform="rotate(0deg)"
+    }
+
+    // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
+    event.stopPropagation();
+});
+
+// Bắt sự kiện click ra ngoài vùng danh sách ul
+document.addEventListener("click", function (event) {
+    if (!topic.contains(event.target) && !opitiontopic.contains(event.target)) {
+        opitiontopic.style.opacity = "0";
+        opitiontopic.style.visibility = "hidden";
+        opitiontopic.style.transition = "all  .4s ease";
+        imgtopic.style.transform="rotate(0deg)"
+    }
+});
+
 let exercises = []; // Mảng chứa dữ liệu bài tập
-let rowsPerPage = 30; // Số bài tập mỗi trang
+let rowsPerPage = 40; // Số bài tập mỗi trang
 let currentPage = 1; // Trang hiện tại
 
 // Hàm để đọc dữ liệu JSON từ file
 async function loadExercises() {
-    let response = await fetch("./json/practice.json"); 
+    let response = await fetch("./json/practice.json");
     exercises = await response.json();
     setbuttonPage();
     displayExercises(currentPage);
@@ -72,7 +107,7 @@ function displayExercises(page) {
         let nameCell = document.createElement("td");
         let divName = document.createElement("div");
         let aPrb = document.createElement("a");
-        divName.classList.add("center", "center-prb");
+        divName.classList.add("center", "center-prb", "name");
         aPrb.textContent = exercise.name;
         divName.appendChild(aPrb);
         nameCell.appendChild(divName);
@@ -122,7 +157,7 @@ function displayExercises(page) {
             .querySelector("div")
             .querySelector("a");
         let exerciseName = exerciseNameCell.textContent;
-        let numberOrder = start + i + 1
+        let numberOrder = start + i + 1;
         exerciseNameCell.textContent = numberOrder + ". " + exerciseName;
     }
     let checks = document.querySelectorAll(".check");
@@ -186,11 +221,15 @@ function setbuttonPage() {
     let firstPage = document.createElement("button");
     firstPage.textContent = "1";
     firstPage.classList.add("nav-btn", "btn-mid");
-    firstPage.onclick = function () {
-        currentPage = 1;
-        displayExercises(currentPage);
-        setbuttonPage();
-    };
+    if (currentPage === 1) {
+        firstPage.disabled = true;
+    } else {
+        firstPage.onclick = function () {
+            currentPage = 1;
+            displayExercises(currentPage);
+            setbuttonPage();
+        };
+    }
     pageNav.appendChild(firstPage);
 
     // tạo nút ...
@@ -265,3 +304,31 @@ function setbuttonPage() {
     }
     pageNav.appendChild(nextButton);
 }
+
+// Tìm kiếm bài tập
+let debounceTimeout;
+document
+    .querySelector(".sea-input")
+    .addEventListener("keyup", function (event) {
+        clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(() => {
+            let input = this.value.toLowerCase();
+            let listItems = document.querySelectorAll("tr .name");
+            if (input === "") {
+                // Nếu ô tìm kiếm rỗng, hiển thị lại tất cả các dòng
+                listItems.forEach(function (item) {
+                    let tr = item.closest("tr");
+                    tr.style.display = "";
+                });
+            } else if (event.key === "Enter") {
+                listItems.forEach(function (item) {
+                    let tr = item.closest("tr");
+                    if (item.textContent.toLowerCase().includes(input)) {
+                        tr.style.display = "";
+                    } else {
+                        tr.style.display = "none";
+                    }
+                });
+            }
+        }, 300);
+    });
