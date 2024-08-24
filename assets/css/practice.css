@@ -1,6 +1,14 @@
 body {
     color: black;
 }
+
+.content {
+    width: 50vw;
+    max-width: calc(50vw - 48px);
+    min-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* ========= Search ========== */
 .title {
     margin-top: 60px;
@@ -17,7 +25,7 @@ body {
 }
 
 .sea-input {
-    margin-left: 240px;
+    margin-left: 150px;
     width: 270px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -26,12 +34,18 @@ body {
     padding-left: 5rem;
     border-radius: 5px;
     border: 2px solid black;
+    transition: all 0.4s ease-out;
+}
+
+.sea-input:focus {
+    width: 450px;
+    transition: all 0.4s ease-out;
 }
 
 .search {
     position: absolute;
     top: 10px;
-    left: 255px;
+    left: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +53,7 @@ body {
 }
 
 .setting {
-    margin-right: 240px;
+    margin-right: 150px;
     position: relative;
 }
 
@@ -85,18 +99,123 @@ body {
     transition: all 0.15s ease-out;
 }
 
-.check-pre i {
+.check-pre i,
+.check i {
     opacity: 0;
     color: white;
     padding: 0;
     margin: 0;
 }
 
-.is-success {
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #7a7a7a;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    transition: all .15s ease-out;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.check-pre .is-success {
     border-color: rgba(10, 132, 255, 1);
     background-color: rgba(10, 132, 255, 1);
 }
 
+.is-complete {
+    background-color: #b8efc9;
+    transition: all 0.4s ease-out;
+}
+
+.row-vid .is-success {
+    border-color: #5c605e;
+    background-color: #5c605e;
+}
+
+.is-success {
+    border-color: #48c78e;
+    background-color: #48c78e;
+}
+
 .premium {
     color: gold;
+}
+
+/* =========== Table ========== */
+table {
+    margin-top: 100px;
+    width: 100%;
+    padding: 10px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+}
+
+table a {
+    color: black;
+}
+
+table .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-prb {
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+th {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+th .prb {
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1.5px solid #5e5e5e;
+    transition: all 0.4s ease-out;
+}
+
+thead tr {
+    border-bottom: 2px solid #5e5e5e ;
+    transition: all 0.4s ease-out;
+}
+
+td {
+    padding: 1.8rem;
+    font-size: 1.6rem;
+}
+
+td .easy {
+    color: rgba(0, 184, 163, 1);
+    font-weight: 500;
+}
+
+td .medium {
+    color: rgba(255, 192, 30, 1);
+    font-weight: 500;
+}
+
+td .hard {
+    color: rgba(255, 55, 95, 1);
+    font-weight: 500;
+}
+
+td.acc {
+    font-weight: 500;
+    font-size: 1.7rem;
 }
