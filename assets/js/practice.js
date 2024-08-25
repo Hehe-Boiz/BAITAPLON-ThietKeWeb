@@ -1,21 +1,21 @@
 // nút setting
 
+const settingWrap = document.querySelector(".wrap-setting");
 const setting = document.querySelector(".setting-in");
 const opition = document.querySelector(".opitions");
 
 // Bắt sự kiện click vào nút
-setting.addEventListener("click", function (event) {
-    if (
-        opition.style.opacity === "0" ||
-        opition.style.visibility === "hidden"
-    ) {
-        opition.style.opacity = "1";
-        opition.style.visibility = "visible";
-        opition.style.transition = "all  .4s ease";
+settingWrap.addEventListener("click", function (event) {
+    if (opition.classList.contains("hidden")) {
+        opition.classList.remove("hidden");
+        opition.classList.add("show");
+        setting.classList.remove("rotate0");
+        setting.classList.add("rotate360");
     } else {
-        opition.style.opacity = "0";
-        opition.style.visibility = "hidden";
-        opition.style.transition = "all  .4s ease";
+        opition.classList.remove("show");
+        opition.classList.add("hidden");
+        setting.classList.remove("rotate360");
+        setting.classList.add("rotate0");
     }
 
     // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
@@ -25,9 +25,10 @@ setting.addEventListener("click", function (event) {
 // Bắt sự kiện click ra ngoài vùng danh sách ul
 document.addEventListener("click", function (event) {
     if (!setting.contains(event.target) && !opition.contains(event.target)) {
-        opition.style.opacity = "0";
-        opition.style.visibility = "hidden";
-        opition.style.transition = "all  .4s ease";
+        opition.classList.remove("show");
+        opition.classList.add("hidden");
+        setting.classList.remove("rotate0");
+        setting.classList.add("rotate360");
     }
 });
 
@@ -37,32 +38,25 @@ const imgtopic = topic.querySelector("img");
 
 // Bắt sự kiện click vào nút
 topic.addEventListener("click", function (event) {
-    if (
-        opitiontopic.style.opacity === "0" ||
-        opitiontopic.style.visibility === "hidden"
-    ) {
-        opitiontopic.style.opacity = "1";
-        opitiontopic.style.visibility = "visible";
-        opitiontopic.style.transition = "all  .4s ease";
-        imgtopic.style.transform="rotate(180deg)"
+    if (opitiontopic.classList.contains("hidden")) {
+        opitiontopic.classList.remove("hidden");
+        opitiontopic.classList.add("show");
+        imgtopic.style.transform = "rotate(180deg)";
     } else {
-        opitiontopic.style.opacity = "0";
-        opitiontopic.style.visibility = "hidden";
-        opitiontopic.style.transition = "all  .4s ease";
-        imgtopic.style.transform="rotate(0deg)"
+        opitiontopic.classList.remove("show");
+        opitiontopic.classList.add("hidden");
+        imgtopic.style.transform = "rotate(0deg)";
     }
 
     // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
     event.stopPropagation();
 });
 
-// Bắt sự kiện click ra ngoài vùng danh sách ul
+// ngăn sự kiện bắt qua ngoài
 document.addEventListener("click", function (event) {
     if (!topic.contains(event.target) && !opitiontopic.contains(event.target)) {
-        opitiontopic.style.opacity = "0";
-        opitiontopic.style.visibility = "hidden";
-        opitiontopic.style.transition = "all  .4s ease";
-        imgtopic.style.transform="rotate(0deg)"
+        opitiontopic.classList.remove("show");
+        opitiontopic.classList.add("hidden");
     }
 });
 
@@ -332,3 +326,104 @@ document
             }
         }, 300);
     });
+
+// tạo nút button tags để lọc
+// fetch("./json/practice.json")
+//     .then((response) => response.json())
+//     .then((exercises) => {
+//         let allTags = exercises.flatMap((exercise) => exercise.tags);
+//         let uniqueTags = [...new Set(allTags)];
+//         let wrapTopics = document.querySelector(".wrap");
+
+//         uniqueTags.forEach((tag) => {
+//             let button = document.createElement("span");
+//             if (tag !== " ") {
+//                 button.textContent = tag;
+//                 button.classList.add("topic", "cursor");
+//                 wrapTopics.appendChild(button);
+//             }
+//         });
+//         // đánh dấu tags
+//         let topics = document.querySelectorAll(".topic");
+//         topics.forEach((topic) => {
+//             topic.addEventListener("click", () => {
+//                 if (topic.classList.contains("is-opition")) {
+//                     topic.classList.remove("is-opition");
+//                 } else {
+//                     topic.classList.add("is-opition");
+//                 }
+//             });
+//         });
+//     });
+
+// Tạo các nút button tags để lọc
+fetch("./json/practice.json")
+    .then((response) => response.json())
+    .then((exercises) => {
+        let allTags = exercises.flatMap((exercise) => exercise.tags);
+        let uniqueTags = [...new Set(allTags)];
+        let wrapTopics = document.querySelector(".wrap");
+
+        uniqueTags.forEach((tag) => {
+            let button = document.createElement("span");
+
+            button.textContent = tag;
+            button.classList.add("topic", "cursor");
+            wrapTopics.appendChild(button);
+        });
+
+        let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ đề đã chọn
+
+        // Gán sự kiện cho các nút tag vừa tạo
+        let topics = document.querySelectorAll(".topic");
+        topics.forEach((topic) => {
+            topic.addEventListener("click", () => {
+                let topicText = topic.textContent.trim();
+
+                // Thay đổi trạng thái của nút
+                if (selectedTopics.has(topicText)) {
+                    topic.classList.remove("is-opition");
+                    selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                } else {
+                    topic.classList.add("is-opition");
+                    selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
+                }
+
+                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+                filterExercises(selectedTopics, exercises);
+            });
+        });
+    });
+
+// Hàm lọc bài tập dựa trên các chủ đề đã chọn
+function filterExercises(selectedTopics, exercises) {
+    if (selectedTopics.size === 0) {
+        showExercises(exercises);
+        return;
+    }
+    // Lọc bài tập dựa trên các chủ đề đã chọn
+    const filExercises = exercises.filter((exercise) =>
+        Array.from(selectedTopics).every((tag) => exercise.tags.includes(tag))
+    );
+    showExercises(filExercises);
+}
+
+// Hàm hiển thị các bài tập đã lọc
+function showExercises(Exercises) {
+    let namePractices = document.querySelectorAll("tr .name a");
+    // Ẩn tất cả các hàng trước
+    namePractices.forEach((practice) => {
+        let tr = practice.closest("tr");
+        tr.style.display = "none";
+    });
+    // Hiển thị các bài tập đã lọc
+    Exercises.forEach((Exercise) => {
+        namePractices.forEach((practice) => {
+            console.log(Exercise.name);
+            let tr = practice.closest("tr");
+            if (practice.textContent.includes(Exercise.name)) {
+                tr.style.display = "";
+            }
+        });
+    });
+}

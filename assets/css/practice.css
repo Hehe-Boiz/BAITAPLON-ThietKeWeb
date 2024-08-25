@@ -58,11 +58,47 @@ body {
     position: relative;
 }
 
-.setting-in {
-    padding: 8px;
-    width: 4rem;
+.wrap-setting {
     background-color: #000a200d;
     border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-in {
+    width: 2.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate0 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate360 {
+    animation: rotate360 0.5s ease-in-out;
+}
+
+.rotate0 {
+    animation: rotate0 0.5s ease-in-out;
 }
 
 .opitions {
@@ -71,9 +107,6 @@ body {
     padding: 8px 13px;
     /* background-color: #272727; */
     border-radius: 7px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
 }
@@ -326,9 +359,6 @@ td.acc {
     margin-top: 8px;
     padding: 10px 13px;
     border-radius: 7px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
     z-index: 2;
@@ -354,8 +384,37 @@ td.acc {
     margin-top: 5px;
     background-color: #f2f2f3;
     display: inline-block;
-    padding: 7px 10px;
+    padding: 5px 10px;
     color: #3c3c4399;
     border-radius: 8px;
     font-size: 1.4rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.topic:hover {
+    background-color: #000a201a;
+}
+
+.is-opition {
+    background-color: #29d657;
+    color: white;
+}
+
+.is-opition:hover {
+    background-color: #42af5f;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
 }
