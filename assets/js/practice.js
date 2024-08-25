@@ -6,16 +6,28 @@ const opition = document.querySelector(".opitions");
 
 // Bắt sự kiện click vào nút
 settingWrap.addEventListener("click", function (event) {
+    if(document.querySelector(".show")){
+        let off=document.querySelector(".show")
+        off.classList.remove("show");
+    }
     if (opition.classList.contains("hidden")) {
         opition.classList.remove("hidden");
         opition.classList.add("show");
-        setting.classList.remove("rotate0");
-        setting.classList.add("rotate360");
+        if (setting.classList.contains("rotate0")) {
+            setting.classList.remove("rotate0");
+            setting.classList.add("rotate360");
+        } else {
+            setting.classList.add("rotate360");
+        }
     } else {
         opition.classList.remove("show");
         opition.classList.add("hidden");
-        setting.classList.remove("rotate360");
-        setting.classList.add("rotate0");
+        if (setting.classList.contains("rotate360")) {
+            setting.classList.remove("rotate360");
+            setting.classList.add("rotate0");
+        } else {
+            setting.classList.add("rotate0");
+        }
     }
 
     // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
@@ -25,12 +37,20 @@ settingWrap.addEventListener("click", function (event) {
 // Bắt sự kiện click ra ngoài vùng danh sách ul
 document.addEventListener("click", function (event) {
     if (!setting.contains(event.target) && !opition.contains(event.target)) {
-        opition.classList.remove("show");
-        opition.classList.add("hidden");
-        setting.classList.remove("rotate0");
-        setting.classList.add("rotate360");
+        if (opition.classList.contains("show")) {
+            opition.classList.remove("show");
+            opition.classList.add("hidden");
+            if (setting.classList.contains("rotate360")) {
+                setting.classList.remove("rotate360");
+                setting.classList.add("rotate0");
+            } else if (!setting.classList.contains("rotate0")) {
+                setting.classList.add("rotate0");
+            }
+        }
     }
 });
+
+// Chủ đề
 
 const topic = document.querySelector(".topics .wrap-name");
 const opitiontopic = document.querySelector(".wrapall");
@@ -55,8 +75,76 @@ topic.addEventListener("click", function (event) {
 // ngăn sự kiện bắt qua ngoài
 document.addEventListener("click", function (event) {
     if (!topic.contains(event.target) && !opitiontopic.contains(event.target)) {
-        opitiontopic.classList.remove("show");
-        opitiontopic.classList.add("hidden");
+        if (opitiontopic.classList.contains("show")) {
+            opitiontopic.classList.remove("show");
+            opitiontopic.classList.add("hidden");
+            imgtopic.style.transform = "rotate(0deg)";
+        }
+    }
+});
+
+// Độ khó
+
+const diff = document.querySelector(".diff .wrap-name");
+const opitiondiff = document.querySelector(".opitions-diff");
+const imgdiff = diff.querySelector("img");
+
+// Bắt sự kiện click vào nút
+diff.addEventListener("click", function (event) {
+    if (opitiondiff.classList.contains("hidden")) {
+        opitiondiff.classList.remove("hidden");
+        opitiondiff.classList.add("show");
+        imgdiff.style.transform = "rotate(180deg)";
+    } else {
+        opitiondiff.classList.remove("show");
+        opitiondiff.classList.add("hidden");
+        imgdiff.style.transform = "rotate(0deg)";
+    }
+
+    // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
+    event.stopPropagation();
+});
+
+// ngăn sự kiện bắt qua ngoài
+document.addEventListener("click", function (event) {
+    if (!diff.contains(event.target) && !opitiondiff.contains(event.target)) {
+        if (opitiondiff.classList.contains("show")) {
+            opitiondiff.classList.remove("show");
+            opitiondiff.classList.add("hidden");
+            imgdiff.style.transform = "rotate(0deg)";
+        }
+    }
+});
+
+// Trạng thái 
+const btnstatus = document.querySelector(".status .wrap-name");
+const opitionstatus = document.querySelector(".opitions-status");
+const imgstatus = btnstatus.querySelector("img");
+
+// Bắt sự kiện click vào nút
+btnstatus.addEventListener("click", function (event) {
+    if (opitionstatus.classList.contains("hidden")) {
+        opitionstatus.classList.remove("hidden");
+        opitionstatus.classList.add("show");
+        imgstatus.style.transform = "rotate(180deg)";
+    } else {
+        opitionstatus.classList.remove("show");
+        opitionstatus.classList.add("hidden");
+        imgstatus.style.transform = "rotate(0deg)";
+    }
+
+    // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
+    event.stopPropagation();
+});
+
+// ngăn sự kiện bắt qua ngoài
+document.addEventListener("click", function (event) {
+    if (!btnstatus.contains(event.target) && !opitionstatus.contains(event.target)) {
+        if (opitionstatus.classList.contains("show")) {
+            opitionstatus.classList.remove("show");
+            opitionstatus.classList.add("hidden");
+            imgstatus.style.transform = "rotate(0deg)";
+        }
     }
 });
 
@@ -326,35 +414,6 @@ document
             }
         }, 300);
     });
-
-// tạo nút button tags để lọc
-// fetch("./json/practice.json")
-//     .then((response) => response.json())
-//     .then((exercises) => {
-//         let allTags = exercises.flatMap((exercise) => exercise.tags);
-//         let uniqueTags = [...new Set(allTags)];
-//         let wrapTopics = document.querySelector(".wrap");
-
-//         uniqueTags.forEach((tag) => {
-//             let button = document.createElement("span");
-//             if (tag !== " ") {
-//                 button.textContent = tag;
-//                 button.classList.add("topic", "cursor");
-//                 wrapTopics.appendChild(button);
-//             }
-//         });
-//         // đánh dấu tags
-//         let topics = document.querySelectorAll(".topic");
-//         topics.forEach((topic) => {
-//             topic.addEventListener("click", () => {
-//                 if (topic.classList.contains("is-opition")) {
-//                     topic.classList.remove("is-opition");
-//                 } else {
-//                     topic.classList.add("is-opition");
-//                 }
-//             });
-//         });
-//     });
 
 // Tạo các nút button tags để lọc
 fetch("./json/practice.json")
