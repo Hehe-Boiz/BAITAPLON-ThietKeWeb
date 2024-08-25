@@ -17,34 +17,40 @@ const data = {
     ],
 };
 
+const scale = 2; // Hệ số tỷ lệ để tăng độ phân giải (2x độ phân giải)
+canvas.width = 500 * scale; // Tăng chiều rộng nội bộ
+canvas.height = 350 * scale;
+
+canvas.style.width = "500px"; // Kích thước hiển thị của canvas
+canvas.style.height = "350px";
+
+ctx.scale(scale, scale);
 
 // Hàm vẽ biểu đồ đường
 function drawChart() {
-    const padding = 50;
-    const chartWidth = canvas.width - padding * 2;
-    const chartHeight = canvas.height - padding * 2;
+    const padding = 50; // Chỉ cần định nghĩa một lần
+    const chartWidth = canvas.width / scale - padding * 2; // Điều chỉnh chiều rộng và chiều cao theo scale
+    const chartHeight = canvas.height / scale - padding * 2;
     const maxYValue = 95; // Giá trị lớn nhất của trục Y
     const scaleX = chartWidth / (data.labels.length - 1);
     const scaleY = chartHeight / maxYValue;
 
     // Vẽ lưới và nhãn
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width / scale, canvas.height / scale); // Chỉ xóa phần hiển thị thực tế
     ctx.beginPath();
-    // ctx.moveTo(padding, padding);
-    // ctx.lineTo(padding, canvas.height - padding);
-    ctx.lineTo(canvas.width - padding, canvas.height - padding);
+    ctx.lineTo(canvas.width / scale - padding, canvas.height / scale - padding);
     ctx.strokeStyle = "#d8d8de";
     ctx.stroke();
     ctx.fillStyle = "black";
-    ctx.font = "normal 15px Poppins";
+    ctx.font = "500 15px Arial";
 
     // Nhãn trục Y
     for (let i = 0; i <= maxYValue; i += 20) {
-        const y = canvas.height - padding - i * scaleY;
+        const y = canvas.height / scale - padding - i * scaleY;
         ctx.fillText(i, padding - 30, y + 5);
         ctx.beginPath();
         ctx.moveTo(padding, y);
-        ctx.lineTo(canvas.width - padding, y);
+        ctx.lineTo(canvas.width / scale - padding, y);
         ctx.strokeStyle = "#d8d8de";
         ctx.stroke();
     }
@@ -52,9 +58,10 @@ function drawChart() {
     // Nhãn trục X
     data.labels.forEach((label, index) => {
         const x = padding + index * scaleX;
-        ctx.fillText(label, x - 10, canvas.height - padding + 20);
+        ctx.fillText(label, x - 10, canvas.height / scale - padding + 20);
     });
-    //Vẽ biểu đồ
+
+    // Vẽ biểu đồ
     data.datasets.forEach((dataset) => {
         if (dataset.label2) {
             drawLine(ctx, dataset, padding, scaleX, scaleY, animationProgress);
@@ -73,9 +80,11 @@ function drawLine(ctx, dataset, padding, scaleX, scaleY, animationProgress) {
     const totalPoints = dataset.data.length - 1;
     for (let i = 0; i < totalPoints; i++) {
         const x1 = padding + i * scaleX + 15;
-        const y1 = canvas.height - padding - dataset.data[i] * scaleY - 10;
+        const y1 =
+            canvas.height / scale - padding - dataset.data[i] * scaleY - 10;
         const x2 = padding + (i + 1) * scaleX + 15;
-        const y2 = canvas.height - padding - dataset.data[i + 1] * scaleY - 10;
+        const y2 =
+            canvas.height / scale - padding - dataset.data[i + 1] * scaleY - 10;
 
         const segmentProgress = animationProgress * totalPoints - i;
 
@@ -104,7 +113,8 @@ function drawPoint(ctx, dataset, padding, scaleX, scaleY, animationProgress) {
         if ((i + 1) * (1 / dataset.data.length) > animationProgress) break;
 
         const x = padding + i * scaleX + 15;
-        const y = canvas.height - padding - dataset.data[i] * scaleY - 10;
+        const y =
+            canvas.height / scale - padding - dataset.data[i] * scaleY - 10;
 
         ctx.beginPath();
         ctx.arc(x, y, 4, 0, Math.PI * 2);
@@ -125,30 +135,35 @@ function drawBar(ctx, dataset, padding, scaleX, scaleY, animationProgress) {
     dataset.data.forEach((value, index) => {
         const barWidth = scaleX * 0.4; // Chiều rộng cột
         const x = padding + index * scaleX; // Đặt cột ngay dưới nhãn
-        const y = canvas.height - padding - value * scaleY * animationProgress;
+        const y =
+            canvas.height / scale -
+            padding -
+            value * scaleY * animationProgress;
         ctx.fillStyle = "#4E31AA";
-        ctx.fillRect(x, y, barWidth, canvas.height - padding - y); // Cột nằm dưới điểm đường
+        ctx.fillRect(x, y, barWidth, canvas.height / scale - padding - y); // Cột nằm dưới điểm đường
     });
 }
 
 // Hàm để vẽ chú thích
 function drawLegend() {
-    const legendX = 50; // Vị trí X
-    const legendY = 30; // Vị trí Y
+    const legendX = 50 / scale; // Vị trí X
+    const legendY = 30 / scale; // Vị trí Y
 
     // Vẽ chú thích cho "Số lượng lập trình viên"
     ctx.fillStyle = "#4E31AA";
-    ctx.fillRect(legendX, legendY, 15, 15);
+    ctx.fillRect(legendX, legendY + 3, 15, 15);
     ctx.fillStyle = "black";
-    ctx.fillText("Số lượng lập trình viên", legendX + 20, legendY + 12);
-    ctx.font = "normal 15px Poppins";
+    ctx.font = "bold 15px Arial";
+    ctx.fillText("Số lượng lập trình viên", legendX + 20, legendY + 15);
+    
 
     // Vẽ chú thích cho "Nhu cầu của thị trường"
     ctx.fillStyle = "teal";
-    ctx.fillRect(legendX, legendY + 25, 15, 15); 
+    ctx.fillRect(legendX, legendY + 28, 15, 15);
     ctx.fillStyle = "black";
-    ctx.fillText("Nhu cầu của thị trường", legendX + 20, legendY + 37);
-    ctx.font = "normal 15px Poppins";
+    ctx.font = "bold 15px Arial";
+    ctx.fillText("Nhu cầu của thị trường", legendX + 20, legendY + 42);
+    
 }
 
 function animateChart() {
@@ -182,4 +197,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(canvas);
-

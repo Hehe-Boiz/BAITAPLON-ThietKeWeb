@@ -22,6 +22,10 @@ body {
     align-items: center;
     margin-top: 70px;
     position: relative;
+    padding: 1.5rem 2rem;
+    /* background-color: #2f3136; */
+    background-color: #e1e1e4;
+    border-radius: 1rem;
 }
 
 .sea-input {
@@ -34,18 +38,20 @@ body {
     padding-left: 5rem;
     border-radius: 5px;
     border: 2px solid black;
-    transition: all 0.4s ease-out;
+    transition: all 1s ease-out;
+    margin-right: 20px;
 }
 
 .sea-input:focus {
     width: 450px;
-    transition: all 0.4s ease-out;
+    transition: all 1s ease-out;
+    outline: none;
 }
 
 .search {
     position: absolute;
-    top: 23px;
-    left: 20px;
+    top: 28px;
+    left: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +65,8 @@ body {
 }
 
 .wrap-setting {
-    background-color: #000a200d;
+    /* background-color: #000a200d; */
+    background-color: #f2f2f3;
     border-radius: 5px;
     padding: 8px;
     display: flex;
@@ -109,7 +116,7 @@ body {
     border-radius: 7px;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
-    background-color: white ;
+    background-color: white;
 }
 
 .opition {
@@ -234,7 +241,6 @@ thead tr {
     transition: all 0.4s ease-out;
 }
 
-
 tr:nth-child(odd) {
     background-color: white;
 }
@@ -358,7 +364,6 @@ tbody tr:first-child {
 
 .topics {
     width: 140px;
-    padding: 10px 15px;
 }
 
 .topics .wrapall {
@@ -431,16 +436,15 @@ tbody tr:first-child {
 /* =========== Reset ========== */
 .tags {
     margin-top: 20px;
-    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 .tags-contain {
     display: flex;
     gap: 10px;
     align-items: center;
+    height: 39px;
 }
 
 .topic-selec {
@@ -455,15 +459,16 @@ tbody tr:first-child {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-bottom: 5px;
 }
 
 .reset {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     gap: 10px;
     padding: 5px 10px;
-    background-color: #f2f2f3;  
+    background-color: #f2f2f3;
     border-radius: 8px;
     padding: 0.7rem 1.3rem;
     -webkit-user-select: none;
@@ -472,8 +477,41 @@ tbody tr:first-child {
     user-select: none;
 }
 
+.reset:hover {
+    background-color: #d8d8d8;
+}
+
+.wrap-reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.wrap-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 4px;
+    background-color: #3c3c434d;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.wrap-i:hover {
+    color: #d2d2d4;
+    /* color: #f8f8f899; */
+    background-color: #45454799;
+    /* background-color: #3c3c4399; */
+    transition: all 0.3s ease;
+}
+
+.wrap-reset i {
+    font-size: 1.3rem;
+}
+
 /* =========== Diff ========== */
-.diff{
+.diff {
     width: 100px;
 }
 
@@ -485,7 +523,7 @@ tbody tr:first-child {
     border-radius: 7px;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
-    background-color: white ;
+    background-color: white;
 }
 
 .opition-diff {
@@ -502,7 +540,7 @@ tbody tr:first-child {
 }
 
 .diff img {
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 /* =========== Status ========== */
 .status {
@@ -517,7 +555,7 @@ tbody tr:first-child {
     border-radius: 7px;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
-    background-color: white ;
+    background-color: white;
 }
 
 .opition-status {
@@ -534,5 +572,40 @@ tbody tr:first-child {
 }
 
 .status img {
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+}
+
+/* =========== Circle Graph ========== */
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar-left {
+    position: sticky;
+    top: 60px;
+    margin-top: 170px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    top: 100px;
+    padding: 20px;
+    width: 20%;
+    min-width: 290px;
+    max-width: 450px;
+    max-height: 500px;
+    min-height: 400px;
+    height: 100%;
+    background-color: #eef0f1;
+    z-index: 5;
+    border-radius: 0 20px 20px 0;
+
+}
+
+
+.sidebar-left .sub-title {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: 600;
 }

@@ -78,7 +78,7 @@ function closeAllMenus(except) {
 settingWrap.addEventListener("click", function (event) {
     event.stopPropagation();
     closeAllMenus(opition);
-    toggleMenu(opition, setting, setting, 360);
+    toggleMenu(opition, settingWrap, setting, 360);
 });
 
 topic.addEventListener("click", function (event) {
@@ -382,6 +382,7 @@ document
         }, 300);
     });
 
+let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ đề đã chọn
 // Tạo các nút button tags để lọc
 fetch("./json/practice.json")
     .then((response) => response.json())
@@ -397,8 +398,6 @@ fetch("./json/practice.json")
             button.classList.add("topic", "cursor");
             wrapTopics.appendChild(button);
         });
-
-        let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ đề đã chọn
 
         // Gán sự kiện cho các nút tag vừa tạo
         let topics = document.querySelectorAll(".topic");
@@ -453,3 +452,23 @@ function showExercises(Exercises) {
         });
     });
 }
+
+// Nút reset
+let reset = document.querySelector(".reset");
+let tagsContainer = document.querySelector(".tags-contain");
+
+reset.addEventListener("click", () => {
+    tagsContainer.innerHTML = "";
+    // Loại bỏ class "is-opition" khỏi tất cả các thẻ topic
+    let topics = document.querySelectorAll(".topic");
+    topics.forEach((topic) => {
+        topic.classList.remove("is-opition");
+    });
+
+    // Xóa tất cả các chủ đề đã chọn
+    selectedTopics.clear();
+
+    // Hiển thị tất cả bài tập
+    showExercises(exercises);
+});
+

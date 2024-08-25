@@ -51,138 +51,176 @@
             </div>
         </header>
         <main>
-            <aside>
-                <div class="sidebar-left"></div>
-                <div class="sidebar-right"></div>
-            </aside>
-            <div class="content">
-                <h1 class="title">Bài tập DSA</h1>
-                <div class="row row-top-sea">
-                    <input
-                        type="text"
-                        placeholder="Tìm kiếm"
-                        class="sea-input"
-                    />
-                    <span class="search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
-                    <div class="row row-fil">
-                        <span class="status">
-                            <div class="wrap-name">
-                                <span class="name-topic">Trạng thái</span>
-                                <img src="assets/icons/arrow-fil.svg" alt=""/>
-                            </div>
-                            <ul class="opitions-status hidden">
-                                <li class="opition-status row cursor">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p>Chưa làm</p>
-                                </li>
-                                <li class="opition-status row cursor">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p>Hoàn thành</p>
-                                </li>
-                            </ul>
-                        </span>
-                        <span class="diff">
-                            <div class="wrap-name">
-                                <span class="name-topic">Độ khó</span>
-                                <img src="assets/icons/arrow-fil.svg" alt=""/>
-                            </div>
-                            <ul class="opitions-diff hidden">
-                                <li class="opition-diff row cursor">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p class="easy">Easy</p>
-                                </li>
-                                <li class="opition-diff row cursor">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p class="medium">Medium</p>
-                                </li>
-                                <li class="opition-diff row cursor">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p class="hard">Hard</p>
-                                </li>
-                            </ul>
-                        </span>
-                        <span class="topics">
-                            <div class="wrap-name">
-                                <span class="name-topic">Chủ đề</span>
-                                <img src="assets/icons/arrow-fil.svg" alt="" />
-                            </div>
-                            <div class="wrapall hidden">
-                                <div class="center">
-                                    <span class="search-topics">
-                                        <i
-                                            class="fa-solid fa-magnifying-glass"
-                                        ></i>
-                                    </span>
-                                    <input
-                                        type="text"
-                                        class="sea-topic"
-                                        placeholder="Tìm kiếm"
-                                    />
-                                </div>
-                                <div class="wrap"></div></div
-                        ></span>
-                        <span class="setting">
-                            <div class="wrap-setting">
-                                <img
-                                    src="assets/icons/setting.svg"
-                                    alt=""
-                                    class="setting-in"
-                                />
-                            </div>
-                            <ul class="opitions hidden">
-                                <li class="opition row">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p>Free</p>
-                                </li>
-                                <li class="opition row">
-                                    <span class="check-pre"
-                                        ><i class="fa-solid fa-check"></i
-                                    ></span>
-                                    <p class="premium">Premium</p>
-                                </li>
-                            </ul>
-                        </span>
+            <div class="body">
+                <div class="sidebar-left">
+                    <h2 class="sub-title">Mục tiêu bản thân</h2>
+                    <div class="wrap-graph">
+                        <canvas
+                            id="progressCircle"
+                            width="150"
+                            height="150"
+                        ></canvas>
                     </div>
                 </div>
-                <div class="tags row">
-                    <div class="tags-contain"></div>
-                    <span class="reset">
-                        <img
-                            src="assets/icons/reset.svg"
-                            alt=""
-                            class="reset-icon"
+                <!-- <div class="sidebar-right"></div> -->
+                <div class="content">
+                    <h1 class="title">Bài tập DSA</h1>
+                    <div class="row row-top-sea">
+                        <input
+                            type="text"
+                            placeholder="Tìm kiếm"
+                            class="sea-input"
                         />
-                        <span>Reset</span>
-                    </span>
+                        <span class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <div class="row row-fil">
+                            <span class="status">
+                                <div class="wrap-name">
+                                    <span class="name-topic">Trạng thái</span>
+                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                </div>
+                                <ul class="opitions-status hidden">
+                                    <li class="opition-status row cursor">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p>Chưa làm</p>
+                                    </li>
+                                    <li class="opition-status row cursor">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p>Hoàn thành</p>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="diff">
+                                <div class="wrap-name">
+                                    <span class="name-topic">Độ khó</span>
+                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                </div>
+                                <ul class="opitions-diff hidden">
+                                    <li class="opition-diff row cursor">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p class="easy">Easy</p>
+                                    </li>
+                                    <li class="opition-diff row cursor">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p class="medium">Medium</p>
+                                    </li>
+                                    <li class="opition-diff row cursor">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p class="hard">Hard</p>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="topics">
+                                <div class="wrap-name">
+                                    <span class="name-topic">Chủ đề</span>
+                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                </div>
+                                <div class="wrapall hidden">
+                                    <div class="center">
+                                        <span class="search-topics">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="sea-topic"
+                                            placeholder="Tìm kiếm"
+                                        />
+                                    </div>
+                                    <div class="wrap"></div></div
+                            ></span>
+                            <span class="setting">
+                                <div class="wrap-setting">
+                                    <img
+                                        src="assets/icons/setting.svg"
+                                        alt=""
+                                        class="setting-in"
+                                    />
+                                </div>
+                                <ul class="opitions hidden">
+                                    <li class="opition row">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p>Free</p>
+                                    </li>
+                                    <li class="opition row">
+                                        <span class="check-pre"
+                                            ><i class="fa-solid fa-check"></i
+                                        ></span>
+                                        <p class="premium">Premium</p>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="tags row">
+                        <div class="tags-contain">
+                            <span class="topic-selec"
+                                ><div class="wrap-reset">
+                                    <span>Array</span
+                                    ><span class="wrap-i"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></span></div
+                            ></span>
+                            <span class="topic-selec"
+                                ><div class="wrap-reset">
+                                    <span>Array</span
+                                    ><span class="wrap-i"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></span></div
+                            ></span>
+                            <span class="topic-selec"
+                                ><div class="wrap-reset">
+                                    <span>Array</span
+                                    ><span class="wrap-i"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></span></div
+                            ></span>
+                            <span class="topic-selec"
+                                ><div class="wrap-reset">
+                                    <span>Array</span
+                                    ><span class="wrap-i"
+                                        ><i class="fa-solid fa-xmark"></i
+                                    ></span></div
+                            ></span>
+                        </div>
+                        <span class="reset">
+                            <img
+                                src="assets/icons/reset.svg"
+                                alt=""
+                                class="reset-icon"
+                            />
+                            <span>Reset</span>
+                        </span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Trạng thái</th>
+                                <th class="prb">
+                                    <div class="prb">Vấn đề</div>
+                                </th>
+                                <th>Thông qua</th>
+                                <th>Độ khó</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="nav-table"></div>
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Trạng thái</th>
-                            <th class="prb">
-                                <div class="prb">Vấn đề</div>
-                            </th>
-                            <th>Thông qua</th>
-                            <th>Độ khó</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-                <div class="nav-table"></div>
             </div>
         </main>
         <footer>
@@ -285,5 +323,6 @@
         </footer>
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/practice.js"></script>
+        <script src="assets/js/graphCircle.js"></script>
     </body>
 </html>
