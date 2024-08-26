@@ -53,16 +53,113 @@
         <main>
             <div class="body">
                 <div class="sidebar-left">
-                    <h2 class="sub-title">Mục tiêu bản thân</h2>
-                    <div class="wrap-graph">
+                    <div class="wrap-goal">
+                        <h3 class="sub-title">Mục tiêu bản thân</h3>
+                        <div class="wrap-setting-goal">
+                            <img
+                                src="assets/icons/setting.svg"
+                                alt=""
+                                class="setting-goal"
+                            />
+                        </div>
+                    </div>
+                    <div class="create-goal">
+                        <p class="subject">Tạo mục tiêu</p>
+                        <div class="wrapall-goal">
+                            <div class="waring-goal hidden">*Không phải là số*</div>
+                            <div class="input-goal">
+                                <input
+                                    type="text"
+                                    placeholder="Viết mục tiêu tại đây"
+                                    class="goal"
+                                />
+                                <span class="btn-goal"
+                                    ><i class="fa-solid fa-plus"></i
+                                ></span>
+                            </div>
+                        </div>
+                        <div class="wrap-date">
+                            <div class="date-goal">Chọn ngày hoàn thành</div>
+                            <span class="date-icon">
+                               <div class="wrap-icon"> <i class="fa-regular fa-calendar-days"></i></div>
+                                <div class="wrap-table hidden">
+                                    <div class="title-date">
+                                        <span class="pre-time"><i class="fa-solid fa-angle-left"></i></span>
+                                        <span class="time-table"></span>
+                                        <span class="next-time"><i class="fa-solid fa-chevron-right"></i></span>
+                                    </div>
+                                    <table class="date-table">
+                                        <thead>
+                                            <tr>
+                                                <th><div class="center-date">MON</div></th>
+                                                <th><div class="center-date">TUE</div></th>
+                                                <th><div class="center-date">WED</div></th>
+                                                <th><div class="center-date">THU</div></th>
+                                                <th><div class="center-date">FRI</div></th>
+                                                <th><div class="center-date">SAT</div></th>
+                                                <th><div class="center-date">SUN</div></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- <tr>
+                                                <td><div class="center-date cursor">29</div></td>
+                                                <td><div class="center-date cursor">30</div></td>
+                                                <td><div class="center-date cursor">31</div></td>
+                                                <td><div class="center-date cursor">1</div></td>
+                                                <td><div class="center-date cursor">2</div></td>
+                                                <td><div class="center-date cursor">3</div></td>
+                                                <td><div class="center-date cursor">4</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="center-date cursor">5</div></td>
+                                                <td><div class="center-date cursor">6</div></td>
+                                                <td><div class="center-date cursor">7</div></td>
+                                                <td><div class="center-date cursor">8</div></td>
+                                                <td><div class="center-date cursor">9</div></td>
+                                                <td><div class="center-date cursor">10</div></td>
+                                                <td><div class="center-date cursor">11</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="center-date cursor">12</div></td>
+                                                <td><div class="center-date cursor">13</div></td>
+                                                <td><div class="center-date cursor">14</div></td>
+                                                <td><div class="center-date cursor">15</div></td>
+                                                <td><div class="center-date cursor">16</div></td>
+                                                <td><div class="center-date cursor">17</div></td>
+                                                <td><div class="center-date cursor">18</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="center-date cursor">19</div></td>
+                                                <td><div class="center-date cursor">20</div></td>
+                                                <td><div class="center-date cursor">21</div></td>
+                                                <td><div class="center-date cursor">22</div></td>
+                                                <td><div class="center-date cursor">23</div></td>
+                                                <td><div class="center-date cursor">24</div></td>
+                                                <td><div class="center-date cursor">25</div></td>
+                                            </tr>
+                                            <tr>
+                                                <td><div class="center-date cursor">26</div></td>
+                                                <td><div class="center-date cursor">27</div></td>
+                                                <td><div class="center-date cursor">28</div></td>
+                                                <td><div class="center-date cursor">29</div></td>
+                                                <td><div class="center-date cursor">30</div></td>
+                                                <td><div class="center-date cursor">31</div></td>
+                                                <td><div class="center-date cursor">1</div></td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div></span
+                            >
+                        </div>
+                    </div>
+                    <!-- <div class="wrap-graph">
                         <canvas
                             id="progressCircle"
                             width="150"
                             height="150"
                         ></canvas>
-                    </div>
+                    </div> -->
                 </div>
-                <!-- <div class="sidebar-right"></div> -->
                 <div class="content">
                     <h1 class="title">Bài tập DSA</h1>
                     <div class="row row-top-sea">
@@ -78,7 +175,10 @@
                             <span class="status">
                                 <div class="wrap-name">
                                     <span class="name-topic">Trạng thái</span>
-                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                    <img
+                                        src="assets/icons/arrow-fil.svg"
+                                        alt=""
+                                    />
                                 </div>
                                 <ul class="opitions-status hidden">
                                     <li class="opition-status row cursor">
@@ -98,7 +198,10 @@
                             <span class="diff">
                                 <div class="wrap-name">
                                     <span class="name-topic">Độ khó</span>
-                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                    <img
+                                        src="assets/icons/arrow-fil.svg"
+                                        alt=""
+                                    />
                                 </div>
                                 <ul class="opitions-diff hidden">
                                     <li class="opition-diff row cursor">
@@ -124,7 +227,10 @@
                             <span class="topics">
                                 <div class="wrap-name">
                                     <span class="name-topic">Chủ đề</span>
-                                    <img src="assets/icons/arrow-fil.svg" alt="" />
+                                    <img
+                                        src="assets/icons/arrow-fil.svg"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="wrapall hidden">
                                     <div class="center">
@@ -206,20 +312,30 @@
                             <span>Reset</span>
                         </span>
                     </div>
-                    <table>
-                        <thead>
+                    <table class="tbl-prac">
+                        <thead class="prac-head">
                             <tr>
                                 <th>Trạng thái</th>
-                                <th class="prb">
+                                <th>
                                     <div class="prb">Vấn đề</div>
                                 </th>
                                 <th>Thông qua</th>
                                 <th>Độ khó</th>
                             </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody class="pracice-table"></tbody>
                     </table>
                     <div class="nav-table"></div>
+                </div>
+                <div class="sidebar-right">
+                    <h3 class="sub-title">Mục tiêu bản thân</h3>
+                    <div class="wrap-graph">
+                        <canvas
+                            id="progressCircle"
+                            width="150"
+                            height="150"
+                        ></canvas>
+                    </div>
                 </div>
             </div>
         </main>
@@ -324,5 +440,6 @@
         <script src="assets/js/scripts.js"></script>
         <script src="assets/js/practice.js"></script>
         <script src="assets/js/graphCircle.js"></script>
+        <script src="assets/js/goal.js"></script>
     </body>
 </html>

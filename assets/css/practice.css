@@ -194,7 +194,7 @@ body {
 }
 
 /* =========== Table ========== */
-table {
+.tbl-prac {
     margin-top: 100px;
     width: 100%;
     padding: 10px;
@@ -203,11 +203,11 @@ table {
         Arial, sans-serif;
 }
 
-table a {
+.tbl-prac a {
     color: black;
 }
 
-table .center {
+.tbl-prac .center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,36 +220,36 @@ table .center {
     font-size: 1.7rem;
 }
 
-th {
+.prac-head th {
     font-size: 1.8rem;
     font-weight: 500;
     padding: 1.2rem;
     padding-bottom: 3rem;
 }
 
-th .prb {
+.prac-head th .prb {
     text-align: left;
 }
 
-tr {
+.prac-head tr {
     /* border-bottom: 1px solid #5e5e5e; */
     transition: all 0.4s ease-out;
 }
 
-thead tr {
+.prac-head tr {
     border-bottom: 0.5px solid #5e5e5e;
     transition: all 0.4s ease-out;
 }
 
-tr:nth-child(odd) {
+.pracice-table tr:nth-child(odd) {
     background-color: white;
 }
 
-tr:nth-child(even) {
+.pracice-table tr:nth-child(even) {
     background-color: rgba(247, 248, 250, 1);
 }
 
-td {
+.tbl-prac td {
     padding: 1.8rem;
     font-size: 1.6rem;
 }
@@ -269,12 +269,12 @@ td {
     font-weight: 500;
 }
 
-td.acc {
+.tbl-prac td.acc {
     font-weight: 500;
     font-size: 1.7rem;
 }
 
-tbody tr:first-child {
+.tbl-prac tbody tr:first-child {
     position: relative;
     z-index: 1;
 }
@@ -575,13 +575,235 @@ tbody tr:first-child {
     transition: all 0.3s ease;
 }
 
-/* =========== Circle Graph ========== */
+/* =========== Sidebar Left ========== */
 .body {
     display: flex;
     justify-content: space-around;
 }
 
 .sidebar-left {
+    position: sticky;
+    top: 60px;
+    margin-top: 170px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    top: 100px;
+    padding: 50px 0 20px;
+    width: 20%;
+    min-width: 290px;
+    max-width: 450px;
+    max-height: 500px;
+    min-height: 400px;
+    height: 100%;
+    background-color: #eef0f1;
+    z-index: 5;
+    border-radius: 0 20px 20px 0;
+}
+
+.sidebar-left .wrap-goal {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.wrapall-goal {
+    margin-top: 30px;
+}
+
+.wrap-setting-goal {
+    background-color: #d9d9d9;
+    border-radius: 7px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-goal {
+    width: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sidebar-left .sub-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.sidebar-left .wrap-graph {
+    margin-top: 30px;
+}
+
+.sidebar-left .create-goal {
+    width: 350px;
+    height: 350px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.sidebar-left .create-goal .subject {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.waring-goal {
+    height: 20px;
+    color: red;
+}
+
+.hidden-goal {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.show-goal {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+}
+
+.sidebar-left .create-goal .input-goal {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #1b1f42;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.sidebar-left .create-goal .goal {
+    outline: none;
+    border: none;
+    /* background-color: transparent;  */
+    background-color: #1b1f42;
+    flex-grow: 1;
+    height: 30px;
+    padding: 1rem 2rem;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar-left .create-goal .goal::placeholder {
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar-left .create-goal .btn-goal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #2d3160;
+    height: 30px;
+    padding: 2rem 1.5rem;
+    border-radius: 7px;
+}
+
+.sidebar-left .create-goal .wrap-date {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-left .create-goal .date-goal {
+    width: 100%;
+    min-width: 200px;
+    color: #292931;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar-left .create-goal .date-icon {
+    position: relative;
+    padding: 0 1.5rem;
+    color: rgb(91, 89, 89);
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-date .time-table {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.wrap-table {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    padding: 2rem 1rem;
+    border-radius: 30px;
+}
+
+.date-table {
+    margin-top: 20px;
+}
+
+.date-table .center-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.date-table thead {
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+
+.date-table th {
+    font-weight: 600;
+    color: #bbc3ca;
+    padding-bottom: 1rem;
+}
+
+.date-table td {
+    padding: 0 1rem ; 
+    border-radius: 50%;
+}
+.date-table td:hover {
+    background-color: #bbc3ca;
+}
+
+/* không có nội dung thì không tác động */
+td:empty {
+    pointer-events: none;
+}
+
+.date-table .wrap-icon {
+    padding: 1rem;
+}
+
+.is-selecDate {
+    background-color: #bbc3ca;
+}
+/* =========== Sidebar Right ========== */
+.body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sidebar-right {
     position: sticky;
     top: 60px;
     margin-top: 170px;
@@ -599,12 +821,10 @@ tbody tr:first-child {
     height: 100%;
     background-color: #eef0f1;
     z-index: 5;
-    border-radius: 0 20px 20px 0;
-
+    border-radius: 20px 0 0 20px;
 }
 
-
-.sidebar-left .sub-title {
+.sidebar-right .sub-title {
     margin-top: 30px;
     font-size: 2.5rem;
     font-weight: 600;

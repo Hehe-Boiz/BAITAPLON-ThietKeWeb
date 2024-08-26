@@ -133,7 +133,7 @@ function displayExercises(page) {
     let end = start + rowsPerPage;
     let paginatedExercises = exercises.slice(start, end);
 
-    let tbody = document.querySelector("tbody");
+    let tbody = document.querySelector(".pracice-table");
     tbody.innerHTML = "";
 
     paginatedExercises.forEach((exercise, index) => {
@@ -182,9 +182,9 @@ function displayExercises(page) {
         tbody.appendChild(row);
     });
     // độ khó
-    let table = document.querySelector("table");
+    let table = document.querySelector(".tbl-prac");
     let rows = table
-        .getElementsByTagName("tbody")[0]
+        .querySelector(".pracice-table")
         .getElementsByTagName("tr");
 
     for (let i = 0; i < rows.length; i++) {
@@ -471,4 +471,3 @@ reset.addEventListener("click", () => {
     // Hiển thị tất cả bài tập
     showExercises(exercises);
 });
-

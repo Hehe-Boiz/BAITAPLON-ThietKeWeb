@@ -1,4 +1,4 @@
-document.fonts.load('10pt "MyCustomFont"').then(function() {
+
 const canvas = document.getElementById("progressCircle");
 
 // Tăng độ phân giải của canvas
@@ -30,7 +30,8 @@ function animate(progressComplete) {
     ctx.beginPath();
     ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
     ctx.lineWidth = lineWidth;
-    ctx.strokeStyle = "#e0e0e0";
+    // ctx.strokeStyle = "#e0e0e0";
+    ctx.strokeStyle = "#cfcccc";
     ctx.stroke();
 
     // Vẽ đường tròn tiến trình
@@ -84,4 +85,3 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(document.getElementById("progressCircle"));
-});
