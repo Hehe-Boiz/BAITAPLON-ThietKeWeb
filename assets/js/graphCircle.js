@@ -7,7 +7,7 @@ const scale = window.devicePixelRatio * 3;
 canvas.width = canvas.clientWidth * scale;
 canvas.height = canvas.clientHeight * scale;
 
-canvas.style.width = `${canvas.clientWidth / 3}px`;
+canvas.style.width = `${canvas.clientWidth / 4}px`;
 canvas.style.height = `${canvas.clientHeight}px`;
 
 const ctx = canvas.getContext("2d");
@@ -51,14 +51,14 @@ function animate(progressComplete) {
     ctx.fillText(`${Math.floor(progressDraw)}%`, centerX, centerY - 10);
 
     if (progressDraw === 100) {
-        ctx.font = "500 12px Arial";
+        ctx.font = "500 10px Arial";
         ctx.fillStyle = "#2a2a72";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText("Hoàn thành", centerX, centerY + 10);
     }
     else {
-        ctx.font = "500 12px Arial";
+        ctx.font = "500 10px Arial";
         ctx.fillStyle = "#2a2a72";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";

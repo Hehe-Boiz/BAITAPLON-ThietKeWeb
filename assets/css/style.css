@@ -56,6 +56,13 @@ a {
     display: flex;
     align-items: center;
 }
+
+progress {
+    -webkit-appearance: none;
+    background-color: #fff;
+    height: 6px;
+    border-radius: 999px;
+}
 /* ========= Navbar ========== */
 header {
     /* background-color: #282366; */

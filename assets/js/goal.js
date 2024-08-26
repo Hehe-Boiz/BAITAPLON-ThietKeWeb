@@ -128,7 +128,7 @@ function attachDayClickEvents() {
                 const selectedMonth = Month;
                 const selectedYear = Year;
                 DateContainer.textContent =
-                    "Ngày đã chọn: " +
+                     +
                     selectedDay +
                     "/" +
                     selectedMonth +
@@ -176,3 +176,34 @@ goal.addEventListener("input", function () {
     }
 });
 
+//nút chỉnh sửa mục tiêu
+
+let btngoal = document.querySelector(".wrap-setting-goal");
+const settinggoal = document.querySelector(".create-goal");
+const graph = document.getElementById("progressCircle");
+
+btngoal.addEventListener("click", function (event) {
+    if (settinggoal.classList.contains("hidden-goal")) {
+        settinggoal.classList.remove("hidden-goal");
+        settinggoal.classList.add("show-goal");
+    } else {
+        settinggoal.classList.remove("show-goal");
+        settinggoal.classList.add("hidden-goal");
+    }
+
+    // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
+    event.stopPropagation();
+});
+
+// Bắt sự kiện click ra ngoài vùng danh sách ul
+document.addEventListener("click", function (event) {
+    if (
+        !btngoal.contains(event.target) &&
+        !settinggoal.contains(event.target)
+    ) {
+        if (settinggoal.classList.contains("show-goal")) {
+            settinggoal.classList.remove("show-goal");
+            settinggoal.classList.add("hidden-goal");
+        }
+    }
+});

@@ -30,7 +30,7 @@ body {
 
 .sea-input {
     /* margin-left: 80px; */
-    width: 270px;
+    width: 250px;
     font-size: 1.6rem;
     font-weight: 500;
     height: 25px;
@@ -579,42 +579,46 @@ body {
 .body {
     display: flex;
     justify-content: space-around;
+    gap: 30px
 }
 
 .sidebar-left {
+    overflow: auto;
     position: sticky;
     top: 60px;
     margin-top: 170px;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-    display: flex;
     top: 100px;
     padding: 50px 0 20px;
     width: 20%;
     min-width: 290px;
     max-width: 450px;
-    max-height: 500px;
-    min-height: 400px;
+    /* max-height: 700px;
+    min-height: 400px; */
     height: 100%;
     background-color: #eef0f1;
     z-index: 5;
     border-radius: 0 20px 20px 0;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
 }
 
 .sidebar-left .wrap-goal {
-    width: 90%;
+    /* margin-left: auto;
+    margin-right: auto;
+    text-align: center; */
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
 
 .wrapall-goal {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .wrap-setting-goal {
+    margin-left: auto;
     background-color: #d9d9d9;
     border-radius: 7px;
     padding: 8px;
@@ -632,55 +636,49 @@ body {
 }
 
 .sidebar-left .sub-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 .sidebar-left .wrap-graph {
     margin-top: 30px;
 }
 
-.sidebar-left .create-goal {
-    width: 350px;
-    height: 350px;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 15px;
-}
-
-.sidebar-left .create-goal .subject {
-    font-size: 2.3rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-
 .waring-goal {
     height: 20px;
     color: red;
 }
 
-.hidden-goal {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease;
+.sidebar-left .create-goal {
+    /* margin: 0 auto; */
+    margin-top: 30px;
+    width: 90%;
+    /* height: 230px; */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 350px;
+    min-width: 270px;
 }
 
-.show-goal {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.4s ease;
+.sidebar-left .create-goal .subject {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .sidebar-left .create-goal .input-goal {
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     background-color: #1b1f42;
     justify-content: space-between;
     border-radius: 10px;
+    width: 95%;
+    max-width: 400px;
 }
 
 .sidebar-left .create-goal .goal {
+    width: 99%;
     outline: none;
     border: none;
     /* background-color: transparent;  */
@@ -717,6 +715,7 @@ body {
 }
 
 .sidebar-left .create-goal .date-goal {
+    font-size: 1.4rem;
     width: 100%;
     min-width: 200px;
     color: #292931;
@@ -749,6 +748,7 @@ body {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     padding: 2rem 1rem;
     border-radius: 30px;
+    transform: scale(0.8);
 }
 
 .date-table {
@@ -778,7 +778,7 @@ body {
 }
 
 .date-table td {
-    padding: 0 1rem ; 
+    padding: 0 1rem;
     border-radius: 50%;
 }
 .date-table td:hover {
@@ -797,6 +797,92 @@ td:empty {
 .is-selecDate {
     background-color: #bbc3ca;
 }
+
+.body .sidebar-left .hidden-goal {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+    height: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.show-goal {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s ease;
+    height: 230px;
+}
+
+.sidebar-left .stats {
+    /* color: #e1e1e1;
+    background-color: #2f3136; */
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    background-color: white;
+    border-radius: 20px;;
+    padding: 2rem;
+    width: 90%;
+    margin: 40px 0 30px;
+}
+
+.sidebar-left .stats .wrapall-pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-left .stats .sub-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sidebar-left .wrap-pro {
+    margin: 10px 0 5px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+progress {
+    width: 90%;
+    height: 8px;
+
+    /* Thay đổi màu sắc */
+    background-color: white;
+    color: #4caf50; /* Màu của phần đã hoàn thành */
+
+    /* Thêm độ cong */
+    border-radius: 999px;
+}
+
+/* Đối với trình duyệt WebKit (Chrome, Safari) */
+progress::-webkit-progress-bar {
+    background-color: rgb(224, 224, 224);
+    border-radius: 999px;
+}
+
+progress.easy-pro::-webkit-progress-value {
+    background-color: #48c78e;
+    border-radius: 999px;
+}
+
+progress.medium-pro::-webkit-progress-value {
+    background-color: #ffe08a;
+    border-radius: 999px;
+}
+
+progress.hard-pro::-webkit-progress-value {
+    background-color: #f14668;
+    border-radius: 999px;
+}
+/* Đối với trình duyệt Mozilla (Firefox) */
+progress::-moz-progress-bar {
+    background-color: white;
+    border-radius: 999px;
+}
+
 /* =========== Sidebar Right ========== */
 .body {
     display: flex;
