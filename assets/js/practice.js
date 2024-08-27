@@ -471,6 +471,8 @@ reset.addEventListener("click", () => {
     // Xóa tất cả các chủ đề đã chọn
     selectedTopics.clear();
 
-    // Hiển thị tất cả bài tập
-    showExercises(exercises);
+    // Hiển thị lại tất cả bài tập
+    currentPage = 1;  // Quay về trang đầu tiên
+    displayExercises(currentPage);  // Tái tạo lại bảng với tất cả các bài tập
+    setbuttonPage();  // Cập nhật lại nút phân trang
 });
