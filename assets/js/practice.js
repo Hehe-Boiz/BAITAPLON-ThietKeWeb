@@ -128,10 +128,10 @@ async function loadExercises() {
 }
 
 // Hiển thị bài tập trên trang hiện tại
-function displayExercises(page) {
+function displayExercises(page, filteredExercises = exercises) {
     let start = (page - 1) * rowsPerPage;
     let end = start + rowsPerPage;
-    let paginatedExercises = exercises.slice(start, end);
+    let paginatedExercises = filteredExercises.slice(start, end);
 
     let tbody = document.querySelector(".pracice-table");
     tbody.innerHTML = "";
@@ -183,9 +183,7 @@ function displayExercises(page) {
     });
     // độ khó
     let table = document.querySelector(".tbl-prac");
-    let rows = table
-        .querySelector(".pracice-table")
-        .getElementsByTagName("tr");
+    let rows = table.querySelector(".pracice-table").getElementsByTagName("tr");
 
     for (let i = 0; i < rows.length; i++) {
         let td = rows[i].getElementsByTagName("td")[3].querySelector("div");
@@ -236,9 +234,9 @@ function displayExercises(page) {
 // Khởi tạo khi trang web tải xong
 loadExercises();
 
-function setbuttonPage() {
-    // Đếm số trang
-    let pageCount = Math.ceil(exercises.length / rowsPerPage);
+function setbuttonPage(filteredExercises = exercises) {
+    // Đếm số trang dựa trên kết quả đã lọc
+    let pageCount = Math.ceil(filteredExercises.length / rowsPerPage);
     let pageNav = document.querySelector(".nav-table");
     pageNav.innerHTML = "";
 
@@ -248,10 +246,6 @@ function setbuttonPage() {
     left.src = "./assets/icons/left.svg";
     prevButton.appendChild(left);
     prevButton.classList.add("nav-btn");
-    left.addEventListener("load", () => {
-        console.log("Hình ảnh đã được tải thành công.");
-    });
-    // vô hiệu hóa khi trang ở số 1
     prevButton.disabled = currentPage === 1;
     prevButton.onclick = function () {
         if (currentPage > 1) {
@@ -289,7 +283,7 @@ function setbuttonPage() {
         pageNav.appendChild(ellipsis);
     }
 
-    // Hiển thị các nút số gần trang hiện tại
+    // Hiển thị các nút số gần trang hiện tại, ngoại trừ trang 1 và trang cuối cùng
     let startPage = Math.max(2, currentPage - 1);
     let endPage = Math.min(pageCount - 1, currentPage + 1);
 
@@ -318,27 +312,28 @@ function setbuttonPage() {
     }
 
     // Hiển thị nút của trang cuối cùng nếu cần
-    let lastPage = document.createElement("button");
-    lastPage.textContent = pageCount;
-    lastPage.classList.add("nav-btn", "btn-mid");
-    if (currentPage === pageCount) {
-        lastPage.disabled = true;
-    } else {
-        lastPage.onclick = function () {
-            currentPage = pageCount;
-            displayExercises(currentPage);
-            setbuttonPage();
-        };
+    if (pageCount > 1) {
+        let lastPage = document.createElement("button");
+        lastPage.textContent = pageCount;
+        lastPage.classList.add("nav-btn", "btn-mid");
+        if (currentPage === pageCount) {
+            lastPage.disabled = true;
+        } else {
+            lastPage.onclick = function () {
+                currentPage = pageCount;
+                displayExercises(currentPage);
+                setbuttonPage();
+            };
+        }
+        pageNav.appendChild(lastPage);
     }
-    pageNav.appendChild(lastPage);
 
-    // tạo mũi tên bên trái
+    // tạo mũi tên bên phải
     let nextButton = document.createElement("button");
     let right = document.createElement("img");
     right.src = "./assets/icons/right.svg";
     nextButton.appendChild(right);
     nextButton.classList.add("nav-btn");
-    // vô hiệu hóa khi trang ở số cuối
     nextButton.disabled = currentPage === pageCount;
     nextButton.onclick = function () {
         if (currentPage < pageCount) {
@@ -422,15 +417,23 @@ fetch("./json/practice.json")
 
 // Hàm lọc bài tập dựa trên các chủ đề đã chọn
 function filterExercises(selectedTopics, exercises) {
+    let filteredExercises;
+
     if (selectedTopics.size === 0) {
-        showExercises(exercises);
-        return;
+        filteredExercises = exercises; // Nếu không có chủ đề nào được chọn, hiển thị tất cả bài tập
+    } else {
+        // Lọc bài tập dựa trên các chủ đề đã chọn
+        filteredExercises = exercises.filter((exercise) =>
+            Array.from(selectedTopics).every((tag) =>
+                exercise.tags.includes(tag)
+            )
+        );
     }
-    // Lọc bài tập dựa trên các chủ đề đã chọn
-    const filExercises = exercises.filter((exercise) =>
-        Array.from(selectedTopics).every((tag) => exercise.tags.includes(tag))
-    );
-    showExercises(filExercises);
+
+    // Cập nhật số trang và hiển thị trang đầu tiên với kết quả đã lọc
+    currentPage = 1;
+    setbuttonPage(filteredExercises);
+    displayExercises(currentPage, filteredExercises);
 }
 
 // Hàm hiển thị các bài tập đã lọc

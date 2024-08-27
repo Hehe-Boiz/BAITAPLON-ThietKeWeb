@@ -299,5 +299,1013 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
+    },
+    {
+        "name": "Next Permutation",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Two Pointers"]
+    },
+    {
+        "name": "Longest Valid Parentheses",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String", "Dynamic Programming", "Stack"]
+    },
+    {
+        "name": "Search in Rotated Sorted Array",
+        "passed": 73,
+        "total": 232,
+        "diff": "Medium",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Search Insert Position",
+        "passed": 73,
+        "total": 232,
+        "diff": "Easy",
+        "tags": ["Array", "Binary Search"]
+    },
+    {
+        "name": "Sudoku Solver",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["Array", "Hash Table", "Backtracking", "Matrix"]
+    },
+    {
+        "name": "Count and Say",
+        "passed": 73,
+        "total": 232,
+        "diff": "Hard",
+        "tags": ["String"]
     }
 ]
