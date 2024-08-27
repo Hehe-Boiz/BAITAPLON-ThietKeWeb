@@ -1,17 +1,19 @@
 //Tải file lên
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
+function selectorSelec(selector) {
+    return document.querySelector(selector);
+}
+
 function load(selector, path) {
     const cached = localStorage.getItem(path);
     if (cached) {
-        $(selector).innerHTML = cached;
+        selectorSelec(selector).innerHTML = cached;
     }
 
     fetch(path)
         .then((res) => res.text())
         .then((html) => {
             if (html !== cached) {
-                $(selector).innerHTML = html;
+                selectorSelec(selector).innerHTML = html;
                 localStorage.setItem(path, html);
             }
         })

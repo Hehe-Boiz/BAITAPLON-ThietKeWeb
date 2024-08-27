@@ -7,7 +7,7 @@ const scale = window.devicePixelRatio * 3;
 canvas.width = canvas.clientWidth * scale;
 canvas.height = canvas.clientHeight * scale;
 
-canvas.style.width = `${canvas.clientWidth / 4}px`;
+canvas.style.width = `${canvas.clientWidth / 3}px`;
 canvas.style.height = `${canvas.clientHeight}px`;
 
 const ctx = canvas.getContext("2d");
