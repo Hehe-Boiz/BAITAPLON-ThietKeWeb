@@ -1,19 +1,19 @@
 //Tải file lên
-function selectorSelec(selector) {
+function selectorSelect(selector) {
     return document.querySelector(selector);
 }
 
 function load(selector, path) {
     const cached = localStorage.getItem(path);
     if (cached) {
-        selectorSelec(selector).innerHTML = cached;
+        selectorSelect(selector).innerHTML = cached;
     }
 
     fetch(path)
         .then((res) => res.text())
         .then((html) => {
             if (html !== cached) {
-                selectorSelec(selector).innerHTML = html;
+                selectorSelect(selector).innerHTML = html;
                 localStorage.setItem(path, html);
             }
         })

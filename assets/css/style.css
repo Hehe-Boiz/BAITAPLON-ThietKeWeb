@@ -182,7 +182,7 @@ footer .row {
 
 footer .row-top {
     gap: 185px; 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 footer .heading {
