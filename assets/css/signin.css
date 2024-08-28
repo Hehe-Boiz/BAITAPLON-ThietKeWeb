@@ -1,0 +1,77 @@
+main *{
+    color:white;
+} 
+
+.loginpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 76px);
+    background-color: gray;
+}
+.form-login{
+    padding :100px;
+    width:600px;
+    height:550px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #333;
+}
+.form-login h2{
+    font-size: 40px;
+    font-weight: 1000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.input-box{
+    position:relative;
+    margin-bottom: 40px;
+    border-bottom: 2px solid white;
+    width: 100%;
+    height:40px;
+}
+.input-box label{
+    position:absolute;
+    left: 0px;
+    transform: translateY(-50%);
+    font-weight: 800;
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    background:transparent;
+    border:none;
+    outline:none;
+}
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.remember-forget a{
+    color: blue;
+    display: inline-block;
+}
+.remember-forget a:hover{
+    text-decoration: underline blue solid 2px;
+}
+.register-link a{
+    color: blue;
+    display: inline-block;
+}
+.register-link a:hover{
+    text-decoration: underline blue solid 2px;
+}
+button.btn{
+    width:100%;
+    padding: 1rem;
+    background-color: lightgreen;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
