@@ -2,7 +2,7 @@ body {
     color: black;
 }
 
-.content {
+body main .content-practice {
     width: 50vw;
     max-width: calc(50vw - 48px);
     min-width: 800px;
@@ -594,7 +594,8 @@ body {
     max-width: 450px;
     max-height: 800px;
     min-height: 400px;
-    height: 81vh;
+    /* height: 81vh; */
+    height : 100%;
     background-color: #eef0f1;
     z-index: 5;
     border-radius: 0 20px 20px 0;

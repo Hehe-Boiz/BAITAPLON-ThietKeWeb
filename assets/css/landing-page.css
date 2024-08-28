@@ -247,13 +247,16 @@ main {
 }
 .image1:hover {
     transform: scale(1.15) rotate(-10deg);
+    transform: translate(-40px, -130px) rotate(-10deg);
     transition: all  .4s ease;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 .image2:hover {
     transform: scale(1.15) rotate(-10deg);
+    transform: translate(-170px, -10px) rotate(-10deg);
     transition: all  .4s ease;
+    
 }
 
 .triangle {

@@ -128,12 +128,7 @@ function attachDayClickEvents() {
                 const selectedMonth = Month;
                 const selectedYear = Year;
                 DateContainer.textContent =
-                     +
-                    selectedDay +
-                    "/" +
-                    selectedMonth +
-                    "/" +
-                    selectedYear;
+                    +selectedDay + "/" + selectedMonth + "/" + selectedYear;
                 td.classList.add("is-selecDate");
             }
         });
@@ -183,12 +178,15 @@ const settinggoal = document.querySelector(".create-goal");
 const graph = document.getElementById("progressCircle");
 
 btngoal.addEventListener("click", function (event) {
+    let sidebar = settinggoal.closest(".sidebar-left");
     if (settinggoal.classList.contains("hidden-goal")) {
         settinggoal.classList.remove("hidden-goal");
         settinggoal.classList.add("show-goal");
+        sidebar.style.height = "81vh";
     } else {
         settinggoal.classList.remove("show-goal");
         settinggoal.classList.add("hidden-goal");
+        sidebar.style.height = "100%";
     }
 
     // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
