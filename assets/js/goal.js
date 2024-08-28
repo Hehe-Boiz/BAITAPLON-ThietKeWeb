@@ -182,11 +182,9 @@ btngoal.addEventListener("click", function (event) {
     if (settinggoal.classList.contains("hidden-goal")) {
         settinggoal.classList.remove("hidden-goal");
         settinggoal.classList.add("show-goal");
-        sidebar.style.height = "81vh";
     } else {
         settinggoal.classList.remove("show-goal");
         settinggoal.classList.add("hidden-goal");
-        sidebar.style.height = "100%";
     }
 
     // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)

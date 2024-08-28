@@ -35,7 +35,7 @@ a {
 
 .logo {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     padding-top: 4px;
     font-family: "ITC Bauhaus";
     user-select: none;
@@ -142,6 +142,11 @@ header {
     background-color: #ffd90063;
     border-radius: 50%;
 }
+.navbar .premium:hover{
+    background-color: #ffd90088;
+    transition: all .2s linear;
+}
+
 .navbar .actions {
     display: flex;
     align-items: center;

@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+/* ========= Common ========== */
+a {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+
+.logo {
+    color: white;
+    font-size: 2.6rem;
+    padding-top: 4px;
+    font-family: "ITC Bauhaus";
+    user-select: none;
+    cursor: pointer;
+}
+
+.bold {
+    color: black;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+/* ========= Navbar ========== */
+header {
+    background: #272727;
+    color: white;
+    padding: 10px 40px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-logo {
+    display: flex;
+    align-items: center;
+    gap: 50px
+}
+
+.navbar .list-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.navbar .list-btn:hover {
+    /* background-color: #313131; */
+    background-color: #343434;
+    transition: background-color .2s linear;
+    border-radius: 999px;
+}
+
+.navbar .list-btn i {
+    font-size: 2.2rem;
+}
+
+.navbar .list-btn .list {
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+.navbar .wrap-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-left: -100px;
+}
+
+.navbar .pre-task{
+    font-size: 1.8rem;
+    padding: 1rem 1.3rem;
+    border-radius: 8px;
+}
+.navbar .pre-task:hover {
+    transition: background-color .2s linear;
+    background-color: #383838;
+}
+
+.navbar .submit {
+    padding: 1.3rem 1.5rem;
+    font-weight: 600;
+    background-color: #00b966;
+    border-radius: 10px;
+}
+.navbar .submit:hover{
+    background-color: #02a85d;
+    transition: all .2s linear;
+
+}
+
+.navbar .next-task{
+    font-size: 1.8rem;
+    padding: 1rem 1.3rem;
+    border-radius: 8px;
+}
+.navbar .next-task:hover {
+    transition: background-color .2s linear;
+    background-color: #383838;
+}
+
+
+.navbar .premium {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+    height: 40px;
+    width: 40px;
+    background-color: #ffd90063;
+    border-radius: 50%;
+}
+.navbar .premium:hover{
+    background-color: #ffd90088;
+    transition: all .2s linear;
+}
+.navbar .actions {
+    display: flex;
+    align-items: center;
+    /* margin-left: auto; */
+}
+
+.navbar .action-link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 18px;
+}
+
+.navbar .action-btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar .action-btn:hover {
+    background-color: #d8d5d5;
+}
