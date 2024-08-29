@@ -19,7 +19,6 @@ calendarIcon.addEventListener("click", function (event) {
     event.stopPropagation();
 });
 
-// Bắt sự kiện click ra ngoài vùng danh sách ul
 document.addEventListener("click", function (event) {
     if (
         !calendarIcon.contains(event.target) &&
