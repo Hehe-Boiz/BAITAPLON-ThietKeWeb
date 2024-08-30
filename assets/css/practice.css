@@ -607,8 +607,6 @@ body main .content-practice {
     transition: all 0.5s ease-in-out;
 }
 
-
-
 .sidebar-left .wrap-goal {
     /* margin-left: auto;
     margin-right: auto;
@@ -665,7 +663,6 @@ body main .content-practice {
     border-radius: 15px;
     max-width: 350px;
     min-width: 270px;
-
 }
 
 .sidebar-left .create-goal .subject {
@@ -933,15 +930,15 @@ progress::-moz-progress-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
 
-.sidebar-right .number{
+.sidebar-right .number {
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.sidebar-right .top1-number{
+.sidebar-right .top1-number {
     color: #ffa116;
 }
 
@@ -958,7 +955,7 @@ progress::-moz-progress-bar {
 }
 
 .sidebar-right .wrap-rankingName span {
-    color: rgba(140,140,140,1);
+    color: rgba(140, 140, 140, 1);
 }
 
 .sidebar-right .sub-title {
@@ -978,21 +975,21 @@ progress::-moz-progress-bar {
     font-weight: 600;
 }
 
-.sidebar-right .wrap-avatar{
+.sidebar-right .wrap-avatar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .sidebar-right .top1 {
-    border: 2px solid gold ;
+    border: 2px solid gold;
     border-radius: 50%;
 }
 .sidebar-right .ranking-avartar {
     position: relative;
 }
 
-.sidebar-right .wrap-avatar .avt-rank{
+.sidebar-right .wrap-avatar .avt-rank {
     width: 50px;
     border-radius: 50%;
 }
