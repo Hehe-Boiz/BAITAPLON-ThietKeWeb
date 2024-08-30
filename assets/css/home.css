@@ -1,3 +1,9 @@
+.row {
+    width: 80%;
+    min-width: 800px;
+    max-width: 900px;
+}
+
 /* =========== Row top ========== */
 
 body {
@@ -12,10 +18,7 @@ main {
 
 main .row-top {
     margin: 0 auto;
-    margin-top: 70px;
-    width: 80%;
-    min-width: 800px;
-    max-width: 900px;
+    margin-top: 30px;
     gap: 30px;
     align-items: stretch;
 }
@@ -414,4 +417,229 @@ td:empty {
     opacity: 1;
     visibility: visible;
     transition: all 0.4s ease;
+}
+/* =========== Challenge Day ========== */
+.row-challen-streak {
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.challenge-day {
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    padding-bottom: 4rem;
+    flex-grow: 1.5;
+}
+.challenge-day .sub-title {
+    margin-top: 20px;
+    text-align: center;
+}
+.challenge {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Helvetica,
+        Arial, sans-serif;
+}
+
+.challenge a {
+    color: black;
+}
+
+.challenge .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenge .center-prb {
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding-right: 4rem;
+}
+
+.challenge th {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.challenge th .prb {
+    text-align: left;
+}
+
+.challenge tr {
+    /* border-bottom: 1px solid #5e5e5e; */
+    transition: all 0.4s ease-out;
+}
+
+.challenge thead tr {
+    border-bottom: 0.5px solid #5e5e5e;
+    transition: all 0.4s ease-out;
+}
+
+.challenge tr:nth-child(odd) {
+    background-color: white;
+}
+
+.challenge tr:nth-child(even) {
+    background-color: rgba(247, 248, 250, 1);
+}
+
+.challenge td {
+    padding: 1.3rem 1rem;
+    font-size: 1.5rem;
+}
+
+.easy {
+    color: rgba(0, 184, 163, 1);
+    font-weight: 500;
+}
+
+.medium {
+    color: rgba(255, 192, 30, 1);
+    font-weight: 500;
+}
+
+.hard {
+    color: rgba(255, 55, 95, 1);
+    font-weight: 500;
+}
+
+.challenge tbody tr:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #7a7a7a;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    transition: all 0.15s ease-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.is-complete {
+    background-color: #b8efc9 !important;
+    transition: all 0.4s ease-out;
+}
+
+.is-success {
+    border-color: #48c78e;
+    background-color: #48c78e;
+}
+
+.check i {
+    opacity: 0;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-challen {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-challen span {
+    padding: 1.5rem 2rem;
+    background-color: rgb(33, 150, 253);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px;
+}
+/* =========== Streak ========== */
+.user-streak {
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    flex-grow: 1;
+}
+
+.user-streak .sub-title {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wrap-streak {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.wrap-streak .wrap-img {
+    margin-left: 20px;
+}
+
+.wrap-streak .wrap-img img {
+    width: 60px;
+}
+
+.wrap-streak .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8rem;
+    font-size: 500;
+}
+
+.wrap-streak .number-day {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.achieve-wrapall {
+    margin-top: 40px;
+}
+
+.user-streak .subject {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.wrap-achie-user {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wrap-achie {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap-achie-user img {
+    max-height: 50px;
+    width: 50px;
+    flex-grow: 1;
 }
