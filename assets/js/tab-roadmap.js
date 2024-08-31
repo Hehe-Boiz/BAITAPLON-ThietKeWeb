@@ -26,7 +26,7 @@ fetch("./json/roadmap.json")
             });
             bck.style.visibility = "hidden";
         });
-        let cards = document.querySelectorAll("svg .box .card");
+        let cards = document.querySelectorAll("svg .card-all");
         cards.forEach((card) => {
             card.addEventListener("click", function () {
                 let tab = document.querySelector(".tab");
