@@ -1,6 +1,10 @@
 body {
     overflow-x: hidden;
 }
+
+main{
+    background-color: rgb(33, 32, 32);
+}
 .view {
     display: flex;
     justify-content: center;

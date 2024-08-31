@@ -1,487 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/reset.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/practice.css" />
-
-        <!-- Embed fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="assets/fonts/Poppins.css" />
-        <link rel="stylesheet" href="assets/fonts/ITC-Bauhaus-Medium.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-
-        <script src="assets/js/load.js"></script>
-        <title>CodemeM</title>
-    </head>
-    <body>
-        <header class="header"></header>
-        <script>
-            load(".header", "./templates/header.html");
-        </script>
-        <main>
-            <div class="body">
-                <div class="sidebar-left">
-                    <div class="wrap-goal">
-                        <h3 class="sub-title">Mục tiêu bản thân</h3>
-                        <div class="wrap-setting-goal">
-                            <img
-                                src="assets/icons/setting.svg"
-                                alt=""
-                                class="setting-goal"
-                            />
-                        </div>
-                    </div>
-                    <div class="create-goal hidden-goal">
-                        <p class="subject">Tạo mục tiêu</p>
-                        <div class="wrapall-goal">
-                            <div class="waring-goal hidden">
-                                *Không phải là số*
-                            </div>
-                            <div class="input-goal">
-                                <input
-                                    type="text"
-                                    placeholder="Viết mục tiêu tại đây"
-                                    class="goal"
-                                />
-                                <span class="btn-goal"
-                                    ><i class="fa-solid fa-plus"></i
-                                ></span>
-                            </div>
-                        </div>
-                        <div class="wrap-date">
-                            <div class="date-goal">Chọn ngày hoàn thành</div>
-                            <span class="date-icon">
-                                <div class="wrap-icon">
-                                    <i class="fa-regular fa-calendar-days"></i>
-                                </div>
-                                <div class="wrap-table hidden">
-                                    <div class="title-date">
-                                        <span class="pre-time"
-                                            ><i
-                                                class="fa-solid fa-angle-left"
-                                            ></i
-                                        ></span>
-                                        <span class="time-table"></span>
-                                        <span class="next-time"
-                                            ><i
-                                                class="fa-solid fa-chevron-right"
-                                            ></i
-                                        ></span>
-                                    </div>
-                                    <table class="date-table">
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="center-date">
-                                                        MON
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        TUE
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        WED
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        THU
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        FRI
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        SAT
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    <div class="center-date">
-                                                        SUN
-                                                    </div>
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody></tbody>
-                                    </table></div
-                            ></span>
-                        </div>
-                    </div>
-                    <div class="wrap-graph">
-                        <canvas
-                            id="progressCircle"
-                            width="150"
-                            height="150"
-                        ></canvas>
-                    </div>
-                    <div class="stats">
-                        <h3 class="sub-title">Stats</h3>
-                        <div class="wrapall-pro">
-                            <div class="wrap-pro">
-                                <p class="hard">Hard</p>
-                                <span class="pro-hard">0/100</span>
-                            </div>
-                            <progress
-                                class="hard-pro"
-                                max="100"
-                                value="78"
-                            ></progress>
-                            <div class="wrap-pro">
-                                <p class="medium">Medium</p>
-                                <span class="pro-medium">0/100</span>
-                            </div>
-                            <progress
-                                class="medium-pro"
-                                max="100"
-                                value="78"
-                            ></progress>
-                            <div class="wrap-pro">
-                                <p class="easy">Easy</p>
-                                <span class="pro-easy">0/100</span>
-                            </div>
-                            <progress
-                                class="easy-pro"
-                                max="100"
-                                value="56"
-                            ></progress>
-                        </div>
-                    </div>
-                </div>
-                <div class="content content-practice">
-                    <h1 class="title">Bài tập DSA</h1>
-                    <div class="row row-top-sea">
-                        <input
-                            type="text"
-                            placeholder="Tìm kiếm"
-                            class="sea-input"
-                        />
-                        <span class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <div class="row row-fil">
-                            <span class="status">
-                                <div class="wrap-name">
-                                    <span class="name-topic">Trạng thái</span>
-                                    <img
-                                        src="assets/icons/arrow-fil.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <ul class="opitions-status hidden">
-                                    <li class="opition-status row cursor">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p>Chưa làm</p>
-                                    </li>
-                                    <li class="opition-status row cursor">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p>Hoàn thành</p>
-                                    </li>
-                                </ul>
-                            </span>
-                            <span class="diff">
-                                <div class="wrap-name">
-                                    <span class="name-topic">Độ khó</span>
-                                    <img
-                                        src="assets/icons/arrow-fil.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <ul class="opitions-diff hidden">
-                                    <li class="opition-diff row cursor">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p class="easy">Easy</p>
-                                    </li>
-                                    <li class="opition-diff row cursor">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p class="medium">Medium</p>
-                                    </li>
-                                    <li class="opition-diff row cursor">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p class="hard">Hard</p>
-                                    </li>
-                                </ul>
-                            </span>
-                            <span class="topics">
-                                <div class="wrap-name">
-                                    <span class="name-topic">Chủ đề</span>
-                                    <img
-                                        src="assets/icons/arrow-fil.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="wrapall hidden">
-                                    <div class="center">
-                                        <span class="search-topics">
-                                            <i
-                                                class="fa-solid fa-magnifying-glass"
-                                            ></i>
-                                        </span>
-                                        <input
-                                            type="text"
-                                            class="sea-topic"
-                                            placeholder="Tìm kiếm"
-                                        />
-                                    </div>
-                                    <div class="wrap"></div></div
-                            ></span>
-                            <span class="setting">
-                                <div class="wrap-setting">
-                                    <img
-                                        src="assets/icons/setting.svg"
-                                        alt=""
-                                        class="setting-in"
-                                    />
-                                </div>
-                                <ul class="opitions hidden">
-                                    <li class="opition row">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p>Free</p>
-                                    </li>
-                                    <li class="opition row">
-                                        <span class="check-pre"
-                                            ><i class="fa-solid fa-check"></i
-                                        ></span>
-                                        <p class="premium">Premium</p>
-                                    </li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="tags row">
-                        <div class="tags-contain">
-                            <span class="topic-selec"
-                                ><div class="wrap-reset">
-                                    <span>Array</span
-                                    ><span class="wrap-i"
-                                        ><i class="fa-solid fa-xmark"></i
-                                    ></span></div
-                            ></span>
-                            <span class="topic-selec"
-                                ><div class="wrap-reset">
-                                    <span>Array</span
-                                    ><span class="wrap-i"
-                                        ><i class="fa-solid fa-xmark"></i
-                                    ></span></div
-                            ></span>
-                            <span class="topic-selec"
-                                ><div class="wrap-reset">
-                                    <span>Array</span
-                                    ><span class="wrap-i"
-                                        ><i class="fa-solid fa-xmark"></i
-                                    ></span></div
-                            ></span>
-                            <span class="topic-selec"
-                                ><div class="wrap-reset">
-                                    <span>Array</span
-                                    ><span class="wrap-i"
-                                        ><i class="fa-solid fa-xmark"></i
-                                    ></span></div
-                            ></span>
-                        </div>
-                        <span class="reset">
-                            <img
-                                src="assets/icons/reset.svg"
-                                alt=""
-                                class="reset-icon"
-                            />
-                            <span>Reset</span>
-                        </span>
-                    </div>
-                    <table class="tbl-prac">
-                        <thead class="prac-head">
-                            <tr>
-                                <th>Trạng thái</th>
-                                <th>
-                                    <div class="prb">Vấn đề</div>
-                                </th>
-                                <th>Thông qua</th>
-                                <th>Độ khó</th>
-                            </tr>
-                        </thead>
-                        <tbody class="pracice-table"></tbody>
-                    </table>
-                    <div class="nav-table"></div>
-                </div>
-                <div class="sidebar-right">
-                    <div class="content-ranking">
-                        <div class="wrap-rankingName">
-                            <span
-                                ><i class="fa-solid fa-ranking-star"></i
-                            ></span>
-                            <h3 class="sub-title">Bảng xếp hạng</h3>
-                        </div>
-                        <div class="ranking">
-                            <div class="ranking-wrap-number">
-                                <div class="number top1-number">1</div>
-                            </div>
-                            <div class="ranking-fix">
-                                <img
-                                    src="assets/icons/triangle-up.svg"
-                                    alt=""
-                                    class="up"
-                                />
-                                <span class="amount-up">+999</span>
-                            </div>
-                            <div class="ranking-avartar">
-                                <div class="wrap-avatar top1">
-                                    <img
-                                        src="assets/img/avatar-ranking.png"
-                                        alt=""
-                                        class="avt-rank"
-                                    />
-                                </div>
-                                <span class="ranking-crown"
-                                    ><img
-                                        src="assets/icons/crown-gold.svg"
-                                        alt=""
-                                /></span>
-                            </div>
-                            <div class="ranking-wrap">
-                                <div class="ranking-name">Heheboiz</div>
-                                <div class="passed">Thông qua: 8888</div>
-                            </div>
-                        </div>
-                        <div class="ranking">
-                            <div class="ranking-wrap-number">
-                                <div class="number top1-number">1</div>
-                            </div>
-                            <div class="ranking-fix">
-                                <img
-                                    src="assets/icons/triangle-up.svg"
-                                    alt=""
-                                    class="up"
-                                />
-                                <span class="amount-up">+999</span>
-                            </div>
-                            <div class="ranking-avartar">
-                                <div class="wrap-avatar top1">
-                                    <img
-                                        src="assets/img/avatar-ranking.png"
-                                        alt=""
-                                        class="avt-rank"
-                                    />
-                                </div>
-                                <span class="ranking-crown"
-                                    ><img
-                                        src="assets/icons/crown-gold.svg"
-                                        alt=""
-                                /></span>
-                            </div>
-                            <div class="ranking-wrap">
-                                <div class="ranking-name">Heheboiz</div>
-                                <div class="passed">Thông qua: 8888</div>
-                            </div>
-                        </div>
-                        <div class="ranking">
-                            <div class="ranking-wrap-number">
-                                <div class="number top1-number">1</div>
-                            </div>
-                            <div class="ranking-fix">
-                                <img
-                                    src="assets/icons/triangle-up.svg"
-                                    alt=""
-                                    class="up"
-                                />
-                                <span class="amount-up">+999</span>
-                            </div>
-                            <div class="ranking-avartar">
-                                <div class="wrap-avatar top1">
-                                    <img
-                                        src="assets/img/avatar-ranking.png"
-                                        alt=""
-                                        class="avt-rank"
-                                    />
-                                </div>
-                                <span class="ranking-crown"
-                                    ><img
-                                        src="assets/icons/crown-gold.svg"
-                                        alt=""
-                                /></span>
-                            </div>
-                            <div class="ranking-wrap">
-                                <div class="ranking-name">Heheboiz</div>
-                                <div class="passed">Thông qua: 8888</div>
-                            </div>
-                        </div>
-                        <div class="ranking">
-                            <div class="ranking-wrap-number">
-                                <div class="number top1-number">1</div>
-                            </div>
-                            <div class="ranking-fix">
-                                <img
-                                    src="assets/icons/triangle-up.svg"
-                                    alt=""
-                                    class="up"
-                                />
-                                <span class="amount-up">+999</span>
-                            </div>
-                            <div class="ranking-avartar">
-                                <div class="wrap-avatar top1">
-                                    <img
-                                        src="assets/img/avatar-ranking.png"
-                                        alt=""
-                                        class="avt-rank"
-                                    />
-                                </div>
-                                <span class="ranking-crown"
-                                    ><img
-                                        src="assets/icons/crown-gold.svg"
-                                        alt=""
-                                /></span>
-                            </div>
-                            <div class="ranking-wrap">
-                                <div class="ranking-name">Heheboiz</div>
-                                <div class="passed">Thông qua: 8888</div>
-                            </div>
-                        </div>
-                    </div>
+<div class="body">
+    <div class="sidebar-left">
+        <div class="wrap-goal">
+            <h3 class="sub-title">Mục tiêu bản thân</h3>
+            <div class="wrap-setting-goal">
+                <img
+                    src="assets/icons/setting.svg"
+                    alt=""
+                    class="setting-goal"
+                />
+            </div>
+        </div>
+        <div class="create-goal hidden-goal">
+            <p class="subject">Tạo mục tiêu</p>
+            <div class="wrapall-goal">
+                <div class="waring-goal hidden">*Không phải là số*</div>
+                <div class="input-goal">
+                    <input
+                        type="text"
+                        placeholder="Viết mục tiêu tại đây"
+                        class="goal"
+                    />
+                    <span class="btn-goal"
+                        ><i class="fa-solid fa-plus"></i
+                    ></span>
                 </div>
             </div>
-        </main>
-        <footer class="footer"></footer>
-        <script>
-            load(".footer", "./templates/footer.html");
-        </script>
-        <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/practice.js"></script>
-        <script src="assets/js/graphCircle.js"></script>
-        <script src="assets/js/goal.js"></script>
-    </body>
-</html>
+            <div class="wrap-date">
+                <div class="date-goal">Chọn ngày hoàn thành</div>
+                <span class="date-icon">
+                    <div class="wrap-icon">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div class="wrap-table hidden">
+                        <div class="title-date">
+                            <span class="pre-time"
+                                ><i class="fa-solid fa-angle-left"></i
+                            ></span>
+                            <span class="time-table"></span>
+                            <span class="next-time"
+                                ><i class="fa-solid fa-chevron-right"></i
+                            ></span>
+                        </div>
+                        <table class="date-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div class="center-date">MON</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">TUE</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">WED</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">THU</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">FRI</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">SAT</div>
+                                    </th>
+                                    <th>
+                                        <div class="center-date">SUN</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table></div
+                ></span>
+            </div>
+        </div>
+        <div class="wrap-graph">
+            <canvas id="progressCircle" width="150" height="150"></canvas>
+        </div>
+        <div class="stats">
+            <h3 class="sub-title">Stats</h3>
+            <div class="wrapall-pro">
+                <div class="wrap-pro">
+                    <p class="hard">Hard</p>
+                    <span class="pro-hard">0/100</span>
+                </div>
+                <progress class="hard-pro" max="100" value="78"></progress>
+                <div class="wrap-pro">
+                    <p class="medium">Medium</p>
+                    <span class="pro-medium">0/100</span>
+                </div>
+                <progress class="medium-pro" max="100" value="78"></progress>
+                <div class="wrap-pro">
+                    <p class="easy">Easy</p>
+                    <span class="pro-easy">0/100</span>
+                </div>
+                <progress class="easy-pro" max="100" value="56"></progress>
+            </div>
+        </div>
+    </div>
+    <div class="content content-practice">
+        <h1 class="title">Bài tập DSA</h1>
+        <div class="row row-top-sea">
+            <input type="text" placeholder="Tìm kiếm" class="sea-input" />
+            <span class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div class="row row-fil">
+                <span class="status">
+                    <div class="wrap-name">
+                        <span class="name-topic">Trạng thái</span>
+                        <img src="assets/icons/arrow-fil.svg" alt="" />
+                    </div>
+                    <ul class="opitions-status hidden">
+                        <li class="opition-status row cursor">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p>Chưa làm</p>
+                        </li>
+                        <li class="opition-status row cursor">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p>Hoàn thành</p>
+                        </li>
+                    </ul>
+                </span>
+                <span class="diff">
+                    <div class="wrap-name">
+                        <span class="name-topic">Độ khó</span>
+                        <img src="assets/icons/arrow-fil.svg" alt="" />
+                    </div>
+                    <ul class="opitions-diff hidden">
+                        <li class="opition-diff row cursor">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p class="easy">Easy</p>
+                        </li>
+                        <li class="opition-diff row cursor">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p class="medium">Medium</p>
+                        </li>
+                        <li class="opition-diff row cursor">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p class="hard">Hard</p>
+                        </li>
+                    </ul>
+                </span>
+                <span class="topics">
+                    <div class="wrap-name">
+                        <span class="name-topic">Chủ đề</span>
+                        <img src="assets/icons/arrow-fil.svg" alt="" />
+                    </div>
+                    <div class="wrapall hidden">
+                        <div class="center">
+                            <span class="search-topics">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input
+                                type="text"
+                                class="sea-topic"
+                                placeholder="Tìm kiếm"
+                            />
+                        </div>
+                        <div class="wrap"></div></div
+                ></span>
+                <span class="setting">
+                    <div class="wrap-setting">
+                        <img
+                            src="assets/icons/setting.svg"
+                            alt=""
+                            class="setting-in"
+                        />
+                    </div>
+                    <ul class="opitions hidden">
+                        <li class="opition row">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p>Free</p>
+                        </li>
+                        <li class="opition row">
+                            <span class="check-pre"
+                                ><i class="fa-solid fa-check"></i
+                            ></span>
+                            <p class="premium">Premium</p>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div class="tags row">
+            <div class="tags-contain">
+                <span class="topic-selec"
+                    ><div class="wrap-reset">
+                        <span>Array</span
+                        ><span class="wrap-i"
+                            ><i class="fa-solid fa-xmark"></i
+                        ></span></div
+                ></span>
+                <span class="topic-selec"
+                    ><div class="wrap-reset">
+                        <span>Array</span
+                        ><span class="wrap-i"
+                            ><i class="fa-solid fa-xmark"></i
+                        ></span></div
+                ></span>
+                <span class="topic-selec"
+                    ><div class="wrap-reset">
+                        <span>Array</span
+                        ><span class="wrap-i"
+                            ><i class="fa-solid fa-xmark"></i
+                        ></span></div
+                ></span>
+                <span class="topic-selec"
+                    ><div class="wrap-reset">
+                        <span>Array</span
+                        ><span class="wrap-i"
+                            ><i class="fa-solid fa-xmark"></i
+                        ></span></div
+                ></span>
+            </div>
+            <span class="reset">
+                <img src="assets/icons/reset.svg" alt="" class="reset-icon" />
+                <span>Reset</span>
+            </span>
+        </div>
+        <table class="tbl-prac">
+            <thead class="prac-head">
+                <tr>
+                    <th>Trạng thái</th>
+                    <th>
+                        <div class="prb">Vấn đề</div>
+                    </th>
+                    <th>Thông qua</th>
+                    <th>Độ khó</th>
+                </tr>
+            </thead>
+            <tbody class="pracice-table"></tbody>
+        </table>
+        <div class="nav-table"></div>
+    </div>
+    <div class="sidebar-right">
+        <div class="content-ranking">
+            <div class="wrap-rankingName">
+                <span><i class="fa-solid fa-ranking-star"></i></span>
+                <h3 class="sub-title">Bảng xếp hạng</h3>
+            </div>
+            <div class="ranking">
+                <div class="ranking-wrap-number">
+                    <div class="number top1-number">1</div>
+                </div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+            </div>
+            <div class="ranking">
+                <div class="ranking-wrap-number">
+                    <div class="number top1-number">1</div>
+                </div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+            </div>
+            <div class="ranking">
+                <div class="ranking-wrap-number">
+                    <div class="number top1-number">1</div>
+                </div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+            </div>
+            <div class="ranking">
+                <div class="ranking-wrap-number">
+                    <div class="number top1-number">1</div>
+                </div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
