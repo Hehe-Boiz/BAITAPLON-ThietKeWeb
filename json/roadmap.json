@@ -1,0 +1,887 @@
+[
+    {
+        "topic_name": "Arrays & Hashing",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Search Algorithms",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Sliding Windows",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Linked List",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Tree",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Stack",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Queues",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Tries",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Heap / Priority Queue",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Graphs",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Backtracking",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "1-D DP",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Intervals",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Greedy",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Advanced Graps",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "2-D DP",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Bit Manipulation",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    },
+    {
+        "topic_name": "Math & Geometry",
+        "lessons": [
+            {
+                "lesson_name": "Dynamic Arrays",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1"
+            },
+            {
+                "lesson_name": "Hash Usage",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "Hash Implementation",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            },
+            {
+                "lesson_name": "PreFix Sums",
+                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2"
+            }
+        ],
+        "exercises": [
+            {
+                "exercise_name": "Contains Duplicate",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Valid Anagram",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Two Sum",
+                "difficulty": "Easy"
+            },
+            {
+                "exercise_name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Top K Frequent Elements",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Encode and Decode Strings",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Product of Array Except Self",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Valid Sudoku",
+                "difficulty": "Medium"
+            },
+            {
+                "exercise_name": "Longest Consecutive Sequence",
+                "difficulty": "Medium"
+            }
+        ]
+    }
+]

@@ -29,52 +29,52 @@
     adjustSVG();
 
     // ============= Tab ==============
-    // ẩn tab
-    let escs = document.querySelectorAll(".esc");
-    escs.forEach((esc) => {
-        esc.addEventListener("click", function () {
-            let tab = esc.closest(".tab");
-            let bck = document.querySelector(".wrap-all");
-            tab.classList.remove("active");
-            tab.classList.add("off");
+    // // ẩn tab
+    // let escs = document.querySelectorAll(".esc");
+    // escs.forEach((esc) => {
+    //     esc.addEventListener("click", function () {
+    //         let tab = esc.closest(".tab");
+    //         let bck = document.querySelector(".wrap-all");
+    //         tab.classList.remove("active");
+    //         tab.classList.add("off");
 
-            bck.style.visibility = "hidden";
-        });
-    });
+    //         bck.style.visibility = "hidden";
+    //     });
+    // });
 
-    let bck = document.querySelector(".wrap-all");
-    bck.addEventListener("click", function () {
-        let tabs = document.querySelectorAll(".tab");
-        tabs.forEach((tab) => {
-            if (tab.classList.contains("active")) {
-                tab.classList.remove("active");
-                tab.classList.add("off");
-            }
-        });
-        bck.style.visibility = "hidden";
-    });
+    // let bck = document.querySelector(".wrap-all");
+    // bck.addEventListener("click", function () {
+    //     let tabs = document.querySelectorAll(".tab");
+    //     tabs.forEach((tab) => {
+    //         if (tab.classList.contains("active")) {
+    //             tab.classList.remove("active");
+    //             tab.classList.add("off");
+    //         }
+    //     });
+    //     bck.style.visibility = "hidden";
+    // });
 
-    // hiện tab tương ứng
-    const cards = document.querySelectorAll(".card-all");
-    // Duyệt qua từng thẻ card và gắn sự kiện click
-    cards.forEach((card) => {
-        card.addEventListener("click", function () {
-            let bck = document.querySelector(".wrap-all");
+    // // hiện tab tương ứng
+    // const cards = document.querySelectorAll(".card-all");
+    // // Duyệt qua từng thẻ card và gắn sự kiện click
+    // cards.forEach((card) => {
+    //     card.addEventListener("click", function () {
+    //         let bck = document.querySelector(".wrap-all");
 
-            // Hiện sidebar tương ứng với card được click
-            // let targetSidebar = document.querySelector(`.${this.dataset.target}`);
-            let tab = document.getElementById(this.dataset.target);
+    //         // Hiện sidebar tương ứng với card được click
+    //         // let targetSidebar = document.querySelector(`.${this.dataset.target}`);
+    //         let tab = document.getElementById(this.dataset.target);
 
-            console.log(this.dataset.target);
-            // tab.style.opacity = "1";
-            // tab.style.visibility = "visible";
-            // tab.style.transform = "translate(0)";
-            // tab.style.transition = "all  .4s ease";
-            tab.classList.add("active");
+    //         console.log(this.dataset.target);
+    //         // tab.style.opacity = "1";
+    //         // tab.style.visibility = "visible";
+    //         // tab.style.transform = "translate(0)";
+    //         // tab.style.transition = "all  .4s ease";
+    //         tab.classList.add("active");
 
-            bck.style.visibility = "visible";
-        });
-    });
+    //         bck.style.visibility = "visible";
+    //     });
+    // });
     // ============= Độ hoàn thành  ==============
     function updateProgress(card) {
         let practice = document.querySelectorAll(
@@ -110,8 +110,8 @@
             attributeFilter: ["class"],
         });
     }
-
-    cards.forEach(function (card) {
+    const cardalls = document.querySelectorAll(".card-all");
+    cardalls.forEach(function (card) {
         let practice = document.querySelectorAll(
             `#${card.dataset.target} tbody tr`
         );
