@@ -378,61 +378,151 @@ document
     });
 
 let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ đề đã chọn
+let currentUser = null;
 // Tạo các nút button tags để lọc
-fetch("./json/practice.json")
-    .then((response) => response.json())
-    .then((exercises) => {
-        let allTags = exercises.flatMap((exercise) => exercise.tags);
-        let uniqueTags = [...new Set(allTags)];
-        let wrapTopics = document.querySelector(".wrap");
+// tải dữ liệu người dùng và dữ liệu bài tập
+Promise.all([
+    fetch("./json/practice.json").then((response) => response.json()),
+    fetch("./json/user.json").then((response) => response.json()),
+]).then(([exercises, usersData]) => {
+    let users = usersData.users;
+    currentUser = users.find((user) => user.username === "HeheBoiz");
 
-        uniqueTags.forEach((tag) => {
-            let button = document.createElement("span");
+    let allTags = exercises.flatMap((exercise) => exercise.tags);
+    let uniqueTags = [...new Set(allTags)];
+    let wrapTopics = document.querySelector(".wrap");
 
-            button.textContent = tag;
-            button.classList.add("topic", "cursor");
-            wrapTopics.appendChild(button);
-        });
+    uniqueTags.forEach((tag) => {
+        let button = document.createElement("span");
 
-        // Gán sự kiện cho các nút tag vừa tạo
-        let topics = document.querySelectorAll(".topic");
-        topics.forEach((topic) => {
-            topic.addEventListener("click", () => {
-                let topicText = topic.textContent.trim();
+        button.textContent = tag;
+        button.classList.add("topic", "cursor");
+        wrapTopics.appendChild(button);
+    });
 
-                // Thay đổi trạng thái của nút
-                if (selectedTopics.has(topicText)) {
-                    topic.classList.remove("is-opition");
-                    let contentTopic = topic.textContent.trim();
-                    deleteTagSelec(contentTopic)
-                    selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
-                } else {
-                    topic.classList.add("is-opition");
-                    let contentTopic = topic.textContent.trim();
-                    createTagSelec(contentTopic)
-                    selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
-                }
+    // Gán sự kiện cho các nút tag vừa tạo
+    let topics = document.querySelectorAll(".topic");
+    topics.forEach((topic) => {
+        topic.addEventListener("click", () => {
+            let topicText = topic.textContent.trim();
 
-                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+            // Thay đổi trạng thái của nút
+            if (selectedTopics.has(topicText)) {
+                topic.classList.remove("is-opition");
+                let contentTopic = topic.textContent.trim();
+                deleteTagSelec(contentTopic);
+                selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+            } else {
+                topic.classList.add("is-opition");
+                let contentTopic = topic.textContent.trim();
+                createTagSelec(contentTopic);
+                selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
+            }
 
-                filterExercises(selectedTopics, exercises);
-            });
+            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+            filterExercises(selectedTopics, exercises);
         });
     });
+    let accSelects = document.querySelectorAll(".opition");
+    accSelects.forEach((accSelect) => {
+        accSelect.addEventListener("click", () => {
+            let accSelectText = accSelect.querySelector("p").textContent.trim();
+            let check = accSelect.querySelector(".check-pre");
+            let icon = check.querySelector("i");
+            // Thay đổi trạng thái của nút
+            if (selectedTopics.has(accSelectText)) {
+                icon.style.opacity = "0";
+                check.classList.remove("is-success");
+                let contentAcc = accSelectText;
+                deleteTagSelec(contentAcc);
+                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+            } else {
+                icon.style.opacity = "1";
+                check.classList.add("is-success");
+                let contentAcc = accSelectText;
+                createTagSelec(contentAcc);
+                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+            }
+
+            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+            filterExercises(selectedTopics, exercises);
+        });
+    });
+    let diffSelects = document.querySelectorAll(".opition-diff");
+    diffSelects.forEach((diffSelect) => {
+        diffSelect.addEventListener("click", () => {
+            let diffSelectText = diffSelect
+                .querySelector("p")
+                .textContent.trim();
+            let check = diffSelect.querySelector(".check-pre");
+            let icon = check.querySelector("i");
+            // Thay đổi trạng thái của nút
+            if (selectedTopics.has(diffSelectText)) {
+                icon.style.opacity = "0";
+                check.classList.remove("is-success");
+                let contentAcc = diffSelectText;
+                deleteTagSelec(contentAcc);
+                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+            } else {
+                icon.style.opacity = "1";
+                check.classList.add("is-success");
+                let contentAcc = diffSelectText;
+                createTagSelec(contentAcc);
+                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+            }
+
+            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+            filterExercises(selectedTopics, exercises);
+        });
+    });
+    let statusSelects = document.querySelectorAll(".opition-status");
+    statusSelects.forEach((statusSelect) => {
+        statusSelect.addEventListener("click", () => {
+            let statusSelectText = statusSelect
+                .querySelector("p")
+                .textContent.trim();
+            let check = statusSelect.querySelector(".check-pre");
+            let icon = check.querySelector("i");
+            // Thay đổi trạng thái của nút
+            if (selectedTopics.has(statusSelectText)) {
+                icon.style.opacity = "0";
+                check.classList.remove("is-success");
+                let contentAcc = statusSelectText;
+                deleteTagSelec(contentAcc);
+                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+            } else {
+                icon.style.opacity = "1";
+                check.classList.add("is-success");
+                let contentAcc = statusSelectText;
+                createTagSelec(contentAcc);
+                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+            }
+
+            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+            filterExercises(selectedTopics, exercises);
+        });
+    });
+});
 
 // Hàm lọc bài tập dựa trên các chủ đề đã chọn
 function filterExercises(selectedTopics, exercises) {
     let filteredExercises;
+    let hasCompletionFilter =
+        selectedTopics.has("Hoàn thành") || selectedTopics.has("Chưa làm");
 
     if (selectedTopics.size === 0) {
-        filteredExercises = exercises; // Nếu không có chủ đề nào được chọn, hiển thị tất cả bài tập
+        filteredExercises = exercises; // Nếu không có bộ lọc nào được chọn, trả về tất cả bài tập
     } else {
         // Lọc bài tập dựa trên các chủ đề đã chọn
-        filteredExercises = exercises.filter((exercise) =>
-            Array.from(selectedTopics).every((tag) =>
-                exercise.tags.includes(tag)
-            )
-        );
+        filteredExercises = exercises.filter((exercise) => {
+            // Kiểm tra tags và access
+            return Array.from(selectedTopics).every(
+                (filter) =>
+                    exercise.tags.includes(filter) ||
+                    exercise.access === filter ||
+                    exercise.diff === filter
+            );
+        });
     }
 
     // Cập nhật số trang và hiển thị trang đầu tiên với kết quả đã lọc
@@ -466,11 +556,36 @@ let reset = document.querySelector(".reset");
 let tagsContainer = document.querySelector(".tags-contain");
 
 reset.addEventListener("click", () => {
+    let optionAccs = document.querySelectorAll(".opition");
+    let optionDiffs = document.querySelectorAll(".opition-diff");
+    let optionStatus = document.querySelectorAll(".opition-status");
     tagsContainer.innerHTML = "";
     // Loại bỏ class "is-opition" khỏi tất cả các thẻ topic
     let topics = document.querySelectorAll(".topic");
     topics.forEach((topic) => {
         topic.classList.remove("is-opition");
+    });
+
+    optionAccs.forEach((optionAcc) => {
+        let check = optionAcc.querySelector(".opition .check-pre");
+        let p = optionAcc.querySelector("p");
+        let icon = check.querySelector("i");
+        icon.style.opacity = "0";
+        check.classList.remove("is-success");
+    });
+    optionDiffs.forEach((optionDiff) => {
+        let check = optionDiff.querySelector(".opition-diff .check-pre");
+        let p = optionDiff.querySelector("p");
+        let icon = check.querySelector("i");
+        icon.style.opacity = "0";
+        check.classList.remove("is-success");
+    });
+    optionStatus.forEach((optionStatu) => {
+        let check = optionStatu.querySelector(".opition-status .check-pre");
+        let p = optionStatu.querySelector("p");
+        let icon = check.querySelector("i");
+        icon.style.opacity = "0";
+        check.classList.remove("is-success");
     });
 
     // Xóa tất cả các chủ đề đã chọn
@@ -483,13 +598,16 @@ reset.addEventListener("click", () => {
 });
 //tạo tags khi ấn trên filter
 
-function createTagSelec(topic) {
+function createTagSelec(content) {
+    let tags = document.querySelectorAll(".topic");
+    let optionAccs = document.querySelectorAll(".opition");
+    let optionDiffs = document.querySelectorAll(".opition-diff");
     let tagsContainer = document.querySelector(".tags-contain");
     let intagSelect = document.createElement("span");
     intagSelect.classList.add("topic-selec");
     intagSelect.innerHTML = `
                 <div class="wrap-reset">
-                    <span class="tmp">${topic}</span>
+                    <span class="tmp">${content}</span>
                     <span class="wrap-i">
                         <i class="fa-solid fa-xmark"></i>
                     </span>
@@ -502,25 +620,48 @@ function createTagSelec(topic) {
             intagSelect.remove();
             // Bỏ chọn tag tương ứng trong danh sách các topic
             tags.forEach((tag) => {
-                if (tag.textContent === topicSelectContent) {
+                if (tag.textContent === content) {
                     tag.classList.remove("is-opition");
                 }
             });
+
+            optionAccs.forEach((optionAcc) => {
+                let check = optionAcc.querySelector(".opition .check-pre");
+                let p = optionAcc.querySelector("p");
+                let icon = check.querySelector("i");
+                if (p.textContent === content) {
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                }
+            });
+            optionDiffs.forEach((optionDiff) => {
+                let check = optionDiff.querySelector(
+                    ".opition-diff .check-pre"
+                );
+                let p = optionDiff.querySelector("p");
+                let icon = check.querySelector("i");
+                if (p.textContent === content) {
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                }
+            });
             // Cập nhật lại danh sách selectedTopics và lọc lại bài tập
-            selectedTopics.delete(topicSelectContent);
+            selectedTopics.delete(content);
             filterExercises(selectedTopics, exercises);
         });
 
     tagsContainer.appendChild(intagSelect);
 }
 
-function deleteTagSelec(topic){
-    let selects = document.querySelector(".tags-contain").querySelectorAll(".topic-selec");
-    
+function deleteTagSelec(content) {
+    let selects = document
+        .querySelector(".tags-contain")
+        .querySelectorAll(".topic-selec");
+
     selects.forEach((select) => {
         let span = select.querySelector(".wrap-reset span.tmp");
-        console.log(span)
-        if (span && span.textContent.trim() === topic) {
+        console.log(span);
+        if (span && span.textContent.trim() === content) {
             select.remove();
         }
     });

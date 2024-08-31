@@ -12,12 +12,12 @@
             },
             "completed": [
                 {
-                    "name": "Exercise 1",
-                    "difficulty": "medium"
+                    "name": "Contains Duplicate",
+                    "difficulty": "Easy"
                 },
                 {
-                    "name": "Exercise 2",
-                    "difficulty": "hard"
+                    "name": "Group Anagrams",
+                    "difficulty": "Medium"
                 }
             ],
             "goal": {

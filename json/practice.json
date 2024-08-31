@@ -28,7 +28,7 @@
         "total": 70,
         "diff": "Medium",
         "tags": ["Array", "Hash Table", "Sorting", "String"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Top K Frequent Elements",
@@ -45,7 +45,7 @@
             "Counting",
             "Quickselect"
         ],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Encode and Decode Strings",
@@ -61,7 +61,7 @@
         "total": 124,
         "diff": "Medium",
         "tags": ["Array", "Prefix Sum"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Valid Sudoku",
@@ -69,7 +69,7 @@
         "total": 153,
         "diff": "Medium",
         "tags": ["Matrix", "Array", "Hash Table"],
-        "access": "free"
+        "access": "premium"
     },
     {
         "name": "Longest Consecutive Sequence",
@@ -85,7 +85,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Linked List", "Recursion", "Math"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Median of Two Sorted Arrays",
@@ -330,7 +330,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["Array", "Hash Table", "Backtracking", "Matrix"],
-        "access": "free"
+        "access": "premium"
     },
     {
         "name": "Count and Say",
@@ -338,6 +338,6 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["String"],
-        "access": "free"
+        "access": "premium"
     }
 ]
