@@ -6,13 +6,16 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/reset.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-
+        <link rel="stylesheet" href="assets/css/codepage.css" />
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="assets/fonts/Poppins.css" />
@@ -29,10 +32,166 @@
         <title>CodemeM</title>
     </head>
     <body>
-        <header class="header"></header>
-        <script>
-            load(".header", "./templates/header.html");
-        </script>
-        <main></main>
+        <header>
+            <nav class="navbar">
+                <div class="wrap-logo">
+                    <a href="" class="logo">CodemeM</a>
+                    <div class="list-btn cursor">
+                        <span></span><i class="fa-solid fa-list-ul"></i
+                        ><span class="list">Danh sách bài tập</span>
+                    </div>
+                </div>
+                <div class="wrap-submit">
+                    <span class="pre-task"
+                        ><i class="fa-solid fa-angle-left"></i
+                    ></span>
+                    <span class="submit cursor">Submit Code</span>
+                    <span class="next-task"
+                        ><i class="fa-solid fa-angle-right"></i
+                    ></span>
+                </div>
+                <div class="actions">
+                    <a class="premium"><i class="fa-solid fa-crown"></i></a>
+                    <a href="#!" class="action-link">Sign in</a>
+                    <a href="#!" class="btn action-btn">Sign up</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="task">
+                    <div class="nav-task">
+                        <ul>
+                            <li class="is-active">Câu hỏi</li>
+                            <li>Giải pháp</li>
+                        </ul>
+                    </div>
+                    <div class="body-task">
+                        <h2 class="name-task">Contains Duplicate</h2>
+                        <div class="tags">
+                            <span class="tag diff easy cursor">Easy</span>
+                            <span class="tag topic cursor">Array</span>
+                            <span class="tag topic cursor">Hash Table</span>
+                            <span class="tag topic cursor">Sorting</span>
+                        </div>
+                        <div class="desc">
+                            <p>
+                                Cho một mảng số nguyên
+                                <span class="code-wrap">nums</span>, trả về
+                                <span class="code-wrap">true</span> nếu bất kỳ
+                                giá trị nào xuất hiện ít nhất hai lần trong mảng
+                                và trả về
+                                <span class="code-wrap">false</span> nếu mọi
+                                phần tử đều khác nhau.
+                            </p>
+                        </div>
+                        <div class="exams">
+                            <div class="exam">
+                                <div class="exam-number">Ví dụ 1:</div>
+                                <div class="desc-exam">
+                                    <pre>
+<code><span class="bold">Input:</span> nums = [1,2,3,1]
+<span class="bold">Output:</span> true
+</code></pre>
+                                </div>
+                            </div>
+                            <div class="exam">
+                                <div class="exam-number">Ví dụ 2:</div>
+                                <div class="desc-exam">
+                                    <pre>
+<code><span class="bold">Input:</span> nums = [1,2,3,4]
+<span class="bold">Output:</span> false
+</code></pre>
+                                </div>
+                            </div>
+                            <div class="exam">
+                                <div class="exam-number">Ví dụ 3:</div>
+                                <div class="desc-exam">
+                                    <pre>
+<code><span class="bold">Input:</span> nums = [1,1,1,3,3,4,3,2,4,2]
+<span class="bold">Output:</span> false
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resizer"></div>
+                <div class="container-code">
+                    <div class="nav-code">
+                        <div class="dropdown">
+                            <div class="lang-btn cursor dropdown-toggle">
+                                <span class="lang">Javascript</span
+                                ><span class="arrow"
+                                    ><i class="fa-solid fa-angle-down"></i
+                                ></span>
+                            </div>
+                            <div class="dropdown-menu Dropdown">
+                                <a href="#">Python</a>
+                                <a href="#">Java</a>
+                                <a href="#">C++</a>
+                                <a href="#" class="is-option-lang">JavaScript</a>
+                                <a href="#">C#</a>
+                            </div>
+                        </div>
+                        <div class="wrap-run">
+                            <span class="reset">
+                                <img
+                                    src="assets/icons/reset.svg"
+                                    alt=""
+                                    class="reset-icon"
+                                />
+                            </span>
+                            <div class="run-btn cursor">Run</div>
+                        </div>
+                    </div>
+                    <div class="code"></div>
+                    <div class="resizer-code"></div>
+                    <div class="test-case">
+                        <div class="nav-test">
+                            <div class="wrap-test-nav">
+                                <span class="icon-test"
+                                    ><i class="fa-solid fa-terminal"></i></span
+                                ><span class="nav-title">Test Case</span>
+                            </div>
+                        </div>
+                        <div class="body-test">
+                            <ul class="tests">
+                                <li class="test cursor">
+                                    <span class="test-number">Case 1</span>
+                                </li>
+                                <li class="test cursor">
+                                    <span class="test-number">Case 2</span>
+                                </li>
+                                <li class="test cursor">
+                                    <span class="test-number">Case 3</span>
+                                </li>
+                            </ul>
+                            <div class="test-content">
+                                <div class="input">
+                                    <div class="input-name">nums =</div>
+                                    <div class="input-content">
+                                        <pre><code></code></pre>
+                                    </div>
+                                </div>
+                                <div class="output-expected">
+                                    <div class="output-name-expected">
+                                        Expected output:
+                                    </div>
+                                </div>
+                                <div class="output-content-expected"></div>
+                            </div>
+                            <div class="output-user">
+                                <div class="output-name-user">Your Output:</div>
+                                <div class="output-content-user"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="assets/js/codepage.js"></script>
+        <script src="assets/js/testContent.js"></script>
     </body>
 </html>

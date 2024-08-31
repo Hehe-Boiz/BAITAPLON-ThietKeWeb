@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Contains Duplicate",
+        "passed": 80,
+        "total": 121,
+        "diff": "Easy",
+        "tags": ["Array", "Hash Table", "Sorting"]
+    },
+    {
+        "name": "Valid Anagram",
+        "passed": 80,
+        "total": 143,
+        "diff": "Easy",
+        "tags": ["Hash Table", "String", "Sorting"]
+    },
+    {
+        "name": "Two Sum",
+        "passed": 80,
+        "total": 111,
+        "diff": "Easy",
+        "tags": ["Hash Table", "Array"]
+    }
+]

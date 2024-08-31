@@ -1,0 +1,476 @@
+<div class="content">
+    <div class="row row-top">
+        <div class="wrap-goalall">
+            <div class="wrap-goal">
+                <h3 class="sub-title">Mục tiêu bản thân</h3>
+                <div class="wrap-setting-goal">
+                    <img
+                        src="assets/icons/setting.svg"
+                        alt=""
+                        class="setting-goal"
+                    />
+                </div>
+            </div>
+            <div class="create-goal hidden-goal">
+                <p class="subject">Tạo mục tiêu</p>
+                <div class="wrapall-goal">
+                    <div class="waring-goal hidden">*Không phải là số*</div>
+                    <div class="input-goal">
+                        <input
+                            type="text"
+                            placeholder="Viết mục tiêu tại đây"
+                            class="goal"
+                        />
+                        <span class="btn-goal"
+                            ><i class="fa-solid fa-plus"></i
+                        ></span>
+                    </div>
+                </div>
+                <div class="wrap-date">
+                    <div class="date-goal">Chọn ngày hoàn thành</div>
+                    <span class="date-icon">
+                        <div class="wrap-icon">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="wrap-table hidden">
+                            <div class="title-date">
+                                <span class="pre-time"
+                                    ><i class="fa-solid fa-angle-left"></i
+                                ></span>
+                                <span class="time-table"></span>
+                                <span class="next-time"
+                                    ><i class="fa-solid fa-chevron-right"></i
+                                ></span>
+                            </div>
+                            <table class="date-table">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="center-date">MON</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">TUE</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">WED</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">THU</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">FRI</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">SAT</div>
+                                        </th>
+                                        <th>
+                                            <div class="center-date">SUN</div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table></div
+                    ></span>
+                </div>
+            </div>
+            <div class="wrap-graph">
+                <canvas id="progressCircle" width="250" height="250"></canvas>
+            </div>
+        </div>
+        <div class="user-profile">
+            <div class="wrap-profileall">
+                <div class="avatar-user">
+                    <img src="assets/img/avatar-ranking.png" alt="" />
+                    <!-- <p>Khách</p> -->
+                </div>
+                <div class="profile">
+                    <span class="username">Heheboiz</span>
+                    <div class="user-level">Trình độ: Cao thủ</div>
+                    <div class="rank top1">
+                        <span class="bold">Rank:</span> 1
+                    </div>
+                </div>
+            </div>
+            <div class="user-complete">
+                <div class="stats">
+                    <div class="wrapall-pro">
+                        <div class="wrap-in-pro">
+                            <div class="wrap-pro">
+                                <p class="hard">Hard</p>
+                                <span class="pro-hard">0/100</span>
+                            </div>
+                            <progress
+                                class="hard-pro"
+                                max="100"
+                                value=""
+                            ></progress>
+                        </div>
+                        <div class="wrap-in-pro">
+                            <div class="wrap-pro">
+                                <p class="medium">Medium</p>
+                                <span class="pro-medium">0/100</span>
+                            </div>
+                            <progress
+                                class="medium-pro"
+                                max="100"
+                                value=""
+                            ></progress>
+                        </div>
+                        <div class="wrap-in-pro">
+                            <div class="wrap-pro">
+                                <p class="easy">Easy</p>
+                                <span class="pro-easy">0/100</span>
+                            </div>
+                            <progress
+                                class="easy-pro"
+                                max="100"
+                                value=""
+                            ></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-challen-streak">
+        <div class="challenge-day">
+            <h2 class="sub-title">Thử thách ngày</h2>
+            <table class="challenge">
+                <thead>
+                    <tr>
+                        <th>Trạng thái</th>
+                        <th>
+                            <div class="prb">Vấn đề</div>
+                        </th>
+                        <th>Độ khó</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="center">
+                                <span class="check"
+                                    ><i class="fa-solid fa-check"></i
+                                ></span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="center center-prb">
+                                <a>Contains Duplicate</a>
+                            </div>
+                        </td>
+                        <td><div class="center easy">Easy</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="center">
+                                <span class="check"
+                                    ><i class="fa-solid fa-check"></i
+                                ></span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="center center-prb">
+                                <a>Valid Anagram</a>
+                            </div>
+                        </td>
+                        <td><div class="center easy">Easy</div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="center">
+                                <span class="check"
+                                    ><i class="fa-solid fa-check"></i
+                                ></span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="center center-prb">
+                                <a>Two Sum</a>
+                            </div>
+                        </td>
+                        <td><div class="center easy">Easy</div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-challen cursor">
+                <span>Bắt đầu thử thách</span>
+            </div>
+        </div>
+        <div class="user-streak">
+            <h2 class="sub-title">Streak học tập</h2>
+            <div class="wrap-streak">
+                <div class="wrap-img">
+                    <img src="assets/icons/fire.svg" alt="" />
+                </div>
+                <div class="desc">
+                    <div class="number-day">12</div>
+                    <p>Ngày liên tiếp</p>
+                </div>
+            </div>
+            <div class="achieve-wrapall">
+                <h3 class="subject">Các thành tích khác:</h3>
+                <div class="wrap-achie-user">
+                    <div class="wrap-achie">
+                        <img src="assets/icons/achieve-1.svg" alt="" />
+                    </div>
+                    <div class="wrap-achie">
+                        <img src="assets/icons/achieve-2.svg" alt="" />
+                    </div>
+                    <div class="wrap-achie">
+                        <img src="assets/icons/achieve-3.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ranking-wrapall">
+        <h2 class="sub-title">Bảng xếp hạng</h2>
+        <div class="rank-label">
+            <span class="label-rank">Xếp hạng</span>
+            <span class="label-amount">Phát triển</span>
+            <span class="label-avatar">Avatar</span>
+            <span class="info">Thông tin</span>
+            <span class="hard">Hard</span>
+            <span class="medium">Meidum</span>
+            <span class="easy">Easy</span>
+        </div>
+        <div class="rankings">
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+
+            <div class="ranking">
+                <div class="number top1-number">1</div>
+                <div class="ranking-fix">
+                    <img src="assets/icons/triangle-up.svg" alt="" class="up" />
+                    <span class="amount-up">+999</span>
+                </div>
+                <div class="ranking-avartar">
+                    <div class="wrap-avatar top1-rank">
+                        <img
+                            src="assets/img/avatar-ranking.png"
+                            alt=""
+                            class="avt-rank"
+                        />
+                    </div>
+                    <span class="ranking-crown"
+                        ><img src="assets/icons/crown-gold.svg" alt=""
+                    /></span>
+                </div>
+                <div class="ranking-wrap">
+                    <div class="ranking-name">Heheboiz</div>
+                    <div class="passed">Thông qua: 8888</div>
+                </div>
+                <div class="quantity">30/100</div>
+                <div class="quantity">200/400</div>
+                <div class="quantity">20/100</div>
+            </div>
+        </div>
+    </div>
+</div>

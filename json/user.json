@@ -1,7 +1,55 @@
-[
-    {
-        "name": "Hehe Boiz",
-        "passed": 3,
-        "namePactice": ["Two Sum", "Valid Anagram"]
-    }
-]
+{
+    "users": [
+        {
+            "username": "HeheBoiz",
+            "accountName": "heheboiz",
+            "password": "12345678",
+            "beginDay":"2023-01-01",
+            "activityDays": {
+                "2024-01-01": 2,
+                "2024-01-02": 3,
+                "2024-01-03": 1
+            },
+            "completed": [
+                {
+                    "name": "Exercise 1",
+                    "difficulty": "medium"
+                },
+                {
+                    "name": "Exercise 2",
+                    "difficulty": "hard"
+                }
+            ],
+            "goal": {
+                "goal": 6,
+                "begin": "2024-08-31",
+                "completionDay": "2024-09-1"
+            }
+        },
+        {
+            "username": "BaTan",
+            "accountName": "batannnn",
+            "password": "12345678",
+            "activityDays": {
+                "2024-01-01": 2,
+                "2024-01-02": 3,
+                "2024-01-03": 1
+            },
+            "completed": [
+                {
+                    "name": "Exercise 1",
+                    "difficulty": "medium"
+                },
+                {
+                    "name": "Exercise 2",
+                    "difficulty": "hard"
+                }
+            ],
+            "goal": {
+                "goal": 5,
+                "begin": "2024-08-31",
+                "completionDay": "2024-09-1"
+            }
+        }
+    ]
+}

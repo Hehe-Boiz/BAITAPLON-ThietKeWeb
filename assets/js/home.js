@@ -1,25 +1,25 @@
-export function graphCircle() {
-    let canvas = document.getElementById("progressCircle");
+export function graph() {
+    const canvas = document.getElementById("progressCircle");
 
     // Tăng độ phân giải của canvas
-    let scale = window.devicePixelRatio * 3;
+    const scale = window.devicePixelRatio * 3;
 
     canvas.width = canvas.clientWidth * scale;
-    canvas.height = canvas.clientHeight * scale;
+    canvas.height = (canvas.clientHeight * scale) / 1.3;
 
     canvas.style.width = `${canvas.clientWidth / 3}px`;
     canvas.style.height = `${canvas.clientHeight}px`;
 
-    let ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d");
 
     // // Điều chỉnh tỷ lệ vẽ
     ctx.scale(scale, scale);
 
-    let centerX = canvas.width / 2 / scale;
-    let centerY = canvas.height / 2 / scale;
-    let radius = 60;
-    let lineWidth = 10;
-    let startAngle = -0.5 * Math.PI;
+    const centerX = canvas.width / 2 / scale;
+    const centerY = canvas.height / 2 / scale;
+    const radius = 60;
+    const lineWidth = 10;
+    const startAngle = -0.5 * Math.PI;
 
     let progressDraw = 0;
 
@@ -35,7 +35,7 @@ export function graphCircle() {
         ctx.stroke();
 
         // Vẽ đường tròn tiến trình
-        let endAngle = (progressDraw / 100) * 2 * Math.PI + startAngle;
+        const endAngle = (progressDraw / 100) * 2 * Math.PI + startAngle;
         ctx.beginPath();
         ctx.arc(centerX, centerY, radius, startAngle, endAngle);
         ctx.lineWidth = lineWidth;
@@ -71,7 +71,7 @@ export function graphCircle() {
     }
 
     // Khởi tạo IntersectionObserver
-    let observer = new IntersectionObserver(
+    const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
