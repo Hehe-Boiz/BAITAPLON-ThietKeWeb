@@ -1,4 +1,4 @@
-export function goal(){
+
     let wrapcalendar = document.querySelector(".wrap-date");
     let calendarIcon = wrapcalendar.querySelector(".wrap-icon");
     let calendar = wrapcalendar.querySelector(".wrap-table");
@@ -173,6 +173,8 @@ export function goal(){
 
     //nút chỉnh sửa mục tiêu
     let btngoal = document.querySelector(".wrap-setting-goal");
+    let btngoalin = document.querySelector(".wrap-setting-goal img");
+
     let settinggoal = document.querySelector(".create-goal");
     let graph = document.getElementById("progressCircle");
 
@@ -181,16 +183,27 @@ export function goal(){
         if (settinggoal.classList.contains("hidden-goal")) {
             settinggoal.classList.remove("hidden-goal");
             settinggoal.classList.add("show-goal");
+            if (btngoalin.classList.contains("rotate0")) {
+                btngoalin.classList.remove("rotate0");
+                btngoalin.classList.add("rotate360");
+            } else {
+                btngoalin.classList.add("rotate360");
+            }
         } else {
             settinggoal.classList.remove("show-goal");
             settinggoal.classList.add("hidden-goal");
+            if (btngoalin.classList.contains("rotate360")) {
+                btngoalin.classList.remove("rotate3600");
+                btngoalin.classList.add("rotate0");
+            } else {
+                btngoalin.classList.add("rotate0");
+            }
         }
 
         // Ngăn sự kiện click lan ra ngoài (để không bị tắt ngay khi nhấn vào nút)
         event.stopPropagation();
     });
 
-    // Bắt sự kiện click ra ngoài vùng danh sách ul
     document.addEventListener("click", function (event) {
         if (
             !btngoal.contains(event.target) &&
@@ -200,6 +213,11 @@ export function goal(){
                 settinggoal.classList.remove("show-goal");
                 settinggoal.classList.add("hidden-goal");
             }
+            if (btngoalin.classList.contains("rotate360")) {
+                btngoalin.classList.remove("rotate3600");
+                btngoalin.classList.add("rotate0");
+            } else {
+                btngoalin.classList.add("rotate0");
+            }
         }
     });
-}

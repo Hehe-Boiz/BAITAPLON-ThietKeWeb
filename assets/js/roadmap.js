@@ -1,4 +1,4 @@
-export function roadmap() {
+
     // ============ Thay đổi kích thước ===============
     function adjustSVG() {
         const svg = document.querySelector(".graph");
@@ -124,4 +124,3 @@ export function roadmap() {
     });
 
     //Tải nội dung từ file json ở phần tab
-}

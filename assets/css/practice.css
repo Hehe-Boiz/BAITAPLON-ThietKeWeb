@@ -117,6 +117,7 @@ body main .content-practice {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
     background-color: white;
+    left: -105px;
 }
 
 .opition {
@@ -359,12 +360,18 @@ body main .content-practice {
     user-select: none;
 }
 
+.wrap-name:hover {
+    background-color: #b6b6b6;
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .topics .wrap-name img {
     transition: all 0.3s ease;
 }
 
 .topics {
     width: 140px;
+    position: relative;
 }
 
 .topics .wrapall {
@@ -379,6 +386,7 @@ body main .content-practice {
     z-index: 2;
     background-color: white;
     overflow: auto;
+    right: 0px;
 }
 
 .wrapall .center {
@@ -514,6 +522,7 @@ body main .content-practice {
 /* =========== Diff ========== */
 .diff {
     width: 100px;
+    position: relative;
 }
 
 .opitions-diff {
@@ -525,6 +534,7 @@ body main .content-practice {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
     background-color: white;
+    right: 0px;
 }
 
 .opition-diff {
@@ -546,6 +556,7 @@ body main .content-practice {
 /* =========== Status ========== */
 .status {
     width: 150px;
+    position: relative;
 }
 
 .opitions-status {
@@ -557,6 +568,8 @@ body main .content-practice {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     outline: 2px solid #0000;
     background-color: white;
+    right: 0px;
+    width: 170px;
 }
 
 .opition-status {

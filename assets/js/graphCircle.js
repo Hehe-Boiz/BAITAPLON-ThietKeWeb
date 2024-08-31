@@ -1,4 +1,4 @@
-export function graphCircle() {
+
     let canvas = document.getElementById("progressCircle");
 
     // Tăng độ phân giải của canvas
@@ -84,4 +84,3 @@ export function graphCircle() {
     );
 
     observer.observe(document.getElementById("progressCircle"));
-}
