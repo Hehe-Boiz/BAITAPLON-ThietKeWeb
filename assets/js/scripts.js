@@ -59,18 +59,12 @@ async function loadJS(jsFiles) {
     removeOldScripts(); // Xóa script cũ
     const scripts = scriptMap[jsFiles] || [];
     for (let scriptName of scripts) {
-        try {
-            const module = await import(`./${scriptName}`);
-            console.log(`${scriptName} đã được import thành công.`);
+        let module = await import(`./${scriptName}`);
 
-            for (let [key, value] of Object.entries(module)) {
-                if (typeof value === "function") {
-                    console.log(`Gọi hàm ${key} từ module ${scriptName}`);
-                    value();
-                }
+        for (let [key, value] of Object.entries(module)) {
+            if (typeof value === "function") {
+                value();
             }
-        } catch (error) {
-            console.error(`Lỗi khi import script: ${scriptName}`, error);
         }
     }
 }
@@ -109,24 +103,22 @@ document.querySelectorAll(".navbar li").forEach((li) => {
     li.addEventListener("click", async function () {
         let targetClass = this.classList[0];
         console.log("targetClass:", targetClass); // Xem giá trị của targetClass
-        // let map = document.querySelector(".map");
-        // if (map) {
-        //     map.remove();
-        // }
-
+        let map = document.querySelector(".map");
+        if (map) {
+            map.remove();
+        }
 
         // Tải nội dung HTML vào thẻ main và đợi cho việc tải hoàn tất
         await load("#main-content", `${targetClass}.html`);
-        
-        // if(targetClass === "roadmap"){
-        //     let divMap = document.createElement("div");
-        //     divMap.classList.add("map");
-        //     document.body.appendChild(divMap);
-        //     const mainElement = document.querySelector("#main-content");
-        //     mainElement.prepend(divMap);
-        //     await load(".map", "map.html");
-        // }
 
+        if (targetClass === "roadmap") {
+            let divMap = document.createElement("div");
+            divMap.classList.add("map");
+            document.body.appendChild(divMap);
+            const mainElement = document.querySelector("#main-content");
+            mainElement.prepend(divMap);
+            await load(".map", "map.html");
+        }
 
         // Xóa phần tử footer nếu nó đã tồn tại
         let Footer = document.querySelector("footer");

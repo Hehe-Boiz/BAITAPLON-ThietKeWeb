@@ -1,5 +1,5 @@
-// // ============ Thay đổi kích thước ===============
-export function Resize() {
+export function roadmap() {
+    // ============ Thay đổi kích thước ===============
     function adjustSVG() {
         const svg = document.querySelector(".graph");
         // Lấy kích thước hiện tại của SVG
@@ -26,11 +26,10 @@ export function Resize() {
     // Gọi hàm khi trang tải và khi cửa sổ thay đổi kích thước
     window.addEventListener("load", adjustSVG);
     window.addEventListener("resize", adjustSVG);
-}
+    adjustSVG();
 
-// ============= Tab ==============
-// ẩn tab
-export function tab() {
+    // ============= Tab ==============
+    // ẩn tab
     let escs = document.querySelectorAll(".esc");
     escs.forEach((esc) => {
         esc.addEventListener("click", function () {
@@ -76,10 +75,7 @@ export function tab() {
             bck.style.visibility = "visible";
         });
     });
-}
-// ============= Độ hoàn thành  ==============
-export function pro() {
-    const cards = document.querySelectorAll(".card-all");
+    // ============= Độ hoàn thành  ==============
     function updateProgress(card) {
         let practice = document.querySelectorAll(
             `#${card.dataset.target} tbody tr`
@@ -110,8 +106,8 @@ export function pro() {
         });
 
         observer.observe(row, {
-            attributes: true, 
-            attributeFilter: ["class"], 
+            attributes: true,
+            attributeFilter: ["class"],
         });
     }
 
@@ -126,6 +122,6 @@ export function pro() {
 
         updateProgress(card);
     });
-}
 
-//Tải nội dung từ file json ở phần tab
+    //Tải nội dung từ file json ở phần tab
+}

@@ -1,4 +1,4 @@
-export function Calendar() {
+export function goal(){
     let wrapcalendar = document.querySelector(".wrap-date");
     let calendarIcon = wrapcalendar.querySelector(".wrap-icon");
     let calendar = wrapcalendar.querySelector(".wrap-table");
@@ -134,9 +134,7 @@ export function Calendar() {
             });
         });
     }
-}
 
-export function Goal() {
     // kiểm tra xem người dùng nhập mục tiêu có đúng không
     let goal = document.querySelector(".goal");
     let resultParent = document.querySelector(".waring-goal");
@@ -172,9 +170,7 @@ export function Goal() {
             }
         }
     });
-}
 
-export function Setting() {
     //nút chỉnh sửa mục tiêu
     let btngoal = document.querySelector(".wrap-setting-goal");
     let settinggoal = document.querySelector(".create-goal");
