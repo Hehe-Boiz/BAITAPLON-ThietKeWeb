@@ -7,6 +7,11 @@
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/codepage.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-solarizedlight.css"
+            rel="stylesheet"
+        />
+
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,56 +68,86 @@
                 <div class="task">
                     <div class="nav-task">
                         <ul>
-                            <li class="is-active">Câu hỏi</li>
-                            <li>Giải pháp</li>
+                            <li class="is-active cursor ques-op">Câu hỏi</li>
+                            <li class="solu-op cursor">Giải pháp</li>
                         </ul>
                     </div>
                     <div class="body-task">
-                        <h2 class="name-task">Contains Duplicate</h2>
-                        <div class="tags">
-                            <span class="tag diff easy cursor">Easy</span>
-                            <span class="tag topic cursor">Array</span>
-                            <span class="tag topic cursor">Hash Table</span>
-                            <span class="tag topic cursor">Sorting</span>
-                        </div>
-                        <div class="desc">
-                            <p>
-                                Cho một mảng số nguyên
-                                <span class="code-wrap">nums</span>, trả về
-                                <span class="code-wrap">true</span> nếu bất kỳ
-                                giá trị nào xuất hiện ít nhất hai lần trong mảng
-                                và trả về
-                                <span class="code-wrap">false</span> nếu mọi
-                                phần tử đều khác nhau.
-                            </p>
-                        </div>
-                        <div class="exams">
-                            <div class="exam">
-                                <div class="exam-number">Ví dụ 1:</div>
-                                <div class="desc-exam">
-                                    <pre>
-<code><span class="bold">Input:</span> nums = [1,2,3,1]
-<span class="bold">Output:</span> true
-</code></pre>
+                        <div class="ques">
+                            <h2 class="name-task">Contains Duplicate</h2>
+                            <div class="tags">
+                                <span class="tag diff easy cursor">Easy</span>
+                                <span class="tag topic cursor">Array</span>
+                                <span class="tag topic cursor">Hash Table</span>
+                                <span class="tag topic cursor">Sorting</span>
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    Cho một mảng số nguyên
+                                    <span class="code-wrap">nums</span>, trả về
+                                    <span class="code-wrap">true</span> nếu bất
+                                    kỳ giá trị nào xuất hiện ít nhất hai lần
+                                    trong mảng và trả về
+                                    <span class="code-wrap">false</span> nếu mọi
+                                    phần tử đều khác nhau.
+                                </p>
+                            </div>
+                            <div class="exams">
+                                <div class="exam">
+                                    <div class="exam-number">Ví dụ 1:</div>
+                                    <div class="desc-exam">
+                                        <pre>
+    <code><span class="bold">Input:</span> nums = [1,2,3,1]
+    <span class="bold">Output:</span> true
+    </code></pre>
+                                    </div>
+                                </div>
+                                <div class="exam">
+                                    <div class="exam-number">Ví dụ 2:</div>
+                                    <div class="desc-exam">
+                                        <pre>
+    <code><span class="bold">Input:</span> nums = [1,2,3,4]
+    <span class="bold">Output:</span> false
+    </code></pre>
+                                    </div>
+                                </div>
+                                <div class="exam">
+                                    <div class="exam-number">Ví dụ 3:</div>
+                                    <div class="desc-exam">
+                                        <pre>
+    <code><span class="bold">Input:</span> nums = [1,1,1,3,3,4,3,2,4,2]
+    <span class="bold">Output:</span> false
+    </code></pre>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="exam">
-                                <div class="exam-number">Ví dụ 2:</div>
-                                <div class="desc-exam">
-                                    <pre>
-<code><span class="bold">Input:</span> nums = [1,2,3,4]
-<span class="bold">Output:</span> false
-</code></pre>
-                                </div>
+                        </div>
+                        <div class="solu">
+                            <h3 class="subject">Video giải thích</h3>
+                            <div class="wrap-vid">
+                                <iframe
+                                    width="460"
+                                    height="285"
+                                    src="https://www.youtube-nocookie.com/embed/3OamzN90kPg?si=I_Ynn3oS0u7kDJJT&amp;controls=0"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
                             </div>
-                            <div class="exam">
-                                <div class="exam-number">Ví dụ 3:</div>
-                                <div class="desc-exam">
-                                    <pre>
-<code><span class="bold">Input:</span> nums = [1,1,1,3,3,4,3,2,4,2]
-<span class="bold">Output:</span> false
-</code></pre>
-                                </div>
+                            <h3 class="subject">Code</h3>
+                            <div class="desc-exam language-cpp">
+                                <pre><code >class Solution:
+    def hasDuplicate(self, nums: List[int]) -&gt; bool:
+        hashset = set()
+
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
+    </code></pre>
                             </div>
                         </div>
                     </div>
@@ -131,7 +166,9 @@
                                 <a href="#">Python</a>
                                 <a href="#">Java</a>
                                 <a href="#">C++</a>
-                                <a href="#" class="is-option-lang">JavaScript</a>
+                                <a href="#" class="is-option-lang"
+                                    >JavaScript</a
+                                >
                                 <a href="#">C#</a>
                             </div>
                         </div>
@@ -168,29 +205,18 @@
                                     <span class="test-number">Case 3</span>
                                 </li>
                             </ul>
-                            <div class="test-content">
-                                <div class="input">
-                                    <div class="input-name">nums =</div>
-                                    <div class="input-content">
-                                        <pre><code></code></pre>
-                                    </div>
-                                </div>
-                                <div class="output-expected">
-                                    <div class="output-name-expected">
-                                        Expected output:
-                                    </div>
-                                </div>
-                                <div class="output-content-expected"></div>
-                            </div>
-                            <div class="output-user">
-                                <div class="output-name-user">Your Output:</div>
-                                <div class="output-content-user"></div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="bck hidden"></div>
+            <div class="good hidden"><div>Chúc mừng bạn đã thông qua</div></div>
         </main>
+        <!-- editor -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.min.js"></script>
+        <!-- hightlight code -->
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
         <script src="assets/js/codepage.js"></script>
         <script src="assets/js/testContent.js"></script>
     </body>

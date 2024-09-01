@@ -257,6 +257,7 @@ main {
     margin-top: 10px;
     width: 100%;
     min-width: 300px;
+    min-width: 500px;
 }
 
 .task .name-task {
@@ -345,12 +346,13 @@ main {
 
 .code {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: #fff;
     height: calc(50vh - 13px - 46px);
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 0 0 20px 20px;
     margin: 0 5px 5px 5px;
+    width: 100%;
 }
 
 .nav-code {
@@ -409,17 +411,15 @@ main {
 }
 
 .expanded {
-    max-height: 500px; 
+    max-height: 500px;
     transition: max-height 0.5s ease-in;
 }
-
 
 main .dropdown-menu .is-option-lang {
     background-color: #fff;
 }
 .is-option-lang:hover {
     background-color: #b1b1b1;
-
 }
 
 .nav-code .run-btn {
@@ -580,6 +580,82 @@ main .dropdown-menu .is-option-lang {
 }
 
 .show {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease-in-out;
+}
+/* ========= Solution ========== */
+.ques {
+    display: block;
+}
+
+.solu {
+    display: none;
+}
+
+.subject {
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.wrap-vid {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.solu .desc-exam {
+    line-height: 1.5;
+}
+
+code,
+pre {
+    background: transparent !important;
+}
+
+/* ========= Passed ========== */
+
+.bck {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.208) ;
+}
+
+.good {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 350px;
+    height: 200px;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.good div {
+    text-align: center;
+}
+
+.hidden {
+    transform: translateY(2000%);
+}
+
+.bck.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;    
+}
+
+.bck.show {
     opacity: 1;
     visibility: visible;
     transition: all 0.4s ease-in-out;

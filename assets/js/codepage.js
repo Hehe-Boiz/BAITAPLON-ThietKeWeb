@@ -123,3 +123,28 @@ document.addEventListener("click", function (event) {
         dropdown.classList.remove("expanded");
     }
 });
+
+// nút giải pháp
+let navTaskOpinions = document.querySelectorAll(".nav-task li");
+let taskContent = document.querySelector(".ques");
+let soluContent = document.querySelector(".solu");
+
+navTaskOpinions.forEach((opinion) => {
+    opinion.addEventListener("click", () => {
+        navTaskOpinions.forEach((opi) => {
+            opi.classList.remove("is-active");
+        });
+        opinion.classList.add("is-active");
+        if (opinion.classList.contains("ques-op")) {
+            taskContent.style.display = "block";
+            soluContent.style.display = "none";
+        } else {
+            taskContent.style.display = "none";
+            soluContent.style.display = "block";
+        }
+    });
+});
+
+
+
+

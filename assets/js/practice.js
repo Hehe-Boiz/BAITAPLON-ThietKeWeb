@@ -156,6 +156,7 @@ function displayExercises(page, filteredExercises = exercises) {
         let nameCell = document.createElement("td");
         let divName = document.createElement("div");
         let aPrb = document.createElement("a");
+        aPrb.href = "code.html";
         divName.classList.add("center", "center-prb", "name");
         aPrb.textContent = exercise.name;
         divName.appendChild(aPrb);
