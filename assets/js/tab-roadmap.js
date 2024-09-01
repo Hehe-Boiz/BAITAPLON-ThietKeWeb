@@ -2,7 +2,7 @@ fetch("./json/roadmap.json")
     .then((response) => response.json())
     .then((info) => {
         // ẩn tab
-
+        let zIndex = 1000;
         let escs = document.querySelectorAll(".esc");
         escs.forEach((esc) => {
             esc.addEventListener("click", function () {
@@ -45,18 +45,33 @@ fetch("./json/roadmap.json")
                     let wrapVid = document.querySelector(".colum .wrap");
                     wrapVid.innerHTML = "";
                     topicData.lessons.forEach((lesson) => {
-                        const lessonDiv = document.createElement("div");
-                        lessonDiv.className = "row row-vid";
-                        lessonDiv.innerHTML = `
-                        <span class="check-pre">
-                            <i class="fa-solid fa-check"></i>
-                        </span>
-                        <a class="vid" href="${lesson.youtube_link}">
-                            <img class="play" src="assets/icons/play.svg" alt="" />
-                            <p class="name">${lesson.lesson_name}</p>
-                        </a>
-                    `;
-                        wrapVid.appendChild(lessonDiv);
+                        const wrapDivVid = document.createElement("div");
+                        wrapDivVid.className = "wrap-row-vid";
+                        
+                        wrapDivVid.innerHTML = `
+                            <div class="wrap-vid">
+                                <iframe
+                                    src="${lesson.iframe.src}"
+                                    title="${lesson.iframe.title}"
+                                    frameborder="${lesson.iframe.frameborder}"
+                                    allow="${lesson.iframe.allow}"
+                                    referrerpolicy="${lesson.iframe.referrerpolicy}"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="row row-vid">
+                                <span class="check-pre"><i class="fa-solid fa-check"></i></span>
+                                <a class="vid" href="${lesson.youtube_link}">
+                                    <img class="play" src="assets/icons/play.svg" alt="" />
+                                    <p class="name">${lesson.lesson_name}</p>
+                                </a>
+                            </div>
+                        `;
+                        let divWrapall = document.createElement("div");
+                        divWrapall.className = "wrapall-vid";
+                        divWrapall.style.zIndex = zIndex--;
+                        divWrapall.appendChild(wrapDivVid);
+                        wrapVid.appendChild(divWrapall);
                     });
                     let practices = document.querySelector("table tbody");
                     practices.innerHTML = "";

@@ -131,14 +131,64 @@ progress::-webkit-progress-value {
 .row-vid {
     padding: 10px 30px 10px 20px;
     width: 600px;
-    justify-content: space-between;
-    box-shadow: 0 0.5em 1em -0.125em #0a0a0a1a, 0 0 0 1px #0a0a0a05;
     background-color: #202225;
+    justify-content: space-between;
     border-radius: 10px;
 }
 
 .row-vid + .row-vid {
     margin-top: 10px;
+}
+
+.wrap-vid {
+    position: absolute;
+    left: 15%;
+    height: 225px;
+    transform: translateY(100%); /* Ẩn video bằng cách dịch xuống dưới */
+    transition: transform 0.5s ease-in-out;
+}
+
+.wrap-vid iframe {
+    width: 400px;
+    height: 225px;
+    margin: 20px 30px 10px;
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+}
+
+.wrapall-vid {
+    position: relative;
+    height: 67px;
+    z-index: 100000000;
+}
+.wrap-row-vid {
+    box-shadow: 0 0.5em 1em -0.125em #0a0a0a1a, 0 0 0 1px #0a0a0a05;
+    background-color: #202225;
+    border-radius: 10px;
+    position: relative;
+    height: 57px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.wrap-row-vid:hover {
+    height: 300px; /* Mở rộng vùng chứa khi hover */
+    transform-origin: bottom; /* Điểm gốc của phép biến đổi nằm ở phía dưới */
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+    position: absolute;
+}
+
+.wrap-row-vid:hover iframe {
+    visibility: visible; 
+}
+
+.wrap-row-vid:hover .wrap-vid {
+    transform: translateY(17%);
+}
+
+.wrap-row-vid .row-vid {
+    position: relative;
+    z-index: 10000;
 }
 
 .colum {
