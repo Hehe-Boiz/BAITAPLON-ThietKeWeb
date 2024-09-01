@@ -85,6 +85,7 @@
             calendarBody.appendChild(row);
         }
         attachDayClickEvents();
+        attachDayClickEventsGoal()
     }
 
     // do chỉ gắn sự kiến click vào lần đầu thoi nên cần phải gắn lại khi đổi lịch
