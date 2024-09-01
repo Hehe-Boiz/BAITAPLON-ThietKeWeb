@@ -165,7 +165,7 @@ function displayExercises(page, filteredExercises = exercises) {
         let nameCell = document.createElement("td");
         let divName = document.createElement("div");
         let aPrb = document.createElement("a");
-        aPrb.href = "code.html";
+        // aPrb.href = "code.html";
         if (exercise.access === "Premium") {
             aPrb.classList.add("premium");
         }
@@ -242,6 +242,8 @@ function displayExercises(page, filteredExercises = exercises) {
             }
         });
     });
+    checkLogin();
+
 }
 
 // Khởi tạo khi trang web tải xong
@@ -676,6 +678,21 @@ function deleteTagSelec(content) {
         console.log(span);
         if (span && span.textContent.trim() === content) {
             select.remove();
+        }
+    });
+}
+
+function checkLogin() {
+    const isLoggedIn = false; // Thay đổi giá trị này dựa trên trạng thái thực tế của người dùng
+
+    document.querySelectorAll("a.premium").forEach((link) => {
+        if (!isLoggedIn) {
+            link.addEventListener("click", function (event) {
+                let tr = link.closest("tr");
+
+                event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+                alert("Bạn cần đăng nhập để truy cập trang này.");
+            });
         }
     });
 }
