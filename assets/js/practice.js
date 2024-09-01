@@ -143,20 +143,32 @@ function displayExercises(page, filteredExercises = exercises) {
         let cellCheck = document.createElement("td");
         let divcheck = document.createElement("div");
         divcheck.classList.add("center");
-        let check = document.createElement("span");
-        check.classList.add("check");
-        let tick = document.createElement("i");
-        tick.classList.add("fa-solid", "fa-check");
-        check.appendChild(tick);
-        divcheck.appendChild(check);
-        cellCheck.appendChild(divcheck);
-        row.appendChild(cellCheck);
+        if (exercise.access === "Premium") {
+            let tick = document.createElement("i");
+            tick.classList.add("fa-solid", "fa-lock");
+            tick.style.color = "#FFD43B";
+            divcheck.appendChild(tick);
+            cellCheck.appendChild(divcheck);
+            row.appendChild(cellCheck);
+        } else {
+            let check = document.createElement("span");
+            check.classList.add("check");
+            let tick = document.createElement("i");
+            tick.classList.add("fa-solid", "fa-check");
+            check.appendChild(tick);
+            divcheck.appendChild(check);
+            cellCheck.appendChild(divcheck);
+            row.appendChild(cellCheck);
+        }
 
         // Cột tên bài tập
         let nameCell = document.createElement("td");
         let divName = document.createElement("div");
         let aPrb = document.createElement("a");
         aPrb.href = "code.html";
+        if (exercise.access === "Premium") {
+            aPrb.classList.add("premium");
+        }
         divName.classList.add("center", "center-prb", "name");
         aPrb.textContent = exercise.name;
         divName.appendChild(aPrb);

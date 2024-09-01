@@ -280,6 +280,9 @@ body main .content-practice {
     position: relative;
     z-index: 1;
 }
+.fa-lock{
+    font-size: 2rem
+}
 
 /* =========== Nav Table ========== */
 .nav-table {
@@ -1034,4 +1037,8 @@ progress::-moz-progress-bar {
 
 .sidebar-right .passed {
     font-size: 1.3rem;
+}
+
+table a.premium {
+    color: #ffac2f;
 }
