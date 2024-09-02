@@ -1,0 +1,127 @@
+main *{
+    color:black
+}
+.flex{
+    display: flex;
+}
+.top h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.top .search-box{
+    width: 300px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgb(201, 199, 199),-12px -12px 12px white;
+}
+.top .search-box>svg{
+    fill: black;
+}
+.top input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto 30px;
+    padding: 0 50px;
+}
+.info{
+    padding: 0 50px;
+    gap: 20px;
+    height: 1310px;
+}
+
+.main-content{
+    width: 70%;
+    border: 1px solid red;
+    background-color: lightblue;
+    height: 100%;
+}
+.side-bar{
+    width: 30%;
+    border: 1px solid red;
+}
+.post{
+    background-color: rgb(242, 230, 209);
+    margin-bottom: 5px;
+}
+.post .img-post{
+    position: relative;
+    width: 30%;
+    height: 250px;
+}
+.all-posts{
+    padding: 20px;
+}
+.post .img-post img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.post .post-content{
+    width: 70%;
+    padding-left: 20px ;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+.post .post-content h1{
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.post .post-content p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.author{
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.author>svg{
+    fill: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.weekly-hightlight{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.must-read{
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.weekly-hightlight h1{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.must-read h1{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.mini-post{
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.mini-post h2{
+    padding:0 10px;
+    width: 70%;
+    font-size: 20px;
+}
+.mini-post .mini-img{
+    position: relative;
+    width: 30%;
+    height: 100px;
+}
+.mini-post .mini-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
