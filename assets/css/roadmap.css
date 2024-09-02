@@ -375,3 +375,7 @@ td .hard {
     transform: translate(0);
     transition: all  .4s ease;
 }
+
+main {
+    overflow: hidden;
+}

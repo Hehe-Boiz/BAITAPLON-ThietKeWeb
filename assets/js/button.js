@@ -41,3 +41,18 @@ checkspre.forEach(function (check) {
         }
     });
 });
+// ============= Chặn Premium ==============
+function checkLogin() {
+    const isLoggedIn = false; // Thay đổi giá trị này dựa trên trạng thái thực tế của người dùng
+
+    document.querySelectorAll("a.premium").forEach((link) => {
+        if (!isLoggedIn) {
+            link.addEventListener("click", function (event) {
+                let tr = link.closest("tr");
+
+                event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+                alert("Bạn cần đăng nhập để truy cập trang này.");
+            });
+        }
+    });
+}
