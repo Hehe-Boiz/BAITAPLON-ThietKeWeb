@@ -251,6 +251,32 @@ progress::-moz-progress-bar {
     box-shadow: 0px 1px 3px #00000014, 0px 6px 16px #00000037;
 }
 
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate0 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate360 {
+    animation: rotate360 0.5s ease-in-out;
+}
+
+.rotate0 {
+    animation: rotate0 0.5s ease-in-out;
+}
+
 .create-goal .subject {
     font-size: 2rem;
     font-weight: 600;
@@ -342,6 +368,7 @@ progress::-moz-progress-bar {
     padding: 2rem 1rem;
     border-radius: 30px;
     /* transform: scale(0.8); */
+    z-index: 2;
 }
 
 .date-table {
@@ -568,6 +595,10 @@ td:empty {
     font-weight: 600;
     border-radius: 15px;
 }
+.btn-challen span:hover {
+    background-color: rgb(33, 133, 220);
+    transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* =========== Streak ========== */
 
 .user-streak {
@@ -681,7 +712,8 @@ td:empty {
 }
 
 .rank-label .info {
-    margin-left: 30px;
+    margin-left: 40px;
+    min-width: 80px;
 }
 
 .rank-label .hard {
@@ -690,36 +722,37 @@ td:empty {
 
 .rank-label .medium {
     margin-left: 35px;
-
 }
 
 .rank-label .easy {
     margin-left: 30px;
 }
 .label-rank {
-    margin-left: 55px;
+    margin-left: 15px;
 }
-.label-amount{
-    margin-left: 5px;
+.label-amount {
+    margin-left: 15px;
 }
 
 .rank-label span {
-    padding: 1.5rem;
+    padding: 1rem;
+}
+
+.label-avatar {
+    margin-left: 10px;
 }
 
 .ranking {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    gap: 30px;
     padding: 1.3rem 0;
     padding-top: 2rem;
 }
 
-.ranking:nth-child(even){
+.ranking:nth-child(even) {
     background-color: rgba(247, 248, 250, 1);
 }
-
 
 .number {
     font-size: 2rem;
@@ -741,7 +774,7 @@ td:empty {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
 .amount-up {
@@ -761,7 +794,8 @@ td:empty {
 }
 .ranking-avartar {
     position: relative;
-    margin-left: 30px;
+    margin-left: 65px;
+    margin-right: 30px;
 }
 
 .wrap-avatar .avt-rank {
@@ -778,6 +812,7 @@ td:empty {
 }
 
 .ranking-wrap {
+    /* width: 400px; */
     margin-bottom: 5px;
     height: 100%;
     margin-left: 30px;
@@ -798,7 +833,7 @@ td:empty {
 }
 
 .ranking .quantity {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 1.8rem;
     font-weight: 500;
 }

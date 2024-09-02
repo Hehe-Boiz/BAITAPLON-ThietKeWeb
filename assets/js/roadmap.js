@@ -1,4 +1,4 @@
-export function roadmap() {
+
     // ============ Thay đổi kích thước ===============
     function adjustSVG() {
         const svg = document.querySelector(".graph");
@@ -29,52 +29,52 @@ export function roadmap() {
     adjustSVG();
 
     // ============= Tab ==============
-    // ẩn tab
-    let escs = document.querySelectorAll(".esc");
-    escs.forEach((esc) => {
-        esc.addEventListener("click", function () {
-            let tab = esc.closest(".tab");
-            let bck = document.querySelector(".wrap-all");
-            tab.classList.remove("active");
-            tab.classList.add("off");
+    // // ẩn tab
+    // let escs = document.querySelectorAll(".esc");
+    // escs.forEach((esc) => {
+    //     esc.addEventListener("click", function () {
+    //         let tab = esc.closest(".tab");
+    //         let bck = document.querySelector(".wrap-all");
+    //         tab.classList.remove("active");
+    //         tab.classList.add("off");
 
-            bck.style.visibility = "hidden";
-        });
-    });
+    //         bck.style.visibility = "hidden";
+    //     });
+    // });
 
-    let bck = document.querySelector(".wrap-all");
-    bck.addEventListener("click", function () {
-        let tabs = document.querySelectorAll(".tab");
-        tabs.forEach((tab) => {
-            if (tab.classList.contains("active")) {
-                tab.classList.remove("active");
-                tab.classList.add("off");
-            }
-        });
-        bck.style.visibility = "hidden";
-    });
+    // let bck = document.querySelector(".wrap-all");
+    // bck.addEventListener("click", function () {
+    //     let tabs = document.querySelectorAll(".tab");
+    //     tabs.forEach((tab) => {
+    //         if (tab.classList.contains("active")) {
+    //             tab.classList.remove("active");
+    //             tab.classList.add("off");
+    //         }
+    //     });
+    //     bck.style.visibility = "hidden";
+    // });
 
-    // hiện tab tương ứng
-    const cards = document.querySelectorAll(".card-all");
-    // Duyệt qua từng thẻ card và gắn sự kiện click
-    cards.forEach((card) => {
-        card.addEventListener("click", function () {
-            let bck = document.querySelector(".wrap-all");
+    // // hiện tab tương ứng
+    // const cards = document.querySelectorAll(".card-all");
+    // // Duyệt qua từng thẻ card và gắn sự kiện click
+    // cards.forEach((card) => {
+    //     card.addEventListener("click", function () {
+    //         let bck = document.querySelector(".wrap-all");
 
-            // Hiện sidebar tương ứng với card được click
-            // let targetSidebar = document.querySelector(`.${this.dataset.target}`);
-            let tab = document.getElementById(this.dataset.target);
+    //         // Hiện sidebar tương ứng với card được click
+    //         // let targetSidebar = document.querySelector(`.${this.dataset.target}`);
+    //         let tab = document.getElementById(this.dataset.target);
 
-            console.log(this.dataset.target);
-            // tab.style.opacity = "1";
-            // tab.style.visibility = "visible";
-            // tab.style.transform = "translate(0)";
-            // tab.style.transition = "all  .4s ease";
-            tab.classList.add("active");
+    //         console.log(this.dataset.target);
+    //         // tab.style.opacity = "1";
+    //         // tab.style.visibility = "visible";
+    //         // tab.style.transform = "translate(0)";
+    //         // tab.style.transition = "all  .4s ease";
+    //         tab.classList.add("active");
 
-            bck.style.visibility = "visible";
-        });
-    });
+    //         bck.style.visibility = "visible";
+    //     });
+    // });
     // ============= Độ hoàn thành  ==============
     function updateProgress(card) {
         let practice = document.querySelectorAll(
@@ -110,8 +110,8 @@ export function roadmap() {
             attributeFilter: ["class"],
         });
     }
-
-    cards.forEach(function (card) {
+    const cardalls = document.querySelectorAll(".card-all");
+    cardalls.forEach(function (card) {
         let practice = document.querySelectorAll(
             `#${card.dataset.target} tbody tr`
         );
@@ -123,5 +123,43 @@ export function roadmap() {
         updateProgress(card);
     });
 
-    //Tải nội dung từ file json ở phần tab
-}
+
+    //thu phóng roadmap
+    
+
+    var scale = 1,
+        panning = false,
+        pointX = 0,
+        pointY = 0,
+        start = { x: 0, y: 0 },
+        zoom = document.querySelector(".view");
+      function setTransform() {
+        zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+      }
+      zoom.onmousedown = function (e) {
+        e.preventDefault();
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        panning = true;
+      }
+      zoom.onmouseup = function (e) {
+        panning = false;
+      }
+      zoom.onmousemove = function (e) {
+        e.preventDefault();
+        if (!panning) {
+          return;
+        }
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+      }
+      zoom.onwheel = function (e) {
+        e.preventDefault();
+        var xs = (e.clientX - pointX) / scale,
+          ys = (e.clientY - pointY) / scale,
+          delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+        setTransform();
+      }

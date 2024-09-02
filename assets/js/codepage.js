@@ -123,3 +123,182 @@ document.addEventListener("click", function (event) {
         dropdown.classList.remove("expanded");
     }
 });
+
+// nút giải pháp
+let navTaskOpinions = document.querySelectorAll(".nav-task li");
+let taskContent = document.querySelector(".ques");
+let soluContent = document.querySelector(".solu");
+
+navTaskOpinions.forEach((opinion) => {
+    opinion.addEventListener("click", () => {
+        navTaskOpinions.forEach((opi) => {
+            opi.classList.remove("is-active");
+        });
+        opinion.classList.add("is-active");
+        if (opinion.classList.contains("ques-op")) {
+            taskContent.style.display = "block";
+            soluContent.style.display = "none";
+        } else {
+            taskContent.style.display = "none";
+            soluContent.style.display = "block";
+        }
+    });
+});
+
+// tắt chúc mừng
+let goodpass = document.querySelector(".good");
+let bckgood = document.querySelector(".bck");
+function hiddenGood() {
+    console.log("thanh cong");
+    goodpass.classList.add("hidden");
+    bckgood.classList.remove("show");
+    bckgood.classList.add("hidden");
+}
+
+goodpass.addEventListener("click", hiddenGood);
+bckgood.addEventListener("click", hiddenGood);
+
+// tạo nội dung cho tab
+// Hàm để đọc dữ liệu JSON từ file
+async function loadExercises() {
+    let response = await fetch("./json/practice.json");
+    exercises = await response.json();
+    displayExercises(exercises);
+}
+
+// Hiển thị bài tập trên trang hiện tại
+function displayExercises(exercises) {
+    let tbody = document.querySelector(".pracice-table");
+    tbody.innerHTML = "";
+    exercises.forEach((exercise, index) => {
+        let row = document.createElement("tr");
+
+        // cột check
+        let cellCheck = document.createElement("td");
+        let divcheck = document.createElement("div");
+        divcheck.classList.add("center");
+        let check = document.createElement("span");
+        check.classList.add("check");
+        let tick = document.createElement("i");
+        tick.classList.add("fa-solid", "fa-check");
+        check.appendChild(tick);
+        divcheck.appendChild(check);
+        cellCheck.appendChild(divcheck);
+        row.appendChild(cellCheck);
+
+        // Cột tên bài tập
+        let nameCell = document.createElement("td");
+        let divName = document.createElement("div");
+        let aPrb = document.createElement("a");
+        aPrb.href = "code.html";
+        divName.classList.add("center", "center-prb", "name");
+        aPrb.textContent = exercise.name;
+        divName.appendChild(aPrb);
+        nameCell.appendChild(divName);
+        row.appendChild(nameCell);
+
+        // Cột tỷ lệ thông qua
+        let passingRateCell = document.createElement("td");
+        let passingRate =
+            ((exercise.passed / exercise.total) * 100).toFixed(2) + "%";
+        passingRateCell.textContent = passingRate;
+        passingRateCell.classList.add("center");
+        passingRateCell.classList.add("acc");
+        row.appendChild(passingRateCell);
+
+        // Cột độ khó
+        let difficultyCell = document.createElement("td");
+        let divDiff = document.createElement("div");
+        divDiff.classList.add("center");
+        divDiff.textContent = exercise.diff;
+        difficultyCell.appendChild(divDiff);
+        row.appendChild(difficultyCell);
+
+        tbody.appendChild(row);
+    });
+    // độ khó
+    let table = document.querySelector(".tbl-prac");
+    let rows = table.querySelector(".pracice-table").getElementsByTagName("tr");
+
+    for (let i = 0; i < rows.length; i++) {
+        let td = rows[i].getElementsByTagName("td")[3].querySelector("div");
+        let exerciseLevel = td.textContent;
+
+        if (exerciseLevel === "Easy") {
+            td.classList.add("easy");
+        } else if (exerciseLevel === "Medium") {
+            td.classList.add("medium");
+        } else {
+            td.classList.add("hard");
+        }
+    }
+    // Đánh số thứ tự
+    for (let i = 0; i < rows.length; i++) {
+        let exerciseNameCell = rows[i]
+            .getElementsByTagName("td")[1]
+            .querySelector("div")
+            .querySelector("a");
+        let exerciseName = exerciseNameCell.textContent;
+        let numberOrder = i + 1;
+        exerciseNameCell.textContent = numberOrder + ". " + exerciseName;
+    }
+    let checks = document.querySelectorAll(".check");
+    checks.forEach(function (check) {
+        check.addEventListener("click", function () {
+            let icon = check.querySelector("i");
+            let tr = check.closest("tr");
+
+            // Kiểm tra nếu icon tồn tại
+            if (icon) {
+                if (icon.style.opacity === "1") {
+                    tr.classList.remove("is-complete");
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                } else {
+                    icon.style.opacity = "1";
+                    check.classList.add("is-success");
+                    tr.classList.add("is-complete");
+                }
+            } else {
+                console.warn("Không tìm thấy thẻ <i> gần nhất");
+            }
+        });
+    });
+}
+
+// Khởi tạo khi trang web tải xong
+loadExercises();
+
+let escs = document.querySelectorAll(".icon-close");
+escs.forEach((esc) => {
+    esc.addEventListener("click", function () {
+        let tab = esc.closest(".tab");
+        let bck = document.querySelector(".wrap-all");
+        tab.classList.remove("active");
+        tab.classList.add("off");
+
+        bck.style.visibility = "hidden";
+    });
+});
+
+let bck = document.querySelector(".wrap-all");
+bck.addEventListener("click", function () {
+    let tabs = document.querySelectorAll(".tab");
+    tabs.forEach((tab) => {
+        if (tab.classList.contains("active")) {
+            tab.classList.remove("active");
+            tab.classList.add("off");
+        }
+    });
+    bck.style.visibility = "hidden";
+});
+
+let list = document.querySelector(".list-btn");
+list.addEventListener("click", function () {
+    let tab = document.querySelector(".tab");
+    if (tab.classList.contains("off")) {
+        tab.classList.remove("off");
+        tab.classList.add("active");
+    }
+    bck.style.visibility = "visible";
+});

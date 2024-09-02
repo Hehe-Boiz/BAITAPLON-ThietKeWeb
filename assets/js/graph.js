@@ -38,7 +38,7 @@ function drawChart() {
     // Vẽ lưới và nhãn
     ctx.clearRect(0, 0, canvas.width / scale, canvas.height / scale); // Chỉ xóa phần hiển thị thực tế
     ctx.beginPath();
-    ctx.lineTo(canvas.width / scale - padding, canvas.height / scale - padding);
+    ctx.lineTo(canvas.width / scale - padding , canvas.height / scale - padding);
     ctx.strokeStyle = "#d8d8de";
     ctx.stroke();
     ctx.fillStyle = "black";
@@ -50,7 +50,7 @@ function drawChart() {
         ctx.fillText(i, padding - 30, y + 5);
         ctx.beginPath();
         ctx.moveTo(padding, y);
-        ctx.lineTo(canvas.width / scale - padding, y);
+        ctx.lineTo(canvas.width / scale - padding + 30, y);
         ctx.strokeStyle = "#d8d8de";
         ctx.stroke();
     }
@@ -58,7 +58,7 @@ function drawChart() {
     // Nhãn trục X
     data.labels.forEach((label, index) => {
         const x = padding + index * scaleX;
-        ctx.fillText(label, x - 10, canvas.height / scale - padding + 20);
+        ctx.fillText(label, x , canvas.height / scale - padding + 20);
     });
 
     // Vẽ biểu đồ
