@@ -125,61 +125,41 @@
 
 
     //thu phóng roadmap
-    const svg = document.querySelector("svg");
+    
 
-    let scale = 1;
-    let translateX = 0;
-    let translateY = 0;
-    let startX, startY;
-    let isPanning = false;
-
-    // Hàm cập nhật matrix
-    function updateTransform() {
-        const matrix = `matrix(${scale}, 0, 0, ${scale}, ${translateX}, ${translateY})`;
-        svg.setAttribute("transform", matrix);
-    }
-
-    // Sự kiện phóng to/thu nhỏ tại vị trí con trỏ chuột
-    svg.addEventListener("wheel", function (event) {
-        event.preventDefault();
-        const zoomFactor = 0.1;
-
-        // Lấy tọa độ chuột tương đối với SVG
-        const point = svg.createSVGPoint();
-        point.x = event.clientX;
-        point.y = event.clientY;
-        const svgP = point.matrixTransform(
-            svg.getScreenCTM().inverse()
-        );
-
-        // Xác định scale mới
-        const oldScale = scale;
-        scale *=
-            event.deltaY < 0 ? 1 + zoomFactor : 1 / (1 + zoomFactor);
-
-        // Điều chỉnh vị trí dịch chuyển để phóng to/thu nhỏ tại vị trí con trỏ chuột
-        translateX += (svgP.x - translateX) * (1 - scale / oldScale);
-        translateY += (svgP.y - translateY) * (1 - scale / oldScale);
-
-        updateTransform();
-    });
-
-    // Sự kiện bắt đầu kéo thả
-    svg.addEventListener("mousedown", function (event) {
-        isPanning = true;
-        startX = event.clientX - translateX;
-        startY = event.clientY - translateY;
-    });
-
-    // Sự kiện kết thúc kéo thả
-    svg.addEventListener("mouseup", function () {
-        isPanning = false;
-    });
-
-    // Sự kiện di chuyển chuột (kéo thả)
-    svg.addEventListener("mousemove", function (event) {
-        if (!isPanning) return;
-        translateX = event.clientX - startX;
-        translateY = event.clientY - startY;
-        updateTransform();
-    });
+    var scale = 1,
+        panning = false,
+        pointX = 0,
+        pointY = 0,
+        start = { x: 0, y: 0 },
+        zoom = document.querySelector(".view");
+      function setTransform() {
+        zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+      }
+      zoom.onmousedown = function (e) {
+        e.preventDefault();
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        panning = true;
+      }
+      zoom.onmouseup = function (e) {
+        panning = false;
+      }
+      zoom.onmousemove = function (e) {
+        e.preventDefault();
+        if (!panning) {
+          return;
+        }
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+      }
+      zoom.onwheel = function (e) {
+        e.preventDefault();
+        var xs = (e.clientX - pointX) / scale,
+          ys = (e.clientY - pointY) / scale,
+          delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+        setTransform();
+      }
