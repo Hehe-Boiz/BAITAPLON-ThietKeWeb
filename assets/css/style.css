@@ -41,11 +41,11 @@ a {
 }
 
 .content {
-    width: 70vw;
-    max-width: calc(70vw - 48px);
-    min-width: 1100px;
+    width: 1110px;
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 .logo {
@@ -55,6 +55,7 @@ a {
     font-family: "ITC Bauhaus";
     user-select: none;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .bold {
@@ -94,7 +95,8 @@ header {
 .navbar {
     display: flex;
     padding: 12px 0;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
 .navbar .logo {
@@ -105,7 +107,7 @@ header {
     display: flex;
     align-items: center;
     gap: 25px;
-    /* margin-left: 170px; */
+    margin-left: 170px;
 }
 
 .navbar ul a {
@@ -166,7 +168,7 @@ header {
 .navbar .actions {
     display: flex;
     align-items: center;
-    /* margin-left: auto; */
+    margin-left: auto;
 }
 
 .navbar .action-link {

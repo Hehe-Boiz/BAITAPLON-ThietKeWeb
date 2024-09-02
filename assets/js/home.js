@@ -3,7 +3,7 @@ const canvas = document.getElementById("progressCircle");
 // Tăng độ phân giải của canvas
 const scale = window.devicePixelRatio * 3;
 
-canvas.width = canvas.clientWidth * scale;
+canvas.width = canvas.clientWidth * scale/1.9;
 canvas.height = (canvas.clientHeight * scale) / 1.3;
 
 canvas.style.width = `${canvas.clientWidth / 3}px`;

@@ -1,6 +1,6 @@
 .row {
     width: 80%;
-    min-width: 1000px;
+    /* min-width: 1000px; */
     max-width: 1100px;
 }
 
@@ -34,6 +34,7 @@ main .row-top {
     align-items: center;
     flex-direction: column;
     position: relative;
+    flex-grow: 1;
 }
 
 .user-profile {
@@ -49,7 +50,7 @@ main .row-top {
     display: flex;
     gap: 30px;
     align-items: center;
-    gap: 90px;
+    gap: 40px;
 }
 
 .avatar-user {
@@ -111,7 +112,7 @@ main .row-top {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    gap: 100px;
+    gap: 50px;
 }
 
 .wrap-pro {
@@ -688,11 +689,12 @@ td:empty {
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     border-radius: 20px;
     margin: 0 auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 80%;
-    min-width: 1000px;
-    max-width: 1100px;
+    /* min-width: 1000px; */
+    max-width: 1000px;
     padding-bottom: 70px;
+    transform: scale(0.87);
 }
 
 .ranking-wrapall .sub-title {

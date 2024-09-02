@@ -1,0 +1,52 @@
+/* PC */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+    /* ========= Row User Profile ========== */
+    .row {
+        width: 100%;
+    }
+    .row-top {
+        flex-direction: column-reverse;
+    }
+    .wrap-goalall {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .user-profile {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row-challen-streak {
+        /* flex-direction: column-reverse; */
+    }
+    .row-challen-streak .challenge .center-prb {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-clamp: 1;
+        height: 25px;
+        line-height: 1.4;
+    }
+    .user-streak .desc p {
+        text-align: center;
+        line-height: 1.5;
+    }
+    .ranking-wrapall {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+}

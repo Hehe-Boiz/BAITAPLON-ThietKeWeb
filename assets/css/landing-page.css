@@ -15,6 +15,24 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.scrolled-to {
+    scroll-margin-top: 70px; /* Điều chỉnh giá trị này tùy theo chiều cao của navbar */
+}
 /* ========= Common ========== */
 a {
     text-decoration: none;
@@ -28,6 +46,7 @@ a {
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 .logo {
@@ -188,7 +207,7 @@ main {
     color: black;
     text-align: center;
     font-size: 1.7rem;
-    font-weight: 500;
+    font-weight: 600;
     z-index: 10;
 }
 
@@ -282,10 +301,12 @@ main {
 }
 
 .bck {
-    max-width: 800px;
-    width: 70vh;
+    max-width: 600px;
+    width: 70vw;
+    min-width: 400px;
     position: absolute;
-    left: -15%;
+    left: -260px;
+    /* left: -15%; */
     bottom: 5%;
     z-index: 1;
 }
@@ -366,7 +387,7 @@ canvas {
 
 .course .info {
     width: 50%;
-    padding: 70px 0 60px 135px;
+    padding: 70px 20px 60px 95px;
 }
 
 .course .logo {
@@ -469,6 +490,9 @@ canvas {
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
+}
+.comment .items::-webkit-scrollbar{
+    height: 5px;
 }
 
 .comment .items li {

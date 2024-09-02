@@ -93,6 +93,7 @@ let observer = new IntersectionObserver(
 );
 
 observer.observe(canvas);
+window.addEventListener("resize", animate(70))
 
 let days = document.querySelectorAll(".center-date");
 let today = new Date();
