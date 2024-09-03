@@ -2,7 +2,11 @@ const canvas = document.getElementById("progressCircle");
 
 // Tăng độ phân giải của canvas
 const scale = window.devicePixelRatio * 3;
-if (window.innerWidth < 991.98) {
+if(window.innerWidth > 991.98 && window.innerWidth < 1100){
+    canvas.width = (canvas.clientWidth * scale) / 1.4;
+    canvas.height = (canvas.clientHeight * scale) / 1.305;
+}
+else if (window.innerWidth < 991.98) {
     canvas.width = (canvas.clientWidth * scale) / 1.05;
     canvas.height = (canvas.clientHeight * scale) / 1.105;
 } else if (window.innerWidth > 992) {

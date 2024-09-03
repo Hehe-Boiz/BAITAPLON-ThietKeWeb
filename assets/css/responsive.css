@@ -11,6 +11,16 @@
     }
 }
 
+@media screen and (max-width: 1100px) and (min-width: 990px) {
+    canvas {
+        width: 190px !important;
+        height: 180px !important;
+    }
+    footer .row-top{
+        gap: 150px;
+    }
+}
+
 /* Tablet & mobile */
 @media screen and (max-width: 991.98px) {
     .navbar ul {
@@ -48,7 +58,7 @@
         background: #fff;
         z-index: 2;
         padding: 60px;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
         transition: 0.5s ease;
         border-radius: 0 20px 20px 0;
     }
@@ -153,7 +163,7 @@
     }
     .menu-drawer .row {
         align-items: center;
-        gap: 65px;
+        gap: 205px;
     }
     .menu-drawer {
         inset: 0 25% 0 0;
