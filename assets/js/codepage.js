@@ -302,3 +302,41 @@ list.addEventListener("click", function () {
     }
     bck.style.visibility = "visible";
 });
+
+//Nút thảo luận
+// function showComent() {
+//     let btnCommnet = document.querySelector(".user-ques");
+//     let comments = document.querySelector(".wrapall-comment");
+//     btnCommnet.addEventListener("click", () => {
+//         if (comments.classList.contains("hidden-comments")) {
+//             comments.classList.remove("hidden-comments");
+//             comments.classList.add("show-comments");
+//         }
+//         else {
+//             comments.classList.remove("show-comments");
+//             comments.classList.add("hidden-comments");
+//         }
+//     });
+// }
+// showComent()
+function showComent() {
+    let btnCommnet = document.querySelector(".user-ques");
+    let comments = document.querySelector(".wrapall-comment");
+    let iconArrow = document.querySelector(".arrow i")
+    
+    btnCommnet.addEventListener("click", () => {
+        if (comments.classList.contains("hidden-comments")) {
+            comments.classList.remove("hidden-comments");
+            comments.classList.add("show-comments");
+            iconArrow.style.transform = "rotate(-180deg)";
+
+        } else {
+
+            comments.classList.remove("show-comments");
+            comments.classList.add("hidden-comments");
+            iconArrow.style.transform="rotate(0deg)";
+        }
+    });
+}
+
+showComent();
