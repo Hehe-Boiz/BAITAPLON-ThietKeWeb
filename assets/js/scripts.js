@@ -104,3 +104,27 @@
 //     loadJS("home");
 // });
 
+//=============== Chuyển code ==============
+function copyNav() {
+    const pcNav = document.querySelector(".pc-nav");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    mobileNav.innerHTML = pcNav.innerHTML;
+}
+copyNav();
+
+//=============== Bật menu trên tablet và điện thoại ==============
+
+let listIcon = document.querySelector(".toggle-menu")
+let menuOverlay = document.querySelector(".menu-overlay") ;
+function hiddenMenu() {
+    console.log("thanh cong");
+    let menu = document.querySelector(".menu-drawer");
+    menu.classList.toggle("show-menu");
+    menuOverlay.classList.toggle("show-menu-overlay");
+}
+listIcon.addEventListener("click",hiddenMenu);
+menuOverlay.addEventListener("click",hiddenMenu);
+let btnClose = document.querySelector(".btn-close");
+btnClose.addEventListener("click",hiddenMenu);
+

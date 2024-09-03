@@ -351,6 +351,8 @@ main {
     background-color: #9191913a;
     font-family: "Inconsolata", monospace;
     border-radius: 10px;
+    max-width: 800px;
+    padding-top: 40px;
 }
 /* ========= Code ========== */
 
@@ -369,6 +371,7 @@ main {
     border-radius: 0 0 20px 20px;
     margin: 0 5px 5px 5px;
     width: 100%;
+    min-width: 600px;
 }
 
 .nav-code {
@@ -379,6 +382,7 @@ main {
     justify-content: space-between;
     padding: 0.5rem 2rem;
     border-radius: 20px 20px 0 0;
+    min-width: 600px;
 }
 
 .nav-code .lang-btn {
@@ -484,6 +488,7 @@ main .dropdown-menu .is-option-lang {
     margin: 5px;
     overflow: auto;
     padding-bottom: 40px;
+    min-width: 400px;
 }
 
 .test-case .nav-test {
@@ -898,3 +903,193 @@ pre {
     z-index: 999;
     visibility: hidden;
 }
+/* ========= Passed ========== */
+.user-ques {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3.5rem;
+}
+.wrap-discuss i{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.discuss-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.user-ques .arrow{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.user-ques .arrow i {
+    transition: all 0.4s ease-in-out;
+}
+
+.comment {
+    position: relative;
+    padding: 3rem;
+    border-radius: 20px;
+    width: 95%;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    margin: 30px auto;
+    min-height: 150px
+
+}
+
+textarea{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    resize: none;
+    font: inherit;
+    color: inherit;
+    height: auto;
+    overflow: auto;
+}
+
+.btn-comment {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    background-color: #02a85d;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+.user-comment{
+    margin: 60px 30px;
+    padding: 1rem;
+}
+
+.comment-of-user .row {
+    gap: 40px;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment-of-user .avatar-user {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.comment-of-user .name-user {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.wrap-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.comment-content {
+    /* padding: 1rem; */
+    margin-top: 20px;
+    line-height: 1.6;
+    /* padding-right: 10px;     */
+}
+
+.icons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.quantity{
+    font-weight: 500;
+}
+
+.comment-of-user + .comment-of-user {
+    margin-top: 30px;
+}
+
+.btn-page {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.number-page:nth-child(1){
+    opacity: .4;
+}
+.number-page{
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    color: #262626bf;
+    background-color: #000a200d;
+    font-weight: 500;
+}
+
+.number-page:hover{
+    background-color: #000a2022;
+}
+.number-page:nth-child(2){
+    box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
+    background-color: #fff;
+}
+.comment-of-user .row >div:nth-child(2){
+    font-weight: 500;
+}
+
+@keyframes heightup {
+    form {
+        height: 0;
+    }
+    to {
+        height: 1900px;
+    }
+}
+
+@keyframes heightdown {
+    form {
+        height: 1900px;
+    }
+    to {
+        height: 0;
+    }
+}
+
+.show-comments{
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+    animation: heightup 0.6s ease-in-out;
+    min-height: 1900px;
+}
+
+.hidden-comments{
+    animation: heightdown 0.6s ease-in-out;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 0;
+}
+
+.wrapall-comment {
+    height: 0;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+

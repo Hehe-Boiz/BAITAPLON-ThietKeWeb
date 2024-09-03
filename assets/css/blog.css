@@ -14,7 +14,13 @@ main *{
     align-items: center;
     box-shadow: 10px 10px 10px rgb(201, 199, 199),-12px -12px 12px white;
 }
-.top .search-box>svg{
+.top .search-box button{
+    background:transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.top .search-box button>svg{
     fill: black;
 }
 .top input{
@@ -32,35 +38,45 @@ main *{
 .info{
     padding: 0 50px;
     gap: 20px;
-    height: 1310px;
 }
-
 .main-content{
     width: 70%;
-    border: 1px solid red;
-    background-color: lightblue;
+    background-color: rgb(237, 227, 206);
     height: 100%;
+    border-radius: 4px;
 }
 .side-bar{
     width: 30%;
-    border: 1px solid red;
+    border-radius: 4px;
 }
 .post{
-    background-color: rgb(242, 230, 209);
+    background-color: white;
     margin-bottom: 5px;
+    border-radius: 4px;
+    height: 250px;
 }
 .post .img-post{
     position: relative;
     width: 30%;
-    height: 250px;
 }
 .all-posts{
     padding: 20px;
+}
+.post{
+    display: none;
+}
+.post:nth-child(1),
+.post:nth-child(2),
+.post:nth-child(3),
+.post:nth-child(4),
+.post:nth-child(5){
+    display: flex;
 }
 .post .img-post img{
     position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: 4px 0 0 4px;
 }
 .post .post-content{
     width: 70%;
@@ -89,11 +105,13 @@ main *{
 }
 .weekly-hightlight{
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(241, 234, 226);
+    border-radius: 4px 4px 0 0;
 }
 .must-read{
     padding: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(241, 234, 226);
+    border-radius: 0 0 4px 4px ;
 }
 .weekly-hightlight h1{
     margin: 20px 0;
@@ -109,6 +127,7 @@ main *{
     align-items: center;
     border: 1px solid black;
     margin-bottom: 10px;
+    border-radius: 4px;
 }
 .mini-post h2{
     padding:0 10px;
@@ -124,4 +143,23 @@ main *{
     position: absolute;
     width: 100%;
     height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+.load{
+    justify-content: center;
+    align-items: center;
+}
+.load-more{
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border :2px solid black;
+}
+.load-more:hover{
+    background-color: blue;
+    color: white;
 }

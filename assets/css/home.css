@@ -1,6 +1,6 @@
 .row {
     width: 80%;
-    min-width: 1000px;
+    /* min-width: 1000px; */
     max-width: 1100px;
 }
 
@@ -34,6 +34,7 @@ main .row-top {
     align-items: center;
     flex-direction: column;
     position: relative;
+    flex-grow: 1;
 }
 
 .user-profile {
@@ -49,7 +50,7 @@ main .row-top {
     display: flex;
     gap: 30px;
     align-items: center;
-    gap: 90px;
+    gap: 40px;
 }
 
 .avatar-user {
@@ -111,7 +112,7 @@ main .row-top {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    gap: 100px;
+    gap: 50px;
 }
 
 .wrap-pro {
@@ -683,16 +684,17 @@ td:empty {
 }
 /* =========== Ranking ========== */
 .ranking-wrapall {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     background-color: #fff;
     box-shadow: 0px 1px 3px #0000000a, 0px 6px 16px #0000001f;
     border-radius: 20px;
     margin: 0 auto;
     margin-top: 30px;
     width: 80%;
-    min-width: 1000px;
-    max-width: 1100px;
+    /* min-width: 1000px; */
+    max-width: 1000px;
     padding-bottom: 70px;
+    /* transform: scale(0.87); */
 }
 
 .ranking-wrapall .sub-title {
@@ -702,44 +704,75 @@ td:empty {
     text-align: center;
 }
 
-.rank-label {
+/* .rank-label {
     margin-top: 30px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(63, 63, 63, 0.58);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
 }
 
 .rank-label .info {
-    margin-left: 40px;
+    margin-left: 55px;
     min-width: 80px;
 }
 
 .rank-label .hard {
-    margin-left: 85px;
+    margin-left: 55px;
 }
 
 .rank-label .medium {
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 .rank-label .easy {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .label-rank {
-    margin-left: 15px;
+    margin-left: 25px;
 }
 .label-amount {
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 .rank-label span {
-    padding: 1rem;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .label-avatar {
-    margin-left: 10px;
+    margin-left: 5px;
+} */
+.rank-label .info {
+    min-width: 143px;
+    text-align: left;
+}
+.rank-label .hard {
+    min-width: 61px;
+}
+.rank-label .easy {
+    min-width: 61px;
+}
+.rank-label .medium {
+    min-width: 78px;
+}
+.rank-label {
+    margin-top: 30px;
+    /* display: flex;
+    align-items: center; */
+    border-bottom: 1px solid rgba(63, 63, 63, 0.58);
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+}
+.rank-label span {
+    /* padding: 1rem; */
+    padding-bottom: 1.5rem;
+}
+.label-avatar {
+    /* margin-left: 5px; */
+    min-width: 74px;
 }
 
 .ranking {
@@ -748,16 +781,29 @@ td:empty {
     align-items: center;
     padding: 1.3rem 0;
     padding-top: 2rem;
+    justify-content: space-evenly;
+    width: 100%;
+    /* gap: 30px; */
+    /* padding-left: 5px; */
+}
+.ranking>div {
+    text-align: center;
+}
+.ranking>span {
+    text-align: center;
 }
 
 .ranking:nth-child(even) {
     background-color: rgba(247, 248, 250, 1);
 }
 
+
 .number {
     font-size: 2rem;
     font-weight: 600;
-    margin-left: 70px;
+    /* margin-left: 50px; */
+    min-width: 84px;
+    text-align: center;
 }
 
 .top1-number {
@@ -774,7 +820,8 @@ td:empty {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    margin-left: 100px;
+    /* margin-left: 70px; */
+    min-width: 86px;
 }
 
 .amount-up {
@@ -794,8 +841,8 @@ td:empty {
 }
 .ranking-avartar {
     position: relative;
-    margin-left: 65px;
-    margin-right: 30px;
+    /* margin-left: 35px;
+    margin-right: 30px; */
 }
 
 .wrap-avatar .avt-rank {
@@ -815,12 +862,14 @@ td:empty {
     /* width: 400px; */
     margin-bottom: 5px;
     height: 100%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     justify-content: center;
+    line-height: 1.5;
+    
 }
 
 .ranking-name {
@@ -833,7 +882,7 @@ td:empty {
 }
 
 .ranking .quantity {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-size: 1.8rem;
     font-weight: 500;
 }

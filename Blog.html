@@ -24,6 +24,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="assets/js/blog.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -49,42 +50,14 @@
             <h1>ALL POSTS</h1>
             <div class="search-box flex">
                 <input type="text" name="search" id="search" placeholder="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                <button id="enter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                </button>
             </div>
         </div>
         <div class="info flex">
             <div class="main-content">
                 <div class="all-posts">
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
                     <div class="post flex">
                         <div class="img-post">
                             <img src="assets/img/frog2.jpg" alt="img">
@@ -129,6 +102,159 @@
                                 The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
                             </p>
                         </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="assets/img/frog2.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="load flex">
+                        <div class="load-more">Load more</div>
                     </div>  
                 </div>
             </div>

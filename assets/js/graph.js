@@ -38,7 +38,7 @@ function drawChart() {
     // Vẽ lưới và nhãn
     ctx.clearRect(0, 0, canvas.width / scale, canvas.height / scale); // Chỉ xóa phần hiển thị thực tế
     ctx.beginPath();
-    ctx.lineTo(canvas.width / scale - padding , canvas.height / scale - padding);
+    ctx.lineTo(canvas.width / scale - padding, canvas.height / scale - padding);
     ctx.strokeStyle = "#d8d8de";
     ctx.stroke();
     ctx.fillStyle = "black";
@@ -58,7 +58,7 @@ function drawChart() {
     // Nhãn trục X
     data.labels.forEach((label, index) => {
         const x = padding + index * scaleX;
-        ctx.fillText(label, x , canvas.height / scale - padding + 20);
+        ctx.fillText(label, x, canvas.height / scale - padding + 20);
     });
 
     // Vẽ biểu đồ
@@ -155,7 +155,6 @@ function drawLegend() {
     ctx.fillStyle = "black";
     ctx.font = "bold 15px Arial";
     ctx.fillText("Số lượng lập trình viên", legendX + 20, legendY + 15);
-    
 
     // Vẽ chú thích cho "Nhu cầu của thị trường"
     ctx.fillStyle = "teal";
@@ -163,7 +162,6 @@ function drawLegend() {
     ctx.fillStyle = "black";
     ctx.font = "bold 15px Arial";
     ctx.fillText("Nhu cầu của thị trường", legendX + 20, legendY + 42);
-    
 }
 
 function animateChart() {
@@ -197,3 +195,48 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(canvas);
+// Comment
+function showComment() {
+
+    let comments = document.querySelectorAll(".comment li");
+    comments.forEach((comment) => {
+        comment.addEventListener("click", (e) => {
+            console.log("thanh cong")
+            // Lấy thông tin từ comment
+            let avatar = comment.querySelector(".avatar").src;
+            let name = comment.querySelector(".name").textContent;
+            let desc = comment.querySelector(".desc").textContent;
+
+            // Gán thông tin vào tab
+            let tab = document.querySelector(".tab");
+            let avatarTab = tab.querySelector(".avatar");
+            let nameTab = tab.querySelector(".name");
+            let descTab = tab.querySelector(".desc");
+
+            avatarTab.src = avatar;
+            nameTab.textContent = name;
+            descTab.textContent = desc;
+            tab.classList.add("show-comment");
+            let bck = document.querySelector(".bck-overlay");
+            bck.classList.add("active");
+            // ngăn cuộn trang
+            document.body.style.overflow = 'hidden';
+        });
+    });
+}
+showComment();
+
+function offComment() {
+    let tab = document.querySelector(".tab");
+    let commentClose = document.querySelector(".tab .close");
+    let overlay = document.querySelector(".bck-overlay");
+    function onClose(){
+        tab.classList.remove("show-comment");
+        overlay.classList.remove("active");
+        document.body.style.overflow = '';
+    }
+    commentClose.addEventListener("click", onClose);
+    overlay.addEventListener("click", onClose);
+}
+
+offComment()

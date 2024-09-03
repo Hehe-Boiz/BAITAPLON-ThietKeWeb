@@ -1,0 +1,150 @@
+/* PC */
+@media screen and (min-width: 1180px) and (max-width: 1380px) {
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+    .container-code {
+        display: none;
+    }
+    .navbar .submit {
+        display: none;
+    }
+    .navbar .action-link {
+        display: none;
+    }
+    .task {
+        width: 100vw;
+        /* height: calc(100vh - 60px); */
+        margin: 0;
+        border-radius: 0px;
+    }
+    .container {
+        display: block;
+    }
+    .bck{
+        display: none;
+    }
+    .good{
+        display: none;  
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    html,
+    body,
+    main {
+        overflow: hidden;
+    }
+    header {
+        padding: 10px 30px;
+    }
+    .navbar .premium {
+        font-size: 1.5rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+    .navbar .action-btn {
+        font-size: 1.3rem;
+        padding: 12px;
+    }
+    .navbar .wrap-submit {
+        display: none;
+    }
+    .navbar .list-btn {
+        display: none;
+    }
+    .task .nav-task ul li {
+        font-size: 1.6rem;
+    }
+    .task .body-task {
+        min-width: 0;
+        padding: 1rem 1.5rem;
+    }
+    .task .body-task {
+        font-size: 2rem;
+    }
+    .task .desc {
+        font-size: 1.3rem;
+    }
+    .task .code-wrap {
+        font-size: 1.3rem;
+    }
+    .task .exam-number {
+        font-size: 1.6rem;
+    }
+    .task .desc-exam {
+        font-size: 1.4rem;
+        padding: 1rem;
+        padding-top: 2rem;
+    }
+    .bold {
+        font-size: 1.4rem;
+    }
+    .task {
+        overflow: auto;
+    }
+
+    iframe {
+        width: 90% !important;
+        height: 200px;
+    }
+    .discuss-name {
+        font-size: 1.6rem;
+    }
+    textarea {
+        font-size: 1.5rem;
+    }
+    .comment {
+        min-height: 130px;
+    }
+    .btn-comment {
+        bottom: 10px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 1.4rem;
+        border-radius: 10px;
+    }
+    .wrap-avatar {
+        gap: 10px;
+    }
+    .comment-of-user .avatar-user {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment-of-user .name-user {
+        font-size: 1.5rem;
+    }
+    .comment-of-user .row > div:nth-child(2) {
+        font-size: 1.5rem;
+    }
+    .user-comment {
+        margin: 0;
+        margin-top: 60px;
+    }
+    .comment-content {
+        font-size: 1.4rem;
+    }
+    .icons {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+    .number-page {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1.5rem;
+    }
+    .hideden-mobile {
+        display: none;
+    }
+}
