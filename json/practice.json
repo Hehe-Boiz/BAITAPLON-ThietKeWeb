@@ -5,7 +5,7 @@
         "total": 121,
         "diff": "Easy",
         "tags": ["Array", "Hash Table", "Sorting"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Valid Anagram",
@@ -13,14 +13,15 @@
         "total": 143,
         "diff": "Easy",
         "tags": ["Hash Table", "String", "Sorting"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Two Sum",
         "passed": 80,
         "total": 111,
         "diff": "Easy",
-        "tags": ["Hash Table", "Array"]
+        "tags": ["Hash Table", "Array"],
+        "access": "Free"
     },
     {
         "name": "Group Anagrams",
@@ -53,7 +54,7 @@
         "total": 112,
         "diff": "Medium",
         "tags": ["Array", "String", "Design"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Product of Array Except Self",
@@ -69,7 +70,7 @@
         "total": 153,
         "diff": "Medium",
         "tags": ["Matrix", "Array", "Hash Table"],
-        "access": "premium"
+        "access": "Premium"
     },
     {
         "name": "Longest Consecutive Sequence",
@@ -77,7 +78,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Hash Table", "Union Find", "Array"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Add Two Numbers",
@@ -93,7 +94,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["Array", "Divide and Conquer", "Binary Search"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Zigzag Conversion",
@@ -101,7 +102,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["String"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Reverse Integer",
@@ -109,7 +110,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Math"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "String to Integer (atoi)",
@@ -117,7 +118,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["String"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Palindrome Number",
@@ -125,7 +126,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Math"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Regular Expression Matching",
@@ -133,7 +134,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["Recursion", "String", "Dynamic Programming"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Container With Most Water",
@@ -141,7 +142,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Greedy", "Two Pointers"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Integer to Roman",
@@ -149,7 +150,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Math", "String", "Hash Table"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Roman to Integer",
@@ -157,7 +158,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Math", "String", "Hash Table"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Longest Common Prefix",
@@ -165,7 +166,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Trie", "String"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "3Sum",
@@ -173,7 +174,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Two Pointers", "Sorting"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "3Sum Closest",
@@ -181,7 +182,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Two Pointers", "Sorting"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Letter Combinations of a Phone Number",
@@ -189,7 +190,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Hash Table", "String", "Backtracking"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "4Sum",
@@ -197,7 +198,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Two Pointers", "Sorting"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Remove Nth Node From End of List",
@@ -205,7 +206,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Linked List", "Two Pointers"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Valid Parentheses",
@@ -213,7 +214,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["String", "Stack"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Merge Two Sorted Lists",
@@ -221,7 +222,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Linked List", "Recursion"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Generate Parentheses",
@@ -229,7 +230,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["String", "Dynamic Programming", "Backtracking"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Merge k Sorted Lists",
@@ -242,7 +243,7 @@
             "Heap (Priority Queue)",
             "Merge Sort"
         ],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Swap Nodes in Pairs",
@@ -250,7 +251,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Linked List", "Recursion"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Reverse Nodes in k-Group",
@@ -258,7 +259,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["Linked List", "Recursion"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Remove Duplicates from Sorted Array",
@@ -266,7 +267,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Array", "Two Pointers"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Remove Element",
@@ -274,7 +275,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Array", "Two Pointers"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Divide Two Integers",
@@ -282,7 +283,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Math", "Bit Manipulation"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Substring with Concatenation of All Words",
@@ -290,7 +291,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["Hash Table", "String", "Sliding Window"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Next Permutation",
@@ -298,7 +299,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Two Pointers"],
-        "access": "free"
+        "access": "Premium"
     },
     {
         "name": "Longest Valid Parentheses",
@@ -306,7 +307,7 @@
         "total": 232,
         "diff": "Hard",
         "tags": ["String", "Dynamic Programming", "Stack"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Search in Rotated Sorted Array",
@@ -314,7 +315,7 @@
         "total": 232,
         "diff": "Medium",
         "tags": ["Array", "Binary Search"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Search Insert Position",
@@ -322,7 +323,7 @@
         "total": 232,
         "diff": "Easy",
         "tags": ["Array", "Binary Search"],
-        "access": "free"
+        "access": "Free"
     },
     {
         "name": "Sudoku Solver",

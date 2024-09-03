@@ -1,55 +1,443 @@
-{
-    "users": [
-        {
-            "username": "HeheBoiz",
-            "accountName": "heheboiz",
-            "password": "12345678",
-            "beginDay":"2023-01-01",
-            "activityDays": {
-                "2024-01-01": 2,
-                "2024-01-02": 3,
-                "2024-01-03": 1
-            },
-            "completed": [
-                {
-                    "name": "Contains Duplicate",
-                    "difficulty": "Easy"
-                },
-                {
-                    "name": "Group Anagrams",
-                    "difficulty": "Medium"
-                }
-            ],
-            "goal": {
-                "goal": 6,
-                "begin": "2024-08-31",
-                "completionDay": "2024-09-1"
-            }
+[
+    {
+        "username": "HeheBoiz",
+        "accountName": "heheboiz",
+        "password": "12345678",
+        "avatar": "assets/img/avatar-ranking.png",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
         },
-        {
-            "username": "BaTan",
-            "accountName": "batannnn",
-            "password": "12345678",
-            "activityDays": {
-                "2024-01-01": 2,
-                "2024-01-02": 3,
-                "2024-01-03": 1
+        "completed": [
+            {
+                "name": "Contains Duplicate",
+                "difficulty": "Easy"
             },
-            "completed": [
-                {
-                    "name": "Exercise 1",
-                    "difficulty": "medium"
-                },
-                {
-                    "name": "Exercise 2",
-                    "difficulty": "hard"
-                }
-            ],
-            "goal": {
-                "goal": 5,
-                "begin": "2024-08-31",
-                "completionDay": "2024-09-1"
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
             }
+        ],
+        "goal": {
+            "goal": 6,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
         }
-    ]
-}
+    },
+    {
+        "username": "BaTan",
+        "accountName": "batannnn",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "HoangVu",
+        "accountName": "hoangvu",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "TrongKha",
+        "accountName": "trongkha",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Free",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "QuangLong",
+        "accountName": "QuangLong",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (3).jpg",
+        "acc": "Free",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "NgocLinh",
+        "accountName": "ngoclinh",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (4).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "ThanhTien",
+        "accountName": "thanhtien",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Free",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "DuongThuongDau",
+        "accountName": "duongthuongdau",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "Thanh",
+        "accountName": "thanh113",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "DoanThiRia",
+        "accountName": "doanthiria",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    },
+    {
+        "username": "KhoaNgu",
+        "accountName": "khoangu",
+        "password": "12345678",
+        "avatar": "assets/img/avatar (2).jpg",
+        "acc": "Premium",
+        "activityDays": {
+            "2024-01-01": 2,
+            "2024-01-02": 3,
+            "2024-01-03": 1
+        },
+        "completed": [
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            },
+            {
+                "name": "Group Anagrams",
+                "difficulty": "Medium"
+            }
+        ],
+        "goal": {
+            "goal": 5,
+            "begin": "2024-08-31",
+            "completionDay": "2024-09-1"
+        }
+    }
+]

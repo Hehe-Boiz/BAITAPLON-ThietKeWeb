@@ -21,7 +21,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .row-challen-streak .challenge .center-prb {
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -41,144 +41,205 @@
         max-width: 100%;
         padding: 1rem;
     }
-    .ranking{
-        justify-content: space-evenly;
-    }
-    
-    wrap-graph{
+
+    wrap-graph {
         width: 100%;
         height: 100%;
     }
     canvas {
         width: 155px !important;
-        height: 180px !important;
+        height: 170px !important;
+    }
+    
+    .rank-table td{
+        padding: 0.5rem 1rem;
+        padding-top: 2rem;
+    }
+    .rank-table th  {
+        padding: 1.3rem;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
 }
-
+@media screen and (min-width: 415px) and (max-width: 737px) {
+    .wrap-streak {
+        justify-content: center;
+    }
+    .wrap-achie-user {
+        justify-content: center;
+        gap: 20px;
+    }
+    .user-streak .subject {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
 /* Mobile */
 @media screen and (max-width: 767px) {
-    
-    .sub-title{
-        font-size: 1.9rem
+    .sub-title {
+        font-size: 1.9rem;
     }
-    .row-top{
+    .row-top {
         flex-direction: column-reverse;
     }
-    .avatar-user{
+    .avatar-user {
         width: 80px;
         height: 80px;
     }
-    .avatar-user img{
+    .avatar-user img {
         width: 80px;
-    } 
-    .user-level{
+    }
+    .user-level {
         font-size: 1.5rem;
     }
-    .user-profile .bold{
+    .user-profile .bold {
         font-size: 1.6rem;
     }
-    .user-profile .rank{
+    .user-profile .rank {
         font-size: 1.6rem;
     }
     .row-challen-streak {
         flex-direction: column-reverse;
     }
-    .rank-label .hard, .rank-label .medium, .rank-label .easy{
+    .rank-label .hard,
+    .rank-label .medium,
+    .rank-label .easy {
         display: none;
-        
-    } 
-    .wrap-pro{
+    }
+    .wrap-pro {
         min-width: 80px;
     }
-    .user-profile{
+    .user-profile {
         padding: 1rem 2rem;
         padding-bottom: 2.5rem;
     }
-    .wrap-in-pro{
+    .wrap-in-pro {
         gap: 30px;
     }
-    .wrap-pro{
+    .wrap-pro {
         font-size: 1.3rem;
     }
-    .wrap-pro span{
+    .wrap-pro span {
         font-size: 1rem;
     }
     .wrap-in-pro + .wrap-in-pro {
         margin-top: 10px;
     }
-    .wrap-streak .wrap-img img{
+    .wrap-streak .wrap-img img {
         width: 50px;
     }
     .wrap-streak .number-day {
         font-size: 3rem;
     }
-    .user-streak .desc p{
+    .user-streak .desc p {
         font-size: 1.5rem;
     }
-    .user-streak .subject{
+    .user-streak .subject {
         font-size: 1.5rem;
     }
-    .wrap-achie{
-        width: 50px;
-        height: 50px;
+    .wrap-achie-user img {
+        max-width: 45px;
+        height: 100%;
     }
-    .wrap-achie-user img{
-        max-width: 40px;
-    }
-    .challenge th{
+    .challenge th {
         font-size: 1.4rem;
         line-height: 1.4;
     }
-    
-    .challenge .center-prb{
+
+    .challenge .center-prb {
         font-size: 1.3rem;
         max-height: 20px;
     }
-    .challenge td{
+    .challenge td {
         font-size: 1.3rem;
     }
-    .btn-challen span{
+    .btn-challen span {
         font-size: 1.3rem;
     }
-    .rank-label span {
+    .rank-table th{
+        padding: 1rem;
         font-size: 1.3rem;
-        line-height: 1.3;
     }
-    .rank-label .info{
-        min-width: 110px;
+    .avt-rank{
+        width: 45px;
     }
-    .ranking .quantity{
-        display: none;
+    .top1-rank{
+        width: 49px;
+        height: 49px;
     }
-    .up{
-        max-width: 10px;
+    .top2-rank{
+        width: 49px;
+        height: 49px;
     }
-    .amount-up{
-        font-size: 1rem;
-    }
-    .number, .ranking-fix{
-        min-width: 59px;
-    }
-    .wrap-avatar .avt-rank{
-        width: 50px;
-    }
-    .wrap-avatar{
-        width: 53px;
-    }
-    .ranking-crown img{
-        transform: translateX(-100%);
-    }
-    .ranking-avartar{
-        min-width: 74px;
+    .top3-rank{
+        width: 49px;
+        height: 49px;
     }
     .ranking-name{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .passed{
+        font-size: 1.3rem;
+    }
+    .number{
+        font-size: 1.7rem;
+    }
+    .rank-table .center.quantity {
+        display: none;
+    }
+    th.hard, th.medium,th.easy{
+        display: none;
+    }
+    .fix-rank .amount-up{
         font-size: 1.1rem;
+    }
+    .ranking-wrapall {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .challenge th {
+        padding: 0.7rem;
+        font-size: 1.3r em;
+    }
+    .challenge td {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+    .check {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+        border: 1.5px solid black;
+    }
+    .btn-challen span {
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .challenge-day {
+        padding: 1.5rem;
+    }
+    
+    .wrap-streak .wrap-img img{
+        width: 40px;
+    }
+    .wrap-achie-user img {
+        max-width: 45px;
+        height: 100%;
+        margin-left: -15px;
+    }
+    
+}
+@media screen and (max-width: 390px){
+    .rank-table th:nth-child(1){
+        white-space: normal;
+    }
+    .rank-table th:nth-child(2){
+        white-space: normal;
     }
 }
