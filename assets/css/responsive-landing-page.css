@@ -113,24 +113,40 @@
     }
 
     .comment .items li {
-        min-width: 30%;
+        min-width: 31%;
     }
 
     .comment .items .avatar {
         width: 100px;
     }
 
-    .comment .items .rate-item {
-        margin-top: 50px;
+    .rate-item{
+        margin-top: 0;
     }
-
+    .tab .rate-item{
+        margin-top: 10px;
+    }
+    .tab .name{
+        font-size: 2rem;
+    }
+    .tab .desc{
+        font-size: 1.5rem;
+    }
+    .tab .before{
+        top: 70px;
+    }
+    .tab .after{
+        bottom: 10px;
+    }
     .comment .items .name {
+        margin-top: 20px;
         font-size: 1.7rem;
     }
 
     .comment .items .desc {
         font-size: 1.5rem;
     }
+    
 
     /* ========= Footer ========= */
     footer {
@@ -275,7 +291,36 @@
     .comment .items li{
         min-width: 100%;
     }
-
+    .tab {
+        width: 95vw;
+        min-width: 200px;
+        height: 250px;
+    }
+    .tab .colum{
+        margin-left: 60px;
+    }
+    .tab .desc{
+        margin-top: 10px;
+    }
+    .tab .before {
+        top: 50px;
+        left: 45px;
+    }
+    .tab .avatar {
+        width: 100px;
+        height: 100px;
+        top: -80px;
+        left: -40px;
+    }
+    .tab .name{
+        font-size: 1.7rem;
+    }
+    .tab .desc{
+        font-size: 1.3rem;
+    }
+    .tab .rate-item{
+        width: 100px;
+    }
     /* ========= Footer ========== */
     footer{
         padding: 40px 10px 70px 10px;
