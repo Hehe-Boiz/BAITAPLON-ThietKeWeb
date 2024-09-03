@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/bloglandingpage.css">
-        <link rel="stylesheet" href="assets/css/responsive-landing-page.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/responsive-bloglandingpage.css">
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,6 +30,77 @@
     <script src="assets/js/bloglandingpage.js"></script>
 </head>
 <body>
+    <header>
+        <div class="content">
+            <nav class="navbar">
+                <span class="toggle-menu">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M18 4.5H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M18 12H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M11 19H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </span>
+                <a href="#" class="logo">CodemeM</a>
+                <ul class="pc-nav">
+                    <li class="home"><a>Home</a></li>
+                    <li class="roadmap"><a href="roadmap.html">Roadmap</a></li>
+                    <li class="practice"><a>Practice</a></li>
+                    <li class="show-on-mobile separate">
+                        <a href="#!">Sign in</a>
+                    </li>
+                    <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+                </ul>
+                <div class="actions">
+                    <a class="premium"><i class="fa-solid fa-crown"></i></a>
+                    <a href="#!" class="action-link">Sign in</a>
+                    <a href="#!" class="btn action-btn">Sign up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <!-- Overlay -->
+        <div for="menu-checkbox" class="menu-overlay"></div>
+    
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <div class="row">
+                <a href="#" class="logo">CodemeM</a>
+                <span class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+    
+            <!-- Navigation -->
+            <ul class="mobile-nav"></ul>
+            
+        </div>
+    </header>
     <main>
         <section class="top overflow-hidden">
             <div class="top-page flex">
@@ -105,11 +177,6 @@
         <section class="lastest-articles">
             <div class="head flex">
                 <h1>Lastest Articles</h1>
-                <div class="categories flex">
-                    <a href="#" class="category">Technology</a>
-                    <a href="#" class="category">Digital marketing</a>
-                    <a href="#" class="category">Business</a>
-                </div>
                 <div class="search">
                     <input type="text" name="search" id="text-input" placeholder="Search">
                     <button type="submit">
@@ -157,7 +224,28 @@
                         <p>The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications</p>
                     </div>
                     <a href="#" class="more-detail">&Rrightarrow;</a>
-                </div><div class="news flex">
+                </div>
+                <div class="news flex">
+                    <div class="news-img">
+                        <img src="assets/img/frog2.jpg" alt="img">\
+                    </div>
+                    <div class="author flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                        <p class="author-name">Joseph</p>
+                    </div>
+                    <div class="news-title">
+                        <h1>Content Marketing Strategies: Explore content trend</h1>
+                    </div>
+                    <div class="category-news flex">
+                        <div class="horizon-line"></div>
+                        <p>Technology</p>
+                    </div>
+                    <div class="summary-content">
+                        <p>The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications</p>
+                    </div>
+                    <a href="#" class="more-detail">&Rrightarrow;</a>
+                </div>
+                <div class="news flex">
                     <div class="news-img">
                         <img src="assets/img/frog2.jpg" alt="img">\
                     </div>
@@ -535,5 +623,95 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="content">
+            <div class="row row-top">
+                <!-- Product column -->
+                <div class="column">
+                    <!-- vì xét góc độ làm SEO thì nó sẽ đánh giá nội dung theo cấp bậc thẻ h 
+                    nên để nhấn mạnh nội dung h2 thì để thẻ này là h3 -->
+                    <h3 class="heading">Product</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Listing</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Property</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Agents</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Resources column -->
+                <div class="column">
+                    <h3 class="heading">Resources</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Customer Stories</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Partners</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Integrations</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Company column -->
+                <div class="column">
+                    <h3 class="heading">Company</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Patnerships</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Terms of use</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Privacy</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Get in touch column -->
+                <div class="column">
+                    <h3 class="heading">Get in touch</h3>
+                    <p class="desc">
+                        Bạn sẽ là người dẫn đầu bằng trang web của chúng tôi.
+                    </p>
+                    <div class="social">
+                        <a href="" class="social-link">
+                            <img src="assets/icons/icons8-facebook.svg" alt="" />
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="assets/icons/twitter.svg" alt="" />
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="assets/icons/linkedin.svg" alt="" />
+                        </a>
+                        <a href="" class="social-link"
+                            ><img src="assets/icons/instagram.svg" alt=""
+                        /></a>
+                        <a href="" class="social-link"
+                            ><img src="assets/icons/icons8-github.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-bottom">
+                <a href="" class="logo">CodemeM</a>
+                <p class="copyright">Copyright © 2024 Minh Nhựt và Bá Tân</p>
+            </div>
+        </div>        
+    </footer>
 </body>
 </html>

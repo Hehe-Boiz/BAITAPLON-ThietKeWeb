@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/blog.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/responsive-blog.css">
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,11 +33,46 @@
     <header>
         <div class="content">
             <nav class="navbar">
+                <span class="toggle-menu">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                    >
+                        <path
+                            d="M18 4.5H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M18 12H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M11 19H6"
+                            stroke="#f7f8fa"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </span>
                 <a href="#" class="logo">CodemeM</a>
-                <ul>
+                <ul class="pc-nav">
                     <li class="home"><a>Home</a></li>
-                    <li class="roadmap"><a>Roadmap</a></li>
+                    <li class="roadmap"><a href="roadmap.html">Roadmap</a></li>
                     <li class="practice"><a>Practice</a></li>
+                    <li class="show-on-mobile separate">
+                        <a href="#!">Sign in</a>
+                    </li>
+                    <li class="show-on-mobile"><a href="#!">Sign up</a></li>
                 </ul>
                 <div class="actions">
                     <a class="premium"><i class="fa-solid fa-crown"></i></a>
@@ -43,6 +80,25 @@
                     <a href="#!" class="btn action-btn">Sign up</a>
                 </div>
             </nav>
+        </div>
+    </header>
+    <header class="mobile-header">
+        <!-- Overlay -->
+        <div for="menu-checkbox" class="menu-overlay"></div>
+    
+        <!-- Menu content -->
+        <div class="menu-drawer">
+            <!-- Logo -->
+            <div class="row">
+                <a href="#" class="logo">CodemeM</a>
+                <span class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+            </div>
+    
+            <!-- Navigation -->
+            <ul class="mobile-nav"></ul>
+            
         </div>
     </header>
     <main>
@@ -314,9 +370,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        
+        </div> 
     </main>
     <footer>
         <div class="content">
@@ -406,8 +460,8 @@
                 <a href="" class="logo">CodemeM</a>
                 <p class="copyright">Copyright © 2024 Minh Nhựt và Bá Tân</p>
             </div>
-        </div>        
+        </div>
+        
     </footer>
-
 </body>
 </html>

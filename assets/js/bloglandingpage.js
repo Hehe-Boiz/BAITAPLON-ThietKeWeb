@@ -1,4 +1,5 @@
 window.addEventListener("load",function(){
+    //Hiệu ứng chuyển hình đầu trang
     let topPage = document.querySelector(".top-page");
     let topPages = this.document.querySelectorAll(".top-page-content");
     let prev = this.document.getElementById("prev");

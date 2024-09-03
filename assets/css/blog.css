@@ -53,7 +53,7 @@ main *{
     background-color: white;
     margin-bottom: 5px;
     border-radius: 4px;
-    height: 250px;
+    height: auto;
 }
 .post .img-post{
     position: relative;
@@ -64,6 +64,7 @@ main *{
 }
 .post{
     display: none;
+    margin-bottom: 20px;
 }
 .post:nth-child(1),
 .post:nth-child(2),
@@ -83,6 +84,7 @@ main *{
     padding-left: 20px ;
     padding-top: 50px;
     padding-right: 10px;
+    padding-bottom: 50px;
 }
 .post .post-content h1{
     font-size: 30px;
@@ -125,9 +127,10 @@ main *{
 }
 .mini-post{
     align-items: center;
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgb(207, 207, 207);
     margin-bottom: 10px;
     border-radius: 4px;
+    background-color: white;
 }
 .mini-post h2{
     padding:0 10px;
@@ -163,3 +166,4 @@ main *{
     background-color: blue;
     color: white;
 }
+
