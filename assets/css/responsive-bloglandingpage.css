@@ -1,19 +1,19 @@
 @media screen and (max-width: 991px) {
-    main{
+    main {
         padding: 0;
     }
-    .top-page{
+    .top-page {
         min-width: 800px;
         justify-content: center;
         align-items: center;
     }
-    .top-page-content{
+    .top-page-content {
         justify-content: center;
         align-self: center;
         min-width: 800px;
         height: 400px;
     }
-    .left-content{
+    .left-content {
         padding: 0;
         width: 100%;
         height: 200px;
@@ -21,210 +21,216 @@
     .right-content {
         display: none;
     }
-    .left-content h1{
+    .left-content h1 {
         margin: 0;
-   }
-    .top-page-content>div{
+    }
+    .top-page-content > div {
         min-width: 600px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-   }
-   .name-time{
-    width: 300px;
-    margin-bottom: 0;
-    margin-top: 10px;
-   }
-   .name-time{
-    gap: 30px;
-   }
-   .name-time span{
-    min-width: 200px;
-    font-size: 1.2rem;
-   }
-   .horizon-line{
-    min-width: 100px;
-   }
-   .left-content a{
+    }
+    .name-time {
+        width: 300px;
+        margin-bottom: 0;
         margin-top: 10px;
-   }
-   .left-content p{
-        margin-top: 10px;
-   }
-   .lastest-articles .head .categories a{
-    display: none;
-   }
-   .news-img{
-    height: 240px;
-   }
-   .all-news{
-    padding-left: 40px;
-    flex-wrap: nowrap;
-    height: auto;
-    overflow: auto;
-   }
-   .news{
-    min-width: 340px;
-    margin-right: 20px;
-   }
-   .info .title h1{
-    font-size: 2rem;
-   }
-   .info .summary-content p{
-    font-size: 1.5rem;
-   }
-   .main-content .info .categories-timetoread p{
-    font-size: 1rem;
-   }
-   .main-content .img-main-content{
-    width: 50%;
-    min-height:300px ;
-   }
-   .mini-content{
-    height: 300px;
-    flex-direction: column;
-   }
-   .mini-content .summary-content{
-    display: none;
-   }
-   .mini-content .categories-timetoread{
-    display: none;
-   }
-   .mini-content .author p{
+    }
+    .name-time {
+        gap: 30px;
+    }
+    .name-time span {
+        min-width: 200px;
         font-size: 1.2rem;
-   }
-   .mini-content .author .horizon-line{
-    min-width: 20px;
-   }
-   .mini-content .info .title h1{
-    font-size: 1.5rem;
-   }
-   .mini-content .info{
-    height: 50%;
-   }
-   .mini-content .info .author svg{
-    width: 10px;
-    height: 10px;
-   }
-   .information{
-    height: auto;
-   }
-   .content-inside .news{
-    padding: 10px;
-   }
+    }
+    .horizon-line {
+        min-width: 100px;
+    }
+    .left-content a {
+        margin-top: 10px;
+    }
+    .left-content p {
+        margin-top: 10px;
+    }
+    .lastest-articles .head .categories a {
+        display: none;
+    }
+    .news-img {
+        height: 240px;
+    }
+    .all-news {
+        padding-left: 40px;
+        flex-wrap: nowrap;
+        height: auto;
+        overflow: auto;
+    }
+    .news {
+        min-width: 340px;
+        margin-right: 20px;
+    }
+    .info .title h1 {
+        font-size: 2rem;
+    }
+    .info .summary-content p {
+        font-size: 1.5rem;
+    }
+    .main-content .info .categories-timetoread p {
+        font-size: 1rem;
+    }
+    .main-content .img-main-content {
+        width: 50%;
+        min-height: 300px;
+    }
+    .mini-content {
+        height: 300px;
+        flex-direction: column;
+    }
+    .mini-content .summary-content {
+        display: none;
+    }
+    .mini-content .categories-timetoread {
+        display: none;
+    }
+    .mini-content .author p {
+        font-size: 1.2rem;
+    }
+    .mini-content .author .horizon-line {
+        min-width: 20px;
+    }
+    .mini-content .info .title h1 {
+        font-size: 1.5rem;
+    }
+    .mini-content .info {
+        height: 50%;
+    }
+    .mini-content .info .author svg {
+        width: 10px;
+        height: 10px;
+    }
+    .information {
+        height: auto;
+    }
+    .content-inside .news {
+        padding: 10px;
+    }
 }
-@media screen and (max-width:767px) {
-    main{
+@media screen and (max-width: 767px) {
+    main {
         padding: 0;
     }
-    div.top-page-content{
+    div.top-page-content {
         padding-left: 0;
         padding-right: 0;
         min-width: 380px;
         height: auto;
         object-fit: cover;
     }
-    .left-content a{
-       font-size: 20px ;
-   }
-   div.top-page-content > div{
-    min-width: auto;
-    min-height: 400px;
-   }
-   .left-content{
-    padding: 10px;
-   }
-   .top-page{
-    min-width: 1180px;
-   }
-   .name-time .horizon-line{
-    min-width: 50px;
-   }
-   .name-time span{
-    font: 0.8rem;
-    min-width: 100px;
-   }
-   .name-time{
-    gap: 20px;
-   }
-   .number-top-page{
-    padding: 0;
-   }
-   .lastest-articles{
-    padding: 20px;
-   }
-   .news-img{
-    height: 180px;
-   }
-   .lastest-articles .head>h1{
-    max-width:200px ;
-   }
-   .lastest-articles .head .search{
-    top: 40px;
-    min-width: 150px;
-    max-height: 30px;
-   }
-   .lastest-articles .head .search button{
-    top: 0;
-    right: 0;
-   }
-   a.more-detail{
-    font-size: 15px;
-   }
-   .all-news{
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 100vw;
-   }
-   .news{
-    min-width: 280px;
-   }
-   .must-read{
-    padding: 10px;
-   }
-   .info .summary-content p{
-    display: none;
-   }
-   .support-content{
-    display: flex;
-    flex-direction: row;
-    overflow: auto;
-    height: auto;
-    min-width: 370px
-   }
-   .img-support-content{
-    height: 150px;
-   }
-   .main-content .info{
-    height: auto;
-   }
-   .support-content .author{
-    display: none;
-   }
-   .mini-content{
-    min-width: 200px;
-   }
-   .info .title{
-    font-size: 1.2rem;
-   }
-   .information{
-    display: block;
-   }
-   .information .main-content{
-    margin-bottom: 20px;
-    height: auto;
-   }
-   .weekly-hightlight .top{
-    padding: 10px;
-   }
-   .weekly-hightlight .top h1{
-    max-width: 250px;
-   }
-   main{
-    overflow: hidden;
-   }
-   .top .buttons{
-    left: 0;
-    width: 100%;
-   }
+    .left-content a {
+        font-size: 20px;
+    }
+    div.top-page-content > div {
+        min-width: auto;
+        min-height: 400px;
+    }
+    .left-content {
+        padding: 10px;
+    }
+    .top-page {
+        min-width: 1180px;
+    }
+    .name-time .horizon-line {
+        min-width: 50px;
+    }
+    .name-time span {
+        font: 0.8rem;
+        min-width: 100px;
+    }
+    .name-time {
+        gap: 20px;
+    }
+    .number-top-page {
+        padding: 0;
+    }
+    .lastest-articles {
+        padding: 20px;
+    }
+    .news-img {
+        height: 180px;
+    }
+    .lastest-articles .head > h1 {
+        max-width: 200px;
+    }
+    .lastest-articles .head .search {
+        top: 40px;
+        min-width: 150px;
+        max-height: 30px;
+    }
+    .lastest-articles .head .search button {
+        top: 0;
+        right: 0;
+    }
+    a.more-detail {
+        font-size: 15px;
+    }
+    .all-news {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 100vw;
+    }
+    .news {
+        min-width: 280px;
+    }
+    .must-read {
+        padding: 10px;
+    }
+    .info .summary-content p {
+        display: none;
+    }
+    .support-content {
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        height: auto;
+        min-width: 370px;
+    }
+    .img-support-content {
+        height: 150px;
+    }
+    .main-content .info {
+        height: auto;
+    }
+    .support-content .author {
+        display: none;
+    }
+    .mini-content {
+        min-width: 200px;
+    }
+    .info .title {
+        font-size: 1.2rem;
+    }
+    .information {
+        display: block;
+    }
+    .information .main-content {
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .weekly-hightlight .top {
+        padding: 10px;
+    }
+    .weekly-hightlight .top h1 {
+        max-width: 250px;
+    }
+    main {
+        overflow: hidden;
+    }
+    .top .buttons {
+        left: 0;
+        width: 100%;
+    }
+    div.top-page-content  {
+        min-width: 100vw;
+        flex-grow: 1;
+        /* height: 100%; */
+    }
+    
 }
