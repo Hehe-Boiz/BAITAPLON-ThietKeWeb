@@ -83,6 +83,7 @@ header {
     color: white;
     padding: 5px 40px;
     z-index: 100;
+    padding-top: 14px;
 }
 
 .navbar {
@@ -1094,3 +1095,20 @@ textarea{
     transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
+.avatar-user-afterLog {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.premium-acc {
+    width: 15px;
+    position: absolute;
+    top: -10px;
+    left: 43%;
+}
+.user-premium {
+    border: 2px solid gold;
+}
+.wrap-userLog{
+    position: relative;
+}

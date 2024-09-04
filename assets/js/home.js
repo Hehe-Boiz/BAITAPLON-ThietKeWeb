@@ -286,24 +286,37 @@ zIndexChange();
 fetch("./json/user.json")
     .then((response) => response.json())
     .then((users) => {
-        const topUsers = users.slice(0, 10);
-        const rankingContainer = document.querySelector(".rank-table tbody");
+        // Sort users by total completed exercises in descending order
+        users.sort((a, b) => {
+            let totalA =
+                a.completed.filter((c) => c.difficulty === "Easy").length +
+                a.completed.filter((c) => c.difficulty === "Medium").length +
+                a.completed.filter((c) => c.difficulty === "Hard").length;
+            let totalB =
+                b.completed.filter((c) => c.difficulty === "Easy").length +
+                b.completed.filter((c) => c.difficulty === "Medium").length +
+                b.completed.filter((c) => c.difficulty === "Hard").length;
+            return totalB - totalA;
+        });
+
+        let topUsers = users.slice(0, 10);
+        let rankingContainer = document.querySelector(".rank-table tbody");
 
         rankingContainer.innerHTML = "";
 
         topUsers.forEach((user, index) => {
-            const completed = user.completed;
-            const easyCount = completed.filter(
+            let completed = user.completed;
+            let easyCount = completed.filter(
                 (c) => c.difficulty === "Easy"
             ).length;
-            const mediumCount = completed.filter(
+            let mediumCount = completed.filter(
                 (c) => c.difficulty === "Medium"
             ).length;
-            const hardCount = completed.filter(
+            let hardCount = completed.filter(
                 (c) => c.difficulty === "Hard"
             ).length;
 
-            const rankingTr = document.createElement("tr");
+            let rankingTr = document.createElement("tr");
             rankingTr.innerHTML = `
                 <td><div class="center ${
                     index === 0
@@ -373,6 +386,7 @@ fetch("./json/user.json")
             rankingContainer.appendChild(rankingTr);
         });
     });
+
 
 async function loadUserData() {
     if (islog === "true") {

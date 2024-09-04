@@ -240,3 +240,59 @@ function offComment() {
 }
 
 offComment()
+
+let islog = localStorage.getItem("islog");
+async function loadUserData() {
+    if (islog === "true") {
+        let signin = document.querySelector(".action-link");
+        let signup = document.querySelector(".action-btn");
+        let actions = document.querySelector(".actions");
+        signin.style.display = "none";
+        signup.style.display = "none";
+
+        let response = await fetch("./json/user.json");
+        let usersFromJSON = await response.json();
+
+        let user = localStorage.getItem("log");
+        let data = JSON.parse(user);
+        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let userFromJSON = usersFromJSON.find(
+            (user) => user.accountName === loggedInEmail
+        );
+        const wrapDiv = document.createElement("div");
+        wrapDiv.className = "wrap-userLog";
+
+        // Giả sử bạn có một phần tử HTML để hiển thị ảnh đại diện
+
+        if (userFromJSON) {
+            console.log("thanh cong");
+
+            if (userFromJSON.acc === "Premium") {
+                console.log("Premium");
+                // Người dùng là Premium, thêm biểu tượng crown
+                wrapDiv.innerHTML = `
+                <img class="avatar-user-afterLog user-premium" src="${userFromJSON.avatar}" alt="User Avatar"/>
+                <img src="./assets/icons/crown-gold.svg" alt="Premium Icon" class="premium-acc">
+            `;
+            } else {
+                // Người dùng không phải Premium, không thêm biểu tượng crown
+                wrapDiv.innerHTML = `
+                <img class="avatar-user-afterLog" src="${userFromJSON.avatar}" alt="User Avatar"/>
+            `;
+            }
+        } else {
+            console.log("ngheo");
+
+            // Nếu không tìm thấy tài khoản, sử dụng ảnh mặc định
+            wrapDiv.innerHTML = `
+            <img class="avatar-user-afterLog" src="./assets/img/default_avatar.jpg" alt="Default Avatar"/>
+        `;
+        }
+        actions.insertBefore(wrapDiv, actions.querySelector("a").nextSibling);
+        let signs = document.querySelectorAll(".sign");
+        signs.forEach((sign) => {
+            sign.style.display = "none";
+        });
+    }
+}
+loadUserData()
