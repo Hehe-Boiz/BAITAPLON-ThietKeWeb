@@ -223,3 +223,9 @@
         gap: 130px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .menu-drawer .row{
+        gap: 70px;
+    }
+}

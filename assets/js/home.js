@@ -190,21 +190,6 @@ checks.forEach((check) => {
     });
 });
 
-function attachDayClickEventsGoal() {
-    let days = document.querySelectorAll(".center-date");
-    let Month = currentDate.getMonth() + 1;
-    let Year = currentDate.getFullYear();
-
-    days.forEach((day) => {
-        day.addEventListener("click", function () {
-            let selectedDay = parseInt(day.textContent);
-            selectedDate = new Date(Year, Month - 1, selectedDay);
-            if (checkGoal()) {
-                animate(70);
-            }
-        });
-    });
-}
 let days = document.querySelectorAll(".center-date");
 let today = new Date();
 let selectedDate;
@@ -409,7 +394,26 @@ async function loadUserData() {
             let imgava = document.querySelector(".user-home-ava");
             imgava.src = userFromJSON.avatar;
             username.textContent = userFromJSON.username
+
         }
+        let n = 100;
+        let level = document.querySelector(".user-level");
+        level.textContent = "Trình độ: Cao thủ"
+        let  rankuser = document.querySelector(".rank.top1");
+        rankuser.innerHTML = `<span class="bold">Rank:</span> ${Math.floor(Math.random() * n)}`
+        let pros = document.querySelectorAll(".pro-pro")
+        pros.forEach((pro)=>{
+            pro.value = Math.floor(Math.random() * n)
+        });
+        let fireimg = document.querySelector(".fire-fire")
+        fireimg.style.filter = "none";
+        let numberste = document.querySelector(".wrap-streak .number-day");
+        numberste.textContent = Math.floor(Math.random() * n)
+        numberste.style.color="#ff9600"
+        let imgachies = document.querySelectorAll(".wrap-achie img")
+        imgachies.forEach((img) =>{
+            img.style.filter = "none";
+        })
     }
 }
 
