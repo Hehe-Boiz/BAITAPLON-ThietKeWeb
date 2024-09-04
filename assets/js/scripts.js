@@ -173,7 +173,6 @@ opLog();
 // localStorage.clear();
 let islog = localStorage.getItem("islog");
 async function loadUserData() {
-
     if (islog === "true") {
         let signin = document.querySelector(".action-link");
         let signup = document.querySelector(".action-btn");
@@ -197,7 +196,6 @@ async function loadUserData() {
 
         if (userFromJSON) {
             console.log("thanh cong");
-            
 
             if (userFromJSON.acc === "Premium") {
                 console.log("Premium");
@@ -221,6 +219,10 @@ async function loadUserData() {
         `;
         }
         actions.insertBefore(wrapDiv, actions.querySelector("a").nextSibling);
+        let signs = document.querySelectorAll(".sign");
+        signs.forEach((sign) => {
+            sign.style.display = "none";
+        });
     }
 }
 
