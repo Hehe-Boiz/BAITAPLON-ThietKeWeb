@@ -608,8 +608,8 @@ reset.addEventListener("click", () => {
 
     // Hiển thị lại tất cả bài tập
     currentPage = 1; // Quay về trang đầu tiên
-    displayExercises(currentPage); // Tái tạo lại bảng với tất cả các bài tập
-    setbuttonPage(); // Cập nhật lại nút phân trang
+    displayExercises(currentPage); 
+    setbuttonPage(); 
 });
 
 

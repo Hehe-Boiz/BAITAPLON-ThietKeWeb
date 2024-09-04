@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/Login.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        <link rel="stylesheet" href="assets/css/response-login.css">
+        <link rel="stylesheet" href="assets/css/Login.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/response-login.css" />
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,134 +29,248 @@
         <script src="assets/js/login.js"></script>
         <script src="assets/js/load.js"></script>
         <title>Codemem</title>
-</head>
-<body>
-    <header>
-        <div class="content">
-            <nav class="navbar">
-                <span class="toggle-menu">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                    >
-                        <path
-                            d="M18 4.5H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M18 12H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M11 19H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </span>
-                <a href="#" class="logo">CodemeM</a>
-                <ul class="pc-nav">
-                    <li class="home"><a>Home</a></li>
-                    <li class="roadmap"><a href="roadmap.html">Roadmap</a></li>
-                    <li class="practice"><a>Practice</a></li>
-                    <li class="show-on-mobile separate">
-                        <a href="#!">Sign in</a>
-                    </li>
-                    <li class="show-on-mobile"><a href="#!">Sign up</a></li>
-                </ul>
-                <div class="actions">
-                    <a class="premium"><i class="fa-solid fa-crown"></i></a>
-                    <a href="#!" class="action-link">Sign in</a>
-                    <a href="#!" class="btn action-btn">Sign up</a>
+    </head>
+    <body>
+        <header>
+            <div class="content">
+                <nav class="navbar">
+                    <span class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M18 4.5H6"
+                                stroke="#f7f8fa"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M18 12H6"
+                                stroke="#f7f8fa"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M11 19H6"
+                                stroke="#f7f8fa"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+                    <a href="#" class="logo">CodemeM</a>
+                    <ul class="pc-nav">
+                        <li class="home"><a>Home</a></li>
+                        <li class="roadmap">
+                            <a href="roadmap.html">Roadmap</a>
+                        </li>
+                        <li class="practice"><a>Practice</a></li>
+                        <li class="show-on-mobile separate">
+                            <a href="#!">Sign in</a>
+                        </li>
+                        <li class="show-on-mobile"><a href="#!">Sign up</a></li>
+                    </ul>
+                    <div class="actions">
+                        <a class="premium"><i class="fa-solid fa-crown"></i></a>
+                        <a href="#!" class="action-link">Sign in</a>
+                        <a href="#!" class="btn action-btn">Sign up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header class="mobile-header">
+            <!-- Overlay -->
+            <div for="menu-checkbox" class="menu-overlay"></div>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <!-- Logo -->
+                <div class="row">
+                    <a href="#" class="logo">CodemeM</a>
+                    <span class="btn-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <header class="mobile-header">
-        <!-- Overlay -->
-        <div for="menu-checkbox" class="menu-overlay"></div>
-    
-        <!-- Menu content -->
-        <div class="menu-drawer">
-            <!-- Logo -->
-            <div class="row">
-                <a href="#" class="logo">CodemeM</a>
-                <span class="btn-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </span>
+
+                <!-- Navigation -->
+                <ul class="mobile-nav"></ul>
             </div>
-    
-            <!-- Navigation -->
-            <ul class="mobile-nav"></ul>
-            
-        </div>
-    </header>
-    <main>
-    <div class="no-js-on-mobile"></div>
-    <div class="register wrapper show">
-        <h1>Signup</h1>
-        <form>
-            <div>
-                <label for="firstname-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                </label>
-                <input type="text" name="firstname" id="firstname-input" placeholder="Firstname">
+        </header>
+        <main>
+            <div class="wrapall-login">
+                <div class="no-js-on-mobile"></div>
+                <div class="register wrapper show">
+                    <h1>Signup</h1>
+                    <form>
+                        <div>
+                            <label for="firstname-input">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="text"
+                                name="firstname"
+                                id="firstname-input"
+                                placeholder="Firstname"
+                            />
+                        </div>
+                        <div>
+                            <label for="email-input">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email-input"
+                                placeholder="Email"
+                            />
+                        </div>
+                        <div>
+                            <label for="password-input">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password-input"
+                                placeholder="Password"
+                            />
+                        </div>
+                        <div>
+                            <label for="password-input">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="password"
+                                name="repeat-password"
+                                id="repeatpswd-input"
+                                placeholder="Repeat Passwod"
+                            />
+                        </div>
+                        <button type="submit">Sign up</button>
+                    </form>
+                    <p>
+                        Already have an account?<a class="login-button" href="#"
+                            >Login</a
+                        >
+                    </p>
+                </div>
+                <div class="login wrapper">
+                    <h1>Login</h1>
+                    <form>
+                        <div>
+                            <label for="email-input-login">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email-input-login"
+                                placeholder="Email"
+                            />
+                        </div>
+                        <div>
+                            <label for="password-input-login">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="black"
+                                >
+                                    <path
+                                        d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"
+                                    />
+                                </svg>
+                            </label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password-input-login"
+                                placeholder="Password"
+                            />
+                        </div>
+                        <button type="submit cursor">Sign in</button>
+                    </form>
+                    <p>
+                        You don't have an account ?<a
+                            class="signup-button cursor"
+                            href="#"
+                            >Register</a
+                        >
+                    </p>
+                    <p><span class="bold">Đăng nhập</span> với</p>
+                    <div class="login-other cursor">
+                        <img src="assets/icons/icons8-google.svg" alt="" />
+                        <span>Đăng nhập bằng <span class="bold">Google</span></span>
+                    </div>
+                    <div class="login-other cursor">
+                        <img src="assets/icons/icons8-facebook.svg" alt="" /> <span>Đăng nhập bằng <span class="bold">Facebook</span></span>
+                    </div>
+                </div>
+                <div class="login-image">
+                    <img
+                        src="assets/img/hitesh-choudhary-pMnw5BSZYsA-unsplash.jpg"
+                        alt="img"
+                    />
+                </div>
             </div>
-            <div>
-                <label for="email-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                </label>
-                <input type="email" name="email" id="email-input" placeholder="Email">
-            </div>
-            <div>
-                <label for="password-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
-                </label>
-                <input type="password" name="password" id="password-input" placeholder="Password">
-            </div>
-            <div>
-                <label for="password-input">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
-                </label>
-                <input type="password" name="repeat-password" id="repeatpswd-input" placeholder="Repeat Passwod">
-            </div>
-            <button type="submit">Sign up</button>
-        </form>
-        <p>Already have an account?<a class="login-button" href="#">Login</a></p>
-    </div>
-    <div class="login wrapper">
-        <h1>Login</h1>
-        <form>
-            <div>
-                <label for="email-input-login">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-                </label>
-                <input type="email" name="email" id="email-input-login" placeholder="Email">
-            </div>
-            <div>
-                <label for="password-input-login">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
-                </label>
-                <input type="password" name="password" id="password-input-login" placeholder="Password">
-            </div>
-            <button type="submit">Sign in</button>
-        </form>
-        <p>You don't have an account ?<a class="signup-button" href="#">Register</a></p>
-    </div>
-    <div class="login-image">
-        <img src="assets/img/frog2.jpg" alt="img">
-    </div>
-    </main> 
-</body>
+        </main>
+    </body>
 </html>

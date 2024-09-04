@@ -36,5 +36,14 @@ window.addEventListener("load", function() {
             img.classList.add("enabled");
         });
     };
+    let loginbutton = document.querySelector(".login-button");
+    let signupbutton = document.querySelector(".signup-button");
+    let bckwrap = document.querySelector(".wrapall-login")
+    loginbutton.addEventListener("click",function(){
+        bckwrap.classList.add("box-off");
+    });
+    signupbutton.addEventListener("click",function(){
+        bckwrap.classList.remove("box-off");
+    });
 });
 

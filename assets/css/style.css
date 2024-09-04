@@ -24,7 +24,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: rgba(22, 24, 35, .2);
+    background-color: rgba(22, 24, 35, 0.2);
 }
 
 ::-webkit-scrollbar-track {
@@ -160,9 +160,9 @@ header {
     background-color: #ffd90063;
     border-radius: 50%;
 }
-.navbar .premium:hover{
+.navbar .premium:hover {
     background-color: #ffd90088;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 }
 
 .navbar .actions {
@@ -196,7 +196,7 @@ footer {
     padding: 50px 0 58px;
     margin-top: 200px;
     background-color: #272727;
-    color: #969393
+    color: #969393;
 }
 
 footer .row {
@@ -204,7 +204,7 @@ footer .row {
 }
 
 footer .row-top {
-    gap: 185px; 
+    gap: 185px;
     /* justify-content: space-between; */
 }
 
@@ -244,7 +244,7 @@ footer .social {
 
 footer .social-link img {
     width: 27px;
-    height: 27px
+    height: 27px;
 }
 
 footer .social-link + .social-link {
@@ -267,4 +267,12 @@ footer .copyright {
     font-size: 1.6rem;
     font-weight: 400;
 }
+/* 
+main {
+    display: none;
+}
 
+main.active-page {
+    display: block;
+    animation: fade 0.5s ease backwards;
+} */
