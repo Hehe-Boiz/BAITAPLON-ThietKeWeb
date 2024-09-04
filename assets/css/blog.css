@@ -1,0 +1,169 @@
+main *{
+    color:black
+}
+.flex{
+    display: flex;
+}
+.top h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.top .search-box{
+    width: 300px;
+    border-bottom: 2px solid black;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgb(201, 199, 199),-12px -12px 12px white;
+}
+.top .search-box button{
+    background:transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.top .search-box button>svg{
+    fill: black;
+}
+.top input{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto 30px;
+    padding: 0 50px;
+}
+.info{
+    padding: 0 50px;
+    gap: 20px;
+}
+.main-content{
+    width: 70%;
+    background-color: rgb(237, 227, 206);
+    height: 100%;
+    border-radius: 4px;
+}
+.side-bar{
+    width: 30%;
+    border-radius: 4px;
+}
+.post{
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    height: auto;
+}
+.post .img-post{
+    position: relative;
+    width: 30%;
+}
+.all-posts{
+    padding: 20px;
+}
+.post{
+    display: none;
+    margin-bottom: 20px;
+}
+.post:nth-child(1),
+.post:nth-child(2),
+.post:nth-child(3),
+.post:nth-child(4),
+.post:nth-child(5){
+    display: flex;
+}
+.post .img-post img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+.post .post-content{
+    width: 70%;
+    padding-left: 20px ;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+.post .post-content h1{
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.post .post-content p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.author{
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.author>svg{
+    fill: black;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.weekly-hightlight{
+    padding: 10px;
+    background-color: rgb(241, 234, 226);
+    border-radius: 4px 4px 0 0;
+}
+.must-read{
+    padding: 10px;
+    background-color: rgb(241, 234, 226);
+    border-radius: 0 0 4px 4px ;
+}
+.weekly-hightlight h1{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.must-read h1{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.mini-post{
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(207, 207, 207);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+.mini-post h2{
+    padding:0 10px;
+    width: 70%;
+    font-size: 20px;
+}
+.mini-post .mini-img{
+    position: relative;
+    width: 30%;
+    height: 100px;
+}
+.mini-post .mini-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
+}
+.load{
+    justify-content: center;
+    align-items: center;
+}
+.load-more{
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border :2px solid black;
+}
+.load-more:hover{
+    background-color: blue;
+    color: white;
+}
+
