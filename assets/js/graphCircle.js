@@ -172,13 +172,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     attachDayClickEventsGoal();
 
-    // Khởi tạo MutationObserver cho các phần tử trong `days`
     let days = document.querySelectorAll(".center-date");
     days.forEach((day) => {
         observerCheck.observe(day, { attributes: true });
     });
 
-    // Khởi tạo đồ thị ban đầu
     animate(0);
 });
 
@@ -198,5 +196,4 @@ function ClassChange(mutationsList) {
     }
 }
 
-// Tạo một MutationObserver và gán hàm xử lý sự thay đổi class
 let observerCheck = new MutationObserver(ClassChange);

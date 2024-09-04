@@ -130,7 +130,7 @@ window.addEventListener("load", function () {
         let json = JSON.stringify(userlog);
         localStorage.setItem("log", json);
         // Lấy dữ liệu từ JSON
-        let response = await fetch("./json/user.json"); // Đảm bảo đường dẫn đúng
+        let response = await fetch("./json/user.json"); 
         let usersFromJSON = await response.json();
 
         // Tìm người dùng trong JSON

@@ -107,7 +107,7 @@
                     DateContainer.textContent = "Chọn ngày hoàn thành";
                 }
                 let selectedDay = parseInt(day.textContent);
-                let selectedDate = new Date(Year, Month - 1, selectedDay); // Ngày được chọn
+                let selectedDate = new Date(Year, Month - 1, selectedDay); 
 
                 let today = new Date();
                 //chỉ so sánh theo ngày nên đặt giờ về 0
@@ -116,7 +116,7 @@
                 // Kiểm tra nếu ngày được chọn là quá khứ
                 if (selectedDate < today) {
                     alert("Bạn không thể chọn ngày trong quá khứ!");
-                    return; // Kết thúc nếu là ngày quá khứ
+                    return; 
                 } else {
                     days.forEach((dayin) => {
                         let tdin = dayin.closest("td");
@@ -156,7 +156,7 @@
     goal.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             checkNumber();
-            event.preventDefault(); // Ngăn chặn hành động mặc định của phím Enter
+            event.preventDefault(); 
         }
     });
 

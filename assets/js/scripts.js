@@ -185,7 +185,7 @@ async function loadUserData() {
 
         let user = localStorage.getItem("log");
         let data = JSON.parse(user);
-        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let loggedInEmail = data.email; 
         let userFromJSON = usersFromJSON.find(
             (user) => user.accountName === loggedInEmail
         );
@@ -205,7 +205,7 @@ async function loadUserData() {
                 <img src="./assets/icons/crown-gold.svg" alt="Premium Icon" class="premium-acc">
             `;
             } else {
-                // Người dùng không phải Premium, không thêm biểu tượng crown
+                
                 wrapDiv.innerHTML = `
                 <img class="avatar-user-afterLog" src="${userFromJSON.avatar}" alt="User Avatar"/>
             `;

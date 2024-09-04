@@ -85,7 +85,6 @@ function animate(progressComplete) {
     }
 }
 
-// Khởi tạo IntersectionObserver
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach((entry) => {
@@ -242,13 +241,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     attachDayClickEventsGoal();
 
-    // Khởi tạo MutationObserver cho các phần tử trong `days`
     let days = document.querySelectorAll(".center-date");
     days.forEach((day) => {
         observerCheck.observe(day, { attributes: true });
     });
 
-    // Khởi tạo đồ thị ban đầu
     animate(0);
 });
 
@@ -268,7 +265,6 @@ function ClassChange(mutationsList) {
     }
 }
 
-// Tạo một MutationObserver và gán hàm xử lý sự thay đổi class
 let observerCheck = new MutationObserver(ClassChange);
 
 // đánh z-index
@@ -286,7 +282,6 @@ zIndexChange();
 fetch("./json/user.json")
     .then((response) => response.json())
     .then((users) => {
-        // Sort users by total completed exercises in descending order
         users.sort((a, b) => {
             let totalA =
                 a.completed.filter((c) => c.difficulty === "Easy").length +
@@ -395,7 +390,7 @@ async function loadUserData() {
 
         let user = localStorage.getItem("log");
         let data = JSON.parse(user);
-        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let loggedInEmail = data.email;
         let userFromJSON = usersFromJSON.find(
             (user) => user.accountName === loggedInEmail
         );

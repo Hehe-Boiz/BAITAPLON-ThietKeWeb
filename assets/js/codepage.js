@@ -355,7 +355,7 @@ async function loadUserData() {
 
         let user = localStorage.getItem("log");
         let data = JSON.parse(user);
-        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let loggedInEmail = data.email; 
         let userFromJSON = usersFromJSON.find(
             (user) => user.accountName === loggedInEmail
         );

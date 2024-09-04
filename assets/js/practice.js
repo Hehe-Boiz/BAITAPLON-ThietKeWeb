@@ -115,9 +115,9 @@ document.addEventListener("click", function (event) {
     }
 });
 
-let exercises = []; // Mảng chứa dữ liệu bài tập
-let rowsPerPage = 40; // Số bài tập mỗi trang
-let currentPage = 1; // Trang hiện tại
+let exercises = [];
+let rowsPerPage = 40;
+let currentPage = 1;
 
 // Hàm để đọc dữ liệu JSON từ file
 async function loadExercises() {
@@ -127,7 +127,6 @@ async function loadExercises() {
     displayExercises(currentPage);
 }
 
-// Hiển thị bài tập trên trang hiện tại
 function displayExercises(page, filteredExercises = exercises) {
     let start = (page - 1) * rowsPerPage;
     let end = start + rowsPerPage;
@@ -245,7 +244,6 @@ function displayExercises(page, filteredExercises = exercises) {
     checkLogin();
 }
 
-// Khởi tạo khi trang web tải xong
 loadExercises();
 
 function setbuttonPage(filteredExercises = exercises) {
@@ -391,10 +389,9 @@ document
         }, 300);
     });
 
-let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ đề đã chọn
+let selectedTopics = new Set();
 let currentUser = null;
 // Tạo các nút button tags để lọc
-// tải dữ liệu người dùng và dữ liệu bài tập
 fetch("./json/practice.json")
     .then((response) => response.json())
     .then((exercises) => {
@@ -421,12 +418,12 @@ fetch("./json/practice.json")
                     topic.classList.remove("is-opition");
                     let contentTopic = topic.textContent.trim();
                     deleteTagSelec(contentTopic);
-                    selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                    selectedTopics.delete(topicText);
                 } else {
                     topic.classList.add("is-opition");
                     let contentTopic = topic.textContent.trim();
                     createTagSelec(contentTopic);
-                    selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
+                    selectedTopics.add(topicText);
                 }
 
                 // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
@@ -447,16 +444,15 @@ fetch("./json/practice.json")
                     check.classList.remove("is-success");
                     let contentAcc = accSelectText;
                     deleteTagSelec(contentAcc);
-                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                    selectedTopics.delete(contentAcc);
                 } else {
                     icon.style.opacity = "1";
                     check.classList.add("is-success");
                     let contentAcc = accSelectText;
                     createTagSelec(contentAcc);
-                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                    selectedTopics.add(contentAcc);
                 }
 
-                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
                 filterExercises(selectedTopics, exercises);
             });
         });
@@ -474,16 +470,15 @@ fetch("./json/practice.json")
                     check.classList.remove("is-success");
                     let contentAcc = diffSelectText;
                     deleteTagSelec(contentAcc);
-                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                    selectedTopics.delete(contentAcc);
                 } else {
                     icon.style.opacity = "1";
                     check.classList.add("is-success");
                     let contentAcc = diffSelectText;
                     createTagSelec(contentAcc);
-                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                    selectedTopics.add(contentAcc);
                 }
 
-                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
                 filterExercises(selectedTopics, exercises);
             });
         });
@@ -501,31 +496,28 @@ fetch("./json/practice.json")
                     check.classList.remove("is-success");
                     let contentAcc = statusSelectText;
                     deleteTagSelec(contentAcc);
-                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                    selectedTopics.delete(contentAcc);
                 } else {
                     icon.style.opacity = "1";
                     check.classList.add("is-success");
                     let contentAcc = statusSelectText;
                     createTagSelec(contentAcc);
-                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                    selectedTopics.add(contentAcc);
                 }
 
-                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
                 filterExercises(selectedTopics, exercises);
             });
         });
     });
 
-// Hàm lọc bài tập dựa trên các chủ đề đã chọn
 function filterExercises(selectedTopics, exercises) {
     let filteredExercises;
     let hasCompletionFilter =
         selectedTopics.has("Hoàn thành") || selectedTopics.has("Chưa làm");
 
     if (selectedTopics.size === 0) {
-        filteredExercises = exercises; // Nếu không có bộ lọc nào được chọn, trả về tất cả bài tập
+        filteredExercises = exercises;
     } else {
-        // Lọc bài tập dựa trên các chủ đề đã chọn
         filteredExercises = exercises.filter((exercise) => {
             // Kiểm tra tags và access
             return Array.from(selectedTopics).every(
@@ -537,31 +529,11 @@ function filterExercises(selectedTopics, exercises) {
         });
     }
 
-    // Cập nhật số trang và hiển thị trang đầu tiên với kết quả đã lọc
     currentPage = 1;
     setbuttonPage(filteredExercises);
     displayExercises(currentPage, filteredExercises);
 }
 
-// Hàm hiển thị các bài tập đã lọc
-function showExercises(Exercises) {
-    let namePractices = document.querySelectorAll("tr .name a");
-    // Ẩn tất cả các hàng trước
-    namePractices.forEach((practice) => {
-        let tr = practice.closest("tr");
-        tr.style.display = "none";
-    });
-    // Hiển thị các bài tập đã lọc
-    Exercises.forEach((Exercise) => {
-        namePractices.forEach((practice) => {
-            console.log(Exercise.name);
-            let tr = practice.closest("tr");
-            if (practice.textContent.includes(Exercise.name)) {
-                tr.style.display = "";
-            }
-        });
-    });
-}
 
 // Nút reset
 let reset = document.querySelector(".reset");
@@ -603,8 +575,7 @@ reset.addEventListener("click", () => {
     // Xóa tất cả các chủ đề đã chọn
     selectedTopics.clear();
 
-    // Hiển thị lại tất cả bài tập
-    currentPage = 1; // Quay về trang đầu tiên
+    currentPage = 1;
     displayExercises(currentPage);
     setbuttonPage();
 });
