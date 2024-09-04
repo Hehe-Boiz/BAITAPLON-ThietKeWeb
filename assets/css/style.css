@@ -107,7 +107,7 @@ header {
     display: flex;
     align-items: center;
     gap: 25px;
-    margin-left: 170px;
+    margin-left: 150px;
 }
 
 .navbar ul a {
@@ -267,12 +267,45 @@ footer .copyright {
     font-size: 1.6rem;
     font-weight: 400;
 }
-/* 
-main {
+
+/* main {
     display: none;
 }
 
 main.active-page {
     display: block;
     animation: fade 0.5s ease backwards;
+}
+active-page.active-nav {
+    color: gold;
 } */
+
+.active-page {
+    color: gold; 
+    position: relative;
+    font-weight: 600 !important;
+}
+
+
+a.active-page::before{
+    background-color: gold !important;
+    transform: scaleX(0.5) !important;
+}
+
+.avatar-user-afterLog {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.premium-acc {
+    width: 20px;
+    position: absolute;
+    top: -15px;
+    left: 43%;
+}
+.user-premium {
+    border: 2px solid gold;
+}
+.wrap-userLog{
+    position: relative;
+}

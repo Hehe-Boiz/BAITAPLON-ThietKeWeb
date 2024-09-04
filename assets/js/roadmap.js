@@ -1,3 +1,4 @@
+
 // ============ Thay đổi kích thước ===============
 function adjustSVGPc() {
     const svg = document.querySelector(".graph");

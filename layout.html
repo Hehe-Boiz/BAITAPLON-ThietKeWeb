@@ -5,9 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/reset.css" />
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link
+            rel="stylesheet"
+            href="assets/css/reset.css"
+            class="default-css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/css/style.css"
+            class="default-css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/css/responsive.css"
+            class="default-css"
+        />
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,19 +27,30 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet"
+            class="default-css"
         />
         <link
             href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
             rel="stylesheet"
+            class="default-css"
         />
-        <link rel="stylesheet" href="assets/fonts/Poppins.css" />
-        <link rel="stylesheet" href="assets/fonts/ITC-Bauhaus-Medium.css" />
+        <link
+            rel="stylesheet"
+            href="assets/fonts/Poppins.css"
+            class="default-css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/fonts/ITC-Bauhaus-Medium.css"
+            class="default-css"
+        />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
+            class="default-css"
         />
 
         <script src="assets/js/load.js"></script>
@@ -38,33 +61,26 @@
         <script>
             load(".header", "./templates/header.html");
         </script>
-        <main data-page="home" class="home"></main>
+        <main data-page="home" class="home-page active-page"></main>
         <script>
-            load(".home", "./home.html");
+            load(".home-page", "./home.html");
         </script>
-        <main data-page="roadmap" class="roadmap"></main>
+        <main data-page="roadmap" class="roadmap-page"></main>
         <script>
-            load(".roadmap", "./roadmap.html");
+            load(".roadmap-page", "./roadmap.html");
         </script>
-        <main data-page="practice"></main>
-        <main data-page="blog"></main>
+        <main data-page="practice" class="practice-page"></main>
+        <script>
+            load(".practice-page", "./practice.html");
+        </script>
+        <main data-page="blog" class="blog-page"></main>
+        <script>
+            load(".blog-page", "./blog.html");
+        </script>
         <footer class="footer"></footer>
         <script>
             load(".footer", "./templates/footer.html");
         </script>
-        <script src="assets/js/blog.js"></script>
-        <script src="assets/js/bloglandingpage.js"></script>
-        <script src="assets/js/button.js"></script>
-        <script src="assets/js/codepage.js"></script>
-        <script src="assets/js/goal.js"></script>
-        <script src="assets/js/graph.js"></script>
-        <script src="assets/js/graphCircle.js"></script>
-        <script src="assets/js/home.js"></script>
-        <script src="assets/js/login.js"></script>
-        <script src="assets/js/practice.js"></script>
-        <script src="assets/js/roadmap.js"></script>
         <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/tab-roadmap.js"></script>
-        <script src="assets/js/testContent.js"></script>
     </body>
 </html>

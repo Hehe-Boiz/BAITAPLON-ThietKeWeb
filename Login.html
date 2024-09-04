@@ -31,84 +31,16 @@
         <title>Codemem</title>
     </head>
     <body>
-        <header>
-            <div class="content">
-                <nav class="navbar">
-                    <span class="toggle-menu">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-                            <path
-                                d="M18 4.5H6"
-                                stroke="#f7f8fa"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M18 12H6"
-                                stroke="#f7f8fa"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                            <path
-                                d="M11 19H6"
-                                stroke="#f7f8fa"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-                        </svg>
-                    </span>
-                    <a href="#" class="logo">CodemeM</a>
-                    <ul class="pc-nav">
-                        <li class="home"><a>Home</a></li>
-                        <li class="roadmap">
-                            <a href="roadmap.html">Roadmap</a>
-                        </li>
-                        <li class="practice"><a>Practice</a></li>
-                        <li class="show-on-mobile separate">
-                            <a href="#!">Sign in</a>
-                        </li>
-                        <li class="show-on-mobile"><a href="#!">Sign up</a></li>
-                    </ul>
-                    <div class="actions">
-                        <a class="premium"><i class="fa-solid fa-crown"></i></a>
-                        <a href="#!" class="action-link">Sign in</a>
-                        <a href="#!" class="btn action-btn">Sign up</a>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <header class="mobile-header">
-            <!-- Overlay -->
-            <div for="menu-checkbox" class="menu-overlay"></div>
-
-            <!-- Menu content -->
-            <div class="menu-drawer">
-                <!-- Logo -->
-                <div class="row">
-                    <a href="#" class="logo">CodemeM</a>
-                    <span class="btn-close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </span>
-                </div>
-
-                <!-- Navigation -->
-                <ul class="mobile-nav"></ul>
-            </div>
-        </header>
+        <header class="header"></header>
+        <script>
+            load(".header", "./templates/header.html");
+        </script>
         <main>
             <div class="wrapall-login">
                 <div class="no-js-on-mobile"></div>
                 <div class="register wrapper show">
                     <h1>Signup</h1>
-                    <form>
+                    <form id="signup-form">
                         <div>
                             <label for="firstname-input">
                                 <svg
@@ -125,9 +57,9 @@
                             </label>
                             <input
                                 type="text"
-                                name="firstname"
+                                name="Username"
                                 id="firstname-input"
-                                placeholder="Firstname"
+                                placeholder="Username"
                             />
                         </div>
                         <div>
@@ -152,6 +84,7 @@
                             />
                         </div>
                         <div>
+                            
                             <label for="password-input">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -170,8 +103,11 @@
                                 name="password"
                                 id="password-input"
                                 placeholder="Password"
+                                
                             />
                         </div>
+                        <p class="waring diff">*Không giống mật khậu đã tạo*</p>
+                        <p class="waring font">*Hãy đặt mật khẩu trên 8 kí tự*</p>
                         <div>
                             <label for="password-input">
                                 <svg
@@ -203,7 +139,7 @@
                 </div>
                 <div class="login wrapper">
                     <h1>Login</h1>
-                    <form>
+                    <form id="login-form">
                         <div>
                             <label for="email-input-login">
                                 <svg
@@ -225,6 +161,7 @@
                                 placeholder="Email"
                             />
                         </div>
+                        <p class="waring mk">Nhập sai mật khẩu hoặc tài khoản không chính xác</p>
                         <div>
                             <label for="password-input-login">
                                 <svg
@@ -258,10 +195,17 @@
                     <p><span class="bold">Đăng nhập</span> với</p>
                     <div class="login-other cursor">
                         <img src="assets/icons/icons8-google.svg" alt="" />
-                        <span>Đăng nhập bằng <span class="bold">Google</span></span>
+                        <span
+                            >Đăng nhập bằng
+                            <span class="bold">Google</span></span
+                        >
                     </div>
                     <div class="login-other cursor">
-                        <img src="assets/icons/icons8-facebook.svg" alt="" /> <span>Đăng nhập bằng <span class="bold">Facebook</span></span>
+                        <img src="assets/icons/icons8-facebook.svg" alt="" />
+                        <span
+                            >Đăng nhập bằng
+                            <span class="bold">Facebook</span></span
+                        >
                     </div>
                 </div>
                 <div class="login-image">
@@ -272,5 +216,6 @@
                 </div>
             </div>
         </main>
+        <script src="assets/js/scripts.js"></script>
     </body>
 </html>

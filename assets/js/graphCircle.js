@@ -1,3 +1,4 @@
+
 let canvas = document.getElementById("progressCircle");
 
 // Tăng độ phân giải của canvas

@@ -1,8 +1,7 @@
-// // Map các script tương ứng với mỗi mục trong navbar
 // let scriptMap = {
-//     home: ["home.js", "goal.js","button.js"],
-//     practice: ["practice.js", "graphCircle.js", "goal.js","button.js"],
-//     roadmap: ["roadmap.js","button.js"],
+//     home: ["home.js", "goal.js", "button.js"],
+//     practice: ["graphCircle.js","practice.js", "goal.js", "button.js"],
+//     roadmap: ["roadmap.js", "button.js","tab-roadmap.js"],
 // };
 
 // function removeOldScripts() {
@@ -24,8 +23,6 @@
 //         }
 //     }
 // }
-
-// // Hàm tải CSS
 // async function loadCSS(target) {
 //     // Tìm tất cả các thẻ link có rel='stylesheet' nhưng không có class='default-css'
 //     const oldLinks = document.querySelectorAll(
@@ -42,67 +39,44 @@
 //     newLink.classList.add("dynamic-css"); // Đánh dấu là CSS động
 //     document.head.appendChild(newLink);
 // }
-
-// // Xử lý sự kiện khi nhấp vào các thành phần trong navbar
-// document.querySelectorAll(".navbar li").forEach((li) => {
-//     li.addEventListener("click", function () {
-//         let targetClass = this.classList[0];
-//         console.log("targetClass:", targetClass); // Xem giá trị của targetClass
-//         let map = document.querySelector(".map");
-//         if (map) {
-//             map.remove();
+// function navigateTo(page) {
+//     document.querySelectorAll("[data-page]").forEach((element) => {
+//         if (element.dataset.page === page) {
+//             element.classList.add("active-page");
+//             loadCSS(page);
+//             loadJS(page);
+//         } else {
+//             element.classList.remove("active-page");
 //         }
-
-//         // Tải nội dung HTML vào thẻ main và đợi cho việc tải hoàn tất
-//         load("#main-content", `${targetClass}.html`);
-
-//         if (targetClass === "roadmap") {
-//             let divMap = document.createElement("div");
-//             divMap.classList.add("map");
-//             document.body.appendChild(divMap);
-//             const mainElement = document.querySelector("#main-content");
-//             mainElement.prepend(divMap);
-//             load(".map", "map.html");
-//         }
-
-//         // Xóa phần tử footer nếu nó đã tồn tại
-//         let Footer = document.querySelector("footer");
-//         if (Footer) {
-//             Footer.remove();
-//         }
-
-//         if (targetClass === "home" || targetClass === "practice") {
-//             let footer = document.createElement("footer");
-//             footer.classList.add("footer");
-//             document.body.appendChild(footer);
-//             load(".footer", "./templates/footer.html");
-//         }
-//         loadCSS(targetClass);
-//         loadJS(targetClass);
 //     });
-// });
 
-// // Mặc định tải trang home khi trang được tải lần đầu
-// document.addEventListener("DOMContentLoaded", async () => {
-//     await loadCSS("home");
-//     // Tải nội dung trang Home vào thẻ main khi trang web được tải lần đầu và đợi cho việc tải hoàn tất
-//     load("#main-content", "home.html");
-//     let existingFooter = document.querySelector("footer");
-//     if (existingFooter) {
-//         existingFooter.remove();
-//     }
+//     document.querySelectorAll("[data-link]").forEach((link) => {
+//         if (link.dataset.link === page) {
+//             link.classList.add("active-nav");
+//         } else {
+//             link.classList.remove("active-nav");
+//         }
+//     });
 
-//     // Tạo phần tử footer
-//     const footer = document.createElement("footer");
-//     // Thêm lớp 'footer' vào phần tử
-//     footer.classList.add("footer");
-//     // Thêm phần tử footer vào body
-//     document.body.appendChild(footer);
-//     load(".footer", "./templates/footer.html");
-//     // Áp dụng CSS và JS cho trang Home sau khi nội dung HTML đã được tải
-//     loadCSS("home");
-//     loadJS("home");
-// });
+//     window.scrollTo(0, 0);
+// }
+
+// function init() {
+//     document.querySelectorAll("[data-link]").forEach((link) => {
+//         link.addEventListener("click", (e) => {
+//             e.preventDefault();
+//             navigateTo(link.dataset.link);
+//         });
+//     });
+
+//     // Load initial page based on active-page class
+//     const initialPage = document.querySelector(".active-page").dataset.page;
+//     loadCSS(initialPage);
+//     loadJS(initialPage);
+// }
+
+// // Initialize when DOM is ready
+// document.addEventListener("DOMContentLoaded", init);
 
 //=============== Chuyển code ==============
 function copyNav() {
@@ -115,37 +89,151 @@ copyNav();
 
 //=============== Bật menu trên tablet và điện thoại ==============
 
-let listIcon = document.querySelector(".toggle-menu")
-let menuOverlay = document.querySelector(".menu-overlay") ;
+let listIcon = document.querySelector(".toggle-menu");
+let menuOverlay = document.querySelector(".menu-overlay");
 function hiddenMenu() {
     console.log("thanh cong");
     let menu = document.querySelector(".menu-drawer");
     menu.classList.toggle("show-menu");
     menuOverlay.classList.toggle("show-menu-overlay");
 }
-listIcon.addEventListener("click",hiddenMenu);
-menuOverlay.addEventListener("click",hiddenMenu);
+listIcon.addEventListener("click", hiddenMenu);
+menuOverlay.addEventListener("click", hiddenMenu);
 let btnClose = document.querySelector(".btn-close");
-btnClose.addEventListener("click",hiddenMenu);
+btnClose.addEventListener("click", hiddenMenu);
+// =============== Header ==============
 
-//=============== đổi trang ============== 
-const navigationLinks = document.querySelectorAll("[data-link]");
-const pages = document.querySelectorAll("[data-page]");
+const currentPath = window.location.pathname;
+const navLinks = document.querySelectorAll(".navbar .pc-nav a, .mobile-nav a");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
-
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active-page");
-        navigationLinks[i].classList.add("active-nav");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-
-  });
+function getPageNameFromPath(path) {
+    // Lấy phần cuối cùng của đường dẫn (tên file)
+    const parts = path.split("/");
+    return parts[parts.length - 1];
 }
+
+const currentPageName = getPageNameFromPath(currentPath);
+console.log("currentPageName", currentPageName);
+
+navLinks.forEach((link) => {
+    const linkPageName = link.getAttribute("href");
+    if (linkPageName === currentPageName) {
+        console.log("active-page", linkPageName);
+        link.classList.add("active-page");
+        link.href = "#";
+    }
+});
+// =============== Sign in hoặc sign up ==============
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+function opLog() {
+    let login = document.querySelector(".login-button");
+    let logwrapper = document.querySelector(".login.wrapper");
+    let regwrapper = document.querySelector(".register.wrapper");
+    let img = document.querySelector(".login-image");
+    let main = document.querySelector("main");
+    let register = document.querySelector(".signup-button");
+    const action = getQueryParam("form");
+    // Kiểm tra URL hiện tại
+    const currentPath = window.location.pathname;
+    console.log(currentPath.includes("Login.html"));
+
+    if (action === "signIn") {
+        if (currentPath.includes("Login.html")) {
+            regwrapper.classList.add("off");
+            logwrapper.classList.add("show");
+            logwrapper.classList.add("center");
+            img.classList.add("off");
+            document.querySelector(".wrapall-login").classList.add("box-off");
+        } else {
+            console.log("chuyen");
+            // Chuyển đến trang signIn nếu không ở đó
+            window.location.href = "Login.html?form=signIn";
+        }
+    } else if (action === "signUp") {
+        if (currentPath.includes("Login.html")) {
+            console.log(currentPath);
+            logwrapper.classList.remove("show");
+            regwrapper.classList.add("show");
+            regwrapper.classList.add("overlay-register");
+            img.classList.remove("disabled");
+            img.classList.add("enabled");
+        } else {
+            // Chuyển đến trang signUp nếu không ở đó
+            window.location.href = "Login.html?form=signUp";
+        }
+    }
+}
+opLog();
+//=============== Sau khi đăng nhập ==============
+// Đảm bảo bạn bao quanh mã sử dụng `await` với một hàm `async`
+// localStorage.clear();
+let islog = localStorage.getItem("islog");
+async function loadUserData() {
+
+    if (islog === "true") {
+        let signin = document.querySelector(".action-link");
+        let signup = document.querySelector(".action-btn");
+        let actions = document.querySelector(".actions");
+        signin.style.display = "none";
+        signup.style.display = "none";
+
+        let response = await fetch("./json/user.json");
+        let usersFromJSON = await response.json();
+
+        let user = localStorage.getItem("log");
+        let data = JSON.parse(user);
+        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let userFromJSON = usersFromJSON.find(
+            (user) => user.accountName === loggedInEmail
+        );
+        const wrapDiv = document.createElement("div");
+        wrapDiv.className = "wrap-userLog";
+
+        // Giả sử bạn có một phần tử HTML để hiển thị ảnh đại diện
+
+        if (userFromJSON) {
+            console.log("thanh cong");
+            
+
+            if (userFromJSON.acc === "Premium") {
+                console.log("Premium");
+                // Người dùng là Premium, thêm biểu tượng crown
+                wrapDiv.innerHTML = `
+                <img class="avatar-user-afterLog user-premium" src="${userFromJSON.avatar}" alt="User Avatar"/>
+                <img src="./assets/icons/crown-gold.svg" alt="Premium Icon" class="premium-acc">
+            `;
+            } else {
+                // Người dùng không phải Premium, không thêm biểu tượng crown
+                wrapDiv.innerHTML = `
+                <img class="avatar-user-afterLog" src="${userFromJSON.avatar}" alt="User Avatar"/>
+            `;
+            }
+        } else {
+            console.log("ngheo");
+
+            // Nếu không tìm thấy tài khoản, sử dụng ảnh mặc định
+            wrapDiv.innerHTML = `
+            <img class="avatar-user-afterLog" src="./assets/img/default_avatar.jpg" alt="Default Avatar"/>
+        `;
+        }
+        actions.insertBefore(wrapDiv, actions.querySelector("a").nextSibling);
+    }
+}
+
+loadUserData();
+for (let i = 0; i < localStorage.length; i++) {
+    let key = localStorage.key(i);
+    let value = localStorage.getItem(key);
+    console.log(`Key: ${key}, Value: ${value}`);
+}
+function setTimePut(time) {
+    var interval = setInterval(function () {
+        localStorage.setItem("islog", "false");
+    }, time);
+}
+
+setTimePut(60000); // 10 phút

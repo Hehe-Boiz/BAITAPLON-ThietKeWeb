@@ -8,7 +8,7 @@
     }
     main {
         overflow: hidden;
-        background-color: rgb(160, 158, 158);
+        /* background-color: rgb(160, 158, 158); */
         display: flex;
         align-items: center;
         justify-content: center;

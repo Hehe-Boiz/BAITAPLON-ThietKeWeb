@@ -1,7 +1,7 @@
 [
     {
         "username": "HeheBoiz",
-        "accountName": "heheboiz",
+        "accountName": "heheboiz@gmail.com" ,
         "password": "12345678",
         "avatar": "assets/img/avatar-ranking.png",
         "acc": "Premium",
@@ -60,7 +60,7 @@
     },
     {
         "username": "BaTan",
-        "accountName": "batannnn",
+        "accountName": "batannnn@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",
@@ -103,7 +103,7 @@
     },
     {
         "username": "HoangVu",
-        "accountName": "hoangvu",
+        "accountName": "hoangvu@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",
@@ -142,7 +142,7 @@
     },
     {
         "username": "TrongKha",
-        "accountName": "trongkha",
+        "accountName": "trongkha@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Free",
@@ -169,7 +169,7 @@
     },
     {
         "username": "QuangLong",
-        "accountName": "QuangLong",
+        "accountName": "QuangLong@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (3).jpg",
         "acc": "Free",
@@ -216,7 +216,7 @@
     },
     {
         "username": "NgocLinh",
-        "accountName": "ngoclinh",
+        "accountName": "ngoclinh@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (4).jpg",
         "acc": "Premium",
@@ -255,7 +255,7 @@
     },
     {
         "username": "ThanhTien",
-        "accountName": "thanhtien",
+        "accountName": "thanhtien@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Free",
@@ -286,7 +286,7 @@
     },
     {
         "username": "DuongThuongDau",
-        "accountName": "duongthuongdau",
+        "accountName": "duongthuongdau@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",
@@ -320,8 +320,8 @@
         }
     },
     {
-        "username": "Thanh",
-        "accountName": "thanh113",
+        "username": "ThayThanh",
+        "accountName": "thanh113@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",
@@ -368,7 +368,7 @@
     },
     {
         "username": "DoanThiRia",
-        "accountName": "doanthiria",
+        "accountName": "doanthiria@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",
@@ -407,7 +407,7 @@
     },
     {
         "username": "KhoaNgu",
-        "accountName": "khoangu",
+        "accountName": "khoangu@gmail.com",
         "password": "12345678",
         "avatar": "assets/img/avatar (2).jpg",
         "acc": "Premium",

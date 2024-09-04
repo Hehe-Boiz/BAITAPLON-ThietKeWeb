@@ -33,7 +33,7 @@
         min-width: 400px;
         max-width: 600px;
         padding: 10px 15px;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .colum .vid {
         width: 80%;
@@ -80,6 +80,12 @@
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+    .colum {
+        gap: 20px;
+    }
+    .wrapall-vid + .wrapall-vid {
+        margin-top: 15px;
+    }
     .view svg {
         margin: 0 60%;
         transform: translateX(-52%) scale(0.7);
@@ -105,28 +111,47 @@
         font-size: 1.5rem;
     }
     .wrap-row-vid .row-vid {
-        min-width: 350px;
+        min-width: 340px;
         height: auto;
     }
     .wrap-row-vid {
         height: auto;
     }
-    .wrapall-vid + .wrapall-vid {
-        margin-top: 10px;
-    }
     .colum .name {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     th {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .center {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .check {
         width: 17px;
         height: 17px;
     }
+    .check-pre {
+        width: 15px;
+        height: 15px;
+        border: 1.5px solid #7a7a7a;
+    }
+    .colum .vid {
+        padding: 7px 15px;
+        width: 80%;
+        max-width: 300px;
+    }
+    .wrapall-vid {
+        height: 60px;
+    }
+    .wrap-row-vid .row-vid {
+        padding: 8px 12px;
+        width: 90%;
+        min-width: 300px;
+    }
+    /* .wrap-row-vid .row-vid{
+        justify-content: center;
+        gap: 30px
+    } */
 }
 @media screen and (max-width: 725px) {
     .view svg {
@@ -147,21 +172,45 @@
     .view svg {
         /* width: 100%; */
         margin-left: 50%;
-        transform: translateX(-35%) scale(0.6);
+        transform: translateX(-40%) scale(0.6);
+    }
+}
+@media screen and (max-width: 600px) {
+    .view svg {
+        /* width: 100%; */
+        margin-left: 40%;
+        transform: translateX(-35%) scale(0.5);
+    }
+}
+@media screen and (max-width: 520px) {
+    .view svg {
+        /* width: 100%; */
+        margin-left: 40%;
+        transform: translateX(-38%) scale(0.4);
     }
 }
 @media screen and (max-width: 458px) {
     .view svg {
         /* width: 100%; */
         margin-left: 50%;
-        transform: translateX(-30%) scale(0.6);
+        transform: translateX(-43%) scale(0.4);
+    }
+}
+@media screen and (max-width: 430px) {
+    .view svg {
+        /* width: 100%; */
+        margin-left: 50%;
+        transform: translateX(-37%) scale(0.5);
     }
 }
 @media screen and (max-width: 370px) {
     .view svg {
         /* width: 100%; */
         margin-left: 50%;
-        transform: translateX(-27%) scale(0.6);
+        transform: translateX(-47%) scale(0.4);
+    }
+    .wrap-row-vid .row-vid{
+        min-width: 0;
     }
 }
 @media screen and (max-width: 290px) {
