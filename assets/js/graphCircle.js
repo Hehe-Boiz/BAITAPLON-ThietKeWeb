@@ -40,8 +40,7 @@ function animate(progressComplete) {
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillText(`Chưa đặt mục tiêu`, centerX, centerY);
-    } 
-    else if (checkGoal()) {
+    } else if (checkGoal()) {
         // Vẽ đường tròn tiến trình
         let endAngle = (progressDraw / 100) * 2 * Math.PI + startAngle;
         ctx.beginPath();
@@ -93,7 +92,32 @@ let observer = new IntersectionObserver(
 );
 
 observer.observe(canvas);
-window.addEventListener("resize", animate(70))
+//khi hàm màn hình thay đổi sẽ tự vẽ lại
+function graphResize() {
+    let scale = window.devicePixelRatio * 3;
+    if (window.innerWidth > 991.98 && window.innerWidth < 1100) {
+        canvas.width = (canvas.clientWidth * scale) / 1.4;
+        canvas.height = (canvas.clientHeight * scale) / 1.305;
+    } else if (window.innerWidth < 991.98) {
+        canvas.width = (canvas.clientWidth * scale) / 1.05;
+        canvas.height = (canvas.clientHeight * scale) / 1.105;
+    } else if (window.innerWidth > 992) {
+        canvas.width = (canvas.clientWidth * scale) / 1.9;
+        canvas.height = (canvas.clientHeight * scale) / 1.3;
+    }
+    canvas.style.width = `${canvas.clientWidth / 3}px`;
+    canvas.style.height = `${canvas.clientHeight}px`;
+
+    ctx = canvas.getContext("2d");
+    ctx.scale(scale, scale);
+
+    centerX = canvas.width / 2 / scale;
+    centerY = canvas.height / 2 / scale;
+    progressDraw = 0;
+    animate(70);
+}
+
+window.addEventListener("resize", graphResize);
 
 let days = document.querySelectorAll(".center-date");
 let today = new Date();
@@ -116,8 +140,14 @@ function attachDayClickEventsGoal() {
 }
 
 function checkGoal() {
-    let inputGoalValue = document.querySelector(".input-goal .goal").value.trim();
-    if (inputGoalValue === "" || !selectedDate || !document.querySelector(".is-selecDate")) {
+    let inputGoalValue = document
+        .querySelector(".input-goal .goal")
+        .value.trim();
+    if (
+        inputGoalValue === "" ||
+        !selectedDate ||
+        !document.querySelector(".is-selecDate")
+    ) {
         return false;
     }
     return true;
@@ -128,7 +158,7 @@ function handleInputChange() {
         animate(70);
     } else {
         animate(0);
-    }   
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -151,9 +181,12 @@ document.addEventListener("DOMContentLoaded", function () {
     animate(0);
 });
 
-function handleClassChange(mutationsList) {
+function ClassChange(mutationsList) {
     for (let mutation of mutationsList) {
-        if (mutation.type === "attributes" && mutation.attributeName === "class") {
+        if (
+            mutation.type === "attributes" &&
+            mutation.attributeName === "class"
+        ) {
             console.log("Class đã thay đổi trên phần tử:", mutation.target);
             if (checkGoal()) {
                 animate(70);
@@ -165,4 +198,4 @@ function handleClassChange(mutationsList) {
 }
 
 // Tạo một MutationObserver và gán hàm xử lý sự thay đổi class
-let observerCheck = new MutationObserver(handleClassChange);
+let observerCheck = new MutationObserver(ClassChange);

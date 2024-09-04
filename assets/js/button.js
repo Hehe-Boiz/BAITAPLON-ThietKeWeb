@@ -45,7 +45,7 @@ checkspre.forEach(function (check) {
 function checkLogin() {
     const isLoggedIn = false; // Thay đổi giá trị này dựa trên trạng thái thực tế của người dùng
 
-    document.querySelectorAll("a.premium").forEach((link) => {
+    document.querySelectorAll("td a.premium").forEach((link) => {
         if (!isLoggedIn) {
             link.addEventListener("click", function (event) {
                 let tr = link.closest("tr");

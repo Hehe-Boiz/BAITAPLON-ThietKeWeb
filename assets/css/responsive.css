@@ -218,3 +218,8 @@
 .show-menu {
     transform: translateX(0);
 }
+@media screen and (max-width: 550px){
+    .menu-drawer .row {
+        gap: 130px;
+    }
+}

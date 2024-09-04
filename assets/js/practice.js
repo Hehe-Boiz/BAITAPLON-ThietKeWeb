@@ -611,6 +611,9 @@ reset.addEventListener("click", () => {
     displayExercises(currentPage); // Tái tạo lại bảng với tất cả các bài tập
     setbuttonPage(); // Cập nhật lại nút phân trang
 });
+
+
+
 //tạo tags khi ấn trên filter
 
 function createTagSelec(content) {

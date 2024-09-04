@@ -305,6 +305,7 @@ body main .content-practice {
     padding: 5px;
     font-size: 1.7rem;
     border-radius: 6px;
+    font-weight: 500;
 }
 
 .nav-table .nav-btn + .nav-btn {

@@ -1,0 +1,125 @@
+/* PC */
+@media screen and (min-width: 992px) {
+}
+@media screen and (max-width: 1400px) {
+    .sidebar-right {
+        display: none;
+    }
+}
+@media screen and (max-width: 1050px){
+    .sidebar-left {
+        display: none;
+    }
+}
+
+/* Tablet & mobile */
+@media screen and (max-width: 991.98px) {
+    .sidebar-left {
+        display: none;
+    }
+    .sidebar-right {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    body main .content-practice {
+        width: 1110px;
+        max-width: calc(100% - 48px);
+        min-width: 0;
+        padding: 0;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .row-top-sea {
+        flex-direction: column;
+        min-width: 100%;
+        padding: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .sea-input {
+        width: 200px;
+        padding: 1.2rem;
+        padding-left: 4rem;
+    }
+    .row-fil {
+        width: 100%;
+    }
+    .status {
+        width: auto;
+        flex-grow: 1;
+    }
+    .diff {
+        width: auto;
+        flex-grow: 1;
+    }
+    .topics {
+        width: auto;
+        flex-grow: 1;
+    }
+    .wrap-setting {
+        padding: 7px;
+    }
+    .setting-in {
+        width: 2rem;
+    }
+    .wrap-name {
+        font-size: 1.3rem;
+        justify-content: center;
+        padding: 1rem 0.5rem;
+    }
+    .sea-input:focus {
+        width: 300px;
+        transition: all 1s ease-out;
+        outline: none;
+    }
+    .search {
+        top: 17px;
+        left: 20px;
+        font-size: 1.5rem;
+    }
+    .prac-head th {
+        font-size: 1.4rem;
+        /* min-width: 100%; */
+        padding: 1.5rem;
+    }
+    .tbl-prac td {
+        font-size: 1.3rem;
+        padding: 1rem;
+        line-height: 1.4;
+        vertical-align: middle;
+    }
+    .center-prb {
+        font-size: 1.3rem;
+    }
+    .tbl-prac td.acc {
+        font-size: 1.3rem;
+    }
+    .check {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+    }
+    .nav-table .nav-btn {
+        font-size: 1.3rem;
+    }
+    .nav-table img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .fa-lock {
+        padding-top: 5px;
+        font-size: 1.5rem;
+    }
+    .tbl-prac .center {
+        height: 100%;
+    }
+}
