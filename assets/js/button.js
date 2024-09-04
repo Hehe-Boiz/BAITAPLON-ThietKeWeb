@@ -1,3 +1,4 @@
+
 // ============= Check-table ==============
 let checks = document.querySelectorAll(".check");
 checks.forEach(function (check) {

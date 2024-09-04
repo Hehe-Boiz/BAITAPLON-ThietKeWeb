@@ -321,7 +321,13 @@ fetch("./json/user.json")
             const rankingTr = document.createElement("tr");
             rankingTr.innerHTML = `
                 <td><div class="center ${
-                    index === 0 ? "top1-number" : index === 1 ? "top2-number":index ===2 ? "top3-number" : ""
+                    index === 0
+                        ? "top1-number"
+                        : index === 1
+                        ? "top2-number"
+                        : index === 2
+                        ? "top3-number"
+                        : ""
                 } number">${index + 1}</div></td>
                                 <td>
                                     <div class="center fix-rank">
@@ -334,7 +340,13 @@ fetch("./json/user.json")
                                 <td>
                                     <div class="center wrap-avatar">
                                         <div class=" ${
-                                            index === 0 ? "top1-rank" : index === 1 ? "top2-rank":index ===2 ? "top3-rank" : ""
+                                            index === 0
+                                                ? "top1-rank"
+                                                : index === 1
+                                                ? "top2-rank"
+                                                : index === 2
+                                                ? "top3-rank"
+                                                : ""
                                         } ">
                                             <img
                                                 src="${user.avatar}"
@@ -348,7 +360,9 @@ fetch("./json/user.json")
                                                     ? "gold"
                                                     : index === 1
                                                     ? "silver"
-                                                    : index===2 ? "bronze":'none'
+                                                    : index === 2
+                                                    ? "bronze"
+                                                    : "none"
                                             }.svg" alt=""/></span>
                                     </div>
                                 </td>
@@ -374,3 +388,29 @@ fetch("./json/user.json")
             rankingContainer.appendChild(rankingTr);
         });
     });
+
+async function loadUserData() {
+    if (islog === "true") {
+        let response = await fetch("./json/user.json");
+        let usersFromJSON = await response.json();
+
+        let user = localStorage.getItem("log");
+        let data = JSON.parse(user);
+        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let userFromJSON = usersFromJSON.find(
+            (user) => user.accountName === loggedInEmail
+        );
+        const wrapDiv = document.createElement("div");
+        wrapDiv.className = "wrap-userLog";
+
+        // Giả sử bạn có một phần tử HTML để hiển thị ảnh đại diện
+        let username = document.querySelector(".username");
+        if (userFromJSON) {
+            let imgava = document.querySelector(".user-home-ava");
+            imgava.src = userFromJSON.avatar;
+            username.textContent = userFromJSON.username
+        }
+    }
+}
+
+loadUserData();

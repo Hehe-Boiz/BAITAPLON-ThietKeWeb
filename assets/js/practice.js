@@ -243,7 +243,6 @@ function displayExercises(page, filteredExercises = exercises) {
         });
     });
     checkLogin();
-
 }
 
 // Khởi tạo khi trang web tải xong
@@ -396,128 +395,126 @@ let selectedTopics = new Set(); // Sử dụng Set để lưu trữ các chủ �
 let currentUser = null;
 // Tạo các nút button tags để lọc
 // tải dữ liệu người dùng và dữ liệu bài tập
-Promise.all([
-    fetch("./json/practice.json").then((response) => response.json()),
-    fetch("./json/user.json").then((response) => response.json()),
-]).then(([exercises, usersData]) => {
-    let users = usersData.users;
-    currentUser = users.find((user) => user.username === "HeheBoiz");
+fetch("./json/practice.json")
+    .then((response) => response.json())
+    .then((exercises) => {
+        let allTags = exercises.flatMap((exercise) => exercise.tags);
+        let uniqueTags = [...new Set(allTags)];
+        let wrapTopics = document.querySelector(".wrap");
 
-    let allTags = exercises.flatMap((exercise) => exercise.tags);
-    let uniqueTags = [...new Set(allTags)];
-    let wrapTopics = document.querySelector(".wrap");
+        uniqueTags.forEach((tag) => {
+            let button = document.createElement("span");
 
-    uniqueTags.forEach((tag) => {
-        let button = document.createElement("span");
+            button.textContent = tag;
+            button.classList.add("topic", "cursor");
+            wrapTopics.appendChild(button);
+        });
 
-        button.textContent = tag;
-        button.classList.add("topic", "cursor");
-        wrapTopics.appendChild(button);
-    });
+        // Gán sự kiện cho các nút tag vừa tạo
+        let topics = document.querySelectorAll(".topic");
+        topics.forEach((topic) => {
+            topic.addEventListener("click", () => {
+                let topicText = topic.textContent.trim();
 
-    // Gán sự kiện cho các nút tag vừa tạo
-    let topics = document.querySelectorAll(".topic");
-    topics.forEach((topic) => {
-        topic.addEventListener("click", () => {
-            let topicText = topic.textContent.trim();
+                // Thay đổi trạng thái của nút
+                if (selectedTopics.has(topicText)) {
+                    topic.classList.remove("is-opition");
+                    let contentTopic = topic.textContent.trim();
+                    deleteTagSelec(contentTopic);
+                    selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                } else {
+                    topic.classList.add("is-opition");
+                    let contentTopic = topic.textContent.trim();
+                    createTagSelec(contentTopic);
+                    selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
+                }
 
-            // Thay đổi trạng thái của nút
-            if (selectedTopics.has(topicText)) {
-                topic.classList.remove("is-opition");
-                let contentTopic = topic.textContent.trim();
-                deleteTagSelec(contentTopic);
-                selectedTopics.delete(topicText); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
-            } else {
-                topic.classList.add("is-opition");
-                let contentTopic = topic.textContent.trim();
-                createTagSelec(contentTopic);
-                selectedTopics.add(topicText); // Thêm chủ đề vào Set nếu được chọn
-            }
+                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+                filterExercises(selectedTopics, exercises);
+            });
+        });
+        let accSelects = document.querySelectorAll(".opition");
+        accSelects.forEach((accSelect) => {
+            accSelect.addEventListener("click", () => {
+                let accSelectText = accSelect
+                    .querySelector("p")
+                    .textContent.trim();
+                let check = accSelect.querySelector(".check-pre");
+                let icon = check.querySelector("i");
+                // Thay đổi trạng thái của nút
+                if (selectedTopics.has(accSelectText)) {
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                    let contentAcc = accSelectText;
+                    deleteTagSelec(contentAcc);
+                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                } else {
+                    icon.style.opacity = "1";
+                    check.classList.add("is-success");
+                    let contentAcc = accSelectText;
+                    createTagSelec(contentAcc);
+                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                }
 
-            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
-            filterExercises(selectedTopics, exercises);
+                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+                filterExercises(selectedTopics, exercises);
+            });
+        });
+        let diffSelects = document.querySelectorAll(".opition-diff");
+        diffSelects.forEach((diffSelect) => {
+            diffSelect.addEventListener("click", () => {
+                let diffSelectText = diffSelect
+                    .querySelector("p")
+                    .textContent.trim();
+                let check = diffSelect.querySelector(".check-pre");
+                let icon = check.querySelector("i");
+                // Thay đổi trạng thái của nút
+                if (selectedTopics.has(diffSelectText)) {
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                    let contentAcc = diffSelectText;
+                    deleteTagSelec(contentAcc);
+                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                } else {
+                    icon.style.opacity = "1";
+                    check.classList.add("is-success");
+                    let contentAcc = diffSelectText;
+                    createTagSelec(contentAcc);
+                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                }
+
+                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+                filterExercises(selectedTopics, exercises);
+            });
+        });
+        let statusSelects = document.querySelectorAll(".opition-status");
+        statusSelects.forEach((statusSelect) => {
+            statusSelect.addEventListener("click", () => {
+                let statusSelectText = statusSelect
+                    .querySelector("p")
+                    .textContent.trim();
+                let check = statusSelect.querySelector(".check-pre");
+                let icon = check.querySelector("i");
+                // Thay đổi trạng thái của nút
+                if (selectedTopics.has(statusSelectText)) {
+                    icon.style.opacity = "0";
+                    check.classList.remove("is-success");
+                    let contentAcc = statusSelectText;
+                    deleteTagSelec(contentAcc);
+                    selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
+                } else {
+                    icon.style.opacity = "1";
+                    check.classList.add("is-success");
+                    let contentAcc = statusSelectText;
+                    createTagSelec(contentAcc);
+                    selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
+                }
+
+                // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
+                filterExercises(selectedTopics, exercises);
+            });
         });
     });
-    let accSelects = document.querySelectorAll(".opition");
-    accSelects.forEach((accSelect) => {
-        accSelect.addEventListener("click", () => {
-            let accSelectText = accSelect.querySelector("p").textContent.trim();
-            let check = accSelect.querySelector(".check-pre");
-            let icon = check.querySelector("i");
-            // Thay đổi trạng thái của nút
-            if (selectedTopics.has(accSelectText)) {
-                icon.style.opacity = "0";
-                check.classList.remove("is-success");
-                let contentAcc = accSelectText;
-                deleteTagSelec(contentAcc);
-                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
-            } else {
-                icon.style.opacity = "1";
-                check.classList.add("is-success");
-                let contentAcc = accSelectText;
-                createTagSelec(contentAcc);
-                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
-            }
-
-            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
-            filterExercises(selectedTopics, exercises);
-        });
-    });
-    let diffSelects = document.querySelectorAll(".opition-diff");
-    diffSelects.forEach((diffSelect) => {
-        diffSelect.addEventListener("click", () => {
-            let diffSelectText = diffSelect
-                .querySelector("p")
-                .textContent.trim();
-            let check = diffSelect.querySelector(".check-pre");
-            let icon = check.querySelector("i");
-            // Thay đổi trạng thái của nút
-            if (selectedTopics.has(diffSelectText)) {
-                icon.style.opacity = "0";
-                check.classList.remove("is-success");
-                let contentAcc = diffSelectText;
-                deleteTagSelec(contentAcc);
-                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
-            } else {
-                icon.style.opacity = "1";
-                check.classList.add("is-success");
-                let contentAcc = diffSelectText;
-                createTagSelec(contentAcc);
-                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
-            }
-
-            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
-            filterExercises(selectedTopics, exercises);
-        });
-    });
-    let statusSelects = document.querySelectorAll(".opition-status");
-    statusSelects.forEach((statusSelect) => {
-        statusSelect.addEventListener("click", () => {
-            let statusSelectText = statusSelect
-                .querySelector("p")
-                .textContent.trim();
-            let check = statusSelect.querySelector(".check-pre");
-            let icon = check.querySelector("i");
-            // Thay đổi trạng thái của nút
-            if (selectedTopics.has(statusSelectText)) {
-                icon.style.opacity = "0";
-                check.classList.remove("is-success");
-                let contentAcc = statusSelectText;
-                deleteTagSelec(contentAcc);
-                selectedTopics.delete(contentAcc); // Xóa chủ đề khỏi Set nếu bị bỏ chọn
-            } else {
-                icon.style.opacity = "1";
-                check.classList.add("is-success");
-                let contentAcc = statusSelectText;
-                createTagSelec(contentAcc);
-                selectedTopics.add(contentAcc); // Thêm chủ đề vào Set nếu được chọn
-            }
-
-            // Gọi hàm để lọc và hiển thị bài tập sau khi cập nhật chủ đề đã chọn
-            filterExercises(selectedTopics, exercises);
-        });
-    });
-});
 
 // Hàm lọc bài tập dựa trên các chủ đề đã chọn
 function filterExercises(selectedTopics, exercises) {
@@ -608,11 +605,9 @@ reset.addEventListener("click", () => {
 
     // Hiển thị lại tất cả bài tập
     currentPage = 1; // Quay về trang đầu tiên
-    displayExercises(currentPage); 
-    setbuttonPage(); 
+    displayExercises(currentPage);
+    setbuttonPage();
 });
-
-
 
 //tạo tags khi ấn trên filter
 
@@ -684,4 +679,3 @@ function deleteTagSelec(content) {
         }
     });
 }
-

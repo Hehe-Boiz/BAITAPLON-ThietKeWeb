@@ -1,3 +1,4 @@
+
 // Thay đổi kích thước layout 2 bên
 let resizer = document.querySelector(".resizer");
 let task = document.querySelector(".task");

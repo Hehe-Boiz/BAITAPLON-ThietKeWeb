@@ -1,3 +1,4 @@
+
 // ============ Biểu đồ ===============
 let isRepeating = true;
 const canvas = document.getElementById("chart");
