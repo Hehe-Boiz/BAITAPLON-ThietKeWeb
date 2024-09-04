@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskName = nameTask.textContent.trim();
         console.log("Task name:", taskName);
 
-        // Fetch and display test cases
         fetch("./json/test-case-out.json")
             .then((response) => response.json())
             .then((exercises) => {

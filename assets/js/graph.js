@@ -17,26 +17,26 @@ const data = {
     ],
 };
 
-const scale = 2; // Hệ số tỷ lệ để tăng độ phân giải (2x độ phân giải)
-canvas.width = 500 * scale; // Tăng chiều rộng nội bộ
+const scale = 2; 
+canvas.width = 500 * scale; 
 canvas.height = 350 * scale;
 
-canvas.style.width = "500px"; // Kích thước hiển thị của canvas
+canvas.style.width = "500px"; 
 canvas.style.height = "350px";
 
 ctx.scale(scale, scale);
 
 // Hàm vẽ biểu đồ đường
 function drawChart() {
-    const padding = 50; // Chỉ cần định nghĩa một lần
-    const chartWidth = canvas.width / scale - padding * 2; // Điều chỉnh chiều rộng và chiều cao theo scale
+    const padding = 50; 
+    const chartWidth = canvas.width / scale - padding * 2; 
     const chartHeight = canvas.height / scale - padding * 2;
-    const maxYValue = 95; // Giá trị lớn nhất của trục Y
+    const maxYValue = 95; 
     const scaleX = chartWidth / (data.labels.length - 1);
     const scaleY = chartHeight / maxYValue;
 
     // Vẽ lưới và nhãn
-    ctx.clearRect(0, 0, canvas.width / scale, canvas.height / scale); // Chỉ xóa phần hiển thị thực tế
+    ctx.clearRect(0, 0, canvas.width / scale, canvas.height / scale); 
     ctx.beginPath();
     ctx.lineTo(canvas.width / scale - padding, canvas.height / scale - padding);
     ctx.strokeStyle = "#d8d8de";
@@ -133,21 +133,21 @@ function drawPoint(ctx, dataset, padding, scaleX, scaleY, animationProgress) {
 function drawBar(ctx, dataset, padding, scaleX, scaleY, animationProgress) {
     ctx.fillStyle = dataset.color;
     dataset.data.forEach((value, index) => {
-        const barWidth = scaleX * 0.4; // Chiều rộng cột
-        const x = padding + index * scaleX; // Đặt cột ngay dưới nhãn
+        const barWidth = scaleX * 0.4; 
+        const x = padding + index * scaleX; 
         const y =
             canvas.height / scale -
             padding -
             value * scaleY * animationProgress;
         ctx.fillStyle = "#4E31AA";
-        ctx.fillRect(x, y, barWidth, canvas.height / scale - padding - y); // Cột nằm dưới điểm đường
+        ctx.fillRect(x, y, barWidth, canvas.height / scale - padding - y); 
     });
 }
 
 // Hàm để vẽ chú thích
 function drawLegend() {
-    const legendX = 50 / scale; // Vị trí X
-    const legendY = 30 / scale; // Vị trí Y
+    const legendX = 50 / scale; 
+    const legendY = 30 / scale; 
 
     // Vẽ chú thích cho "Số lượng lập trình viên"
     ctx.fillStyle = "#4E31AA";
@@ -166,7 +166,7 @@ function drawLegend() {
 
 function animateChart() {
     if (animationProgress < 1) {
-        animationProgress += 0.008; // Giữ nguyên tốc độ chậm
+        animationProgress += 0.008; 
         drawChart();
         requestAnimationFrame(animateChart);
     } else if (isRepeating) {
@@ -174,7 +174,7 @@ function animateChart() {
         setTimeout(() => {
             animationProgress = 0; // Reset tiến trình
             requestAnimationFrame(animateChart);
-        }, 1000); // Đợi 1 giây trước khi bắt đầu lại
+        }, 1000); 
     }
 }
 
@@ -255,27 +255,24 @@ async function loadUserData() {
 
         let user = localStorage.getItem("log");
         let data = JSON.parse(user);
-        let loggedInEmail = data.email; // Đảm bảo đã lưu email của người dùng khi đăng nhập
+        let loggedInEmail = data.email;
         let userFromJSON = usersFromJSON.find(
             (user) => user.accountName === loggedInEmail
         );
         const wrapDiv = document.createElement("div");
         wrapDiv.className = "wrap-userLog";
 
-        // Giả sử bạn có một phần tử HTML để hiển thị ảnh đại diện
 
         if (userFromJSON) {
             console.log("thanh cong");
 
             if (userFromJSON.acc === "Premium") {
                 console.log("Premium");
-                // Người dùng là Premium, thêm biểu tượng crown
                 wrapDiv.innerHTML = `
                 <img class="avatar-user-afterLog user-premium" src="${userFromJSON.avatar}" alt="User Avatar"/>
                 <img src="./assets/icons/crown-gold.svg" alt="Premium Icon" class="premium-acc">
             `;
             } else {
-                // Người dùng không phải Premium, không thêm biểu tượng crown
                 wrapDiv.innerHTML = `
                 <img class="avatar-user-afterLog" src="${userFromJSON.avatar}" alt="User Avatar"/>
             `;
@@ -283,7 +280,6 @@ async function loadUserData() {
         } else {
             console.log("ngheo");
 
-            // Nếu không tìm thấy tài khoản, sử dụng ảnh mặc định
             wrapDiv.innerHTML = `
             <img class="avatar-user-afterLog" src="./assets/img/default_avatar.jpg" alt="Default Avatar"/>
         `;

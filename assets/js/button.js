@@ -17,9 +17,7 @@ checks.forEach(function (check) {
                 check.classList.add("is-success");
                 tr.classList.add("is-complete");
             }
-        } else {
-            console.warn("Không tìm thấy thẻ <i> gần nhất");
-        }
+        } 
     });
 });
 
@@ -44,14 +42,14 @@ checkspre.forEach(function (check) {
 });
 // ============= Chặn Premium ==============
 function checkLogin() {
-    const isLoggedIn = false; // Thay đổi giá trị này dựa trên trạng thái thực tế của người dùng
+    const isLoggedIn = false; 
 
     document.querySelectorAll("td a.premium").forEach((link) => {
         if (!isLoggedIn) {
             link.addEventListener("click", function (event) {
                 let tr = link.closest("tr");
 
-                event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+                event.preventDefault(); 
                 alert("Bạn cần đăng nhập để truy cập trang này.");
             });
         }

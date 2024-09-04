@@ -192,14 +192,12 @@ async function loadUserData() {
         const wrapDiv = document.createElement("div");
         wrapDiv.className = "wrap-userLog";
 
-        // Giả sử bạn có một phần tử HTML để hiển thị ảnh đại diện
 
         if (userFromJSON) {
             console.log("thanh cong");
 
             if (userFromJSON.acc === "Premium") {
                 console.log("Premium");
-                // Người dùng là Premium, thêm biểu tượng crown
                 wrapDiv.innerHTML = `
                 <img class="avatar-user-afterLog user-premium" src="${userFromJSON.avatar}" alt="User Avatar"/>
                 <img src="./assets/icons/crown-gold.svg" alt="Premium Icon" class="premium-acc">
@@ -213,7 +211,6 @@ async function loadUserData() {
         } else {
             console.log("ngheo");
 
-            // Nếu không tìm thấy tài khoản, sử dụng ảnh mặc định
             wrapDiv.innerHTML = `
             <img class="avatar-user-afterLog" src="./assets/img/default_avatar.jpg" alt="Default Avatar"/>
         `;
