@@ -4,7 +4,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=xT70mHdAM74",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -18,7 +18,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=knV86FlSXJ8&t=106s",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -32,7 +32,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -46,7 +46,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=7pJo_rM0z_s",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -58,7 +58,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=7pJo_rM0z_s",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -70,7 +70,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=7pJo_rM0z_s",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -125,7 +125,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=jzJlq35dQII",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -139,7 +139,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=FsfRsGFHuv4&t=320s",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -153,7 +153,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=wWgIAphfn2U&list=PLqM7alHXFySGwXaessYMemAnITqlZdZVE",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -167,7 +167,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -179,7 +179,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -191,7 +191,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -246,7 +246,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=xT70mHdAM74&t=16",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -260,7 +260,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -274,7 +274,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -288,7 +288,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -300,7 +300,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -312,7 +312,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -367,7 +367,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -381,7 +381,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -395,7 +395,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -409,7 +409,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -421,7 +421,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -433,7 +433,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -488,7 +488,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -502,7 +502,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -516,7 +516,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -530,7 +530,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -542,7 +542,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -554,7 +554,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -609,7 +609,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -623,7 +623,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -637,7 +637,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -651,7 +651,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -663,7 +663,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -675,7 +675,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17s",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -730,7 +730,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=vJvqYFKXo5E&t=17",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -744,7 +744,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -758,7 +758,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -772,7 +772,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -784,7 +784,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -796,7 +796,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -851,7 +851,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -865,7 +865,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -879,7 +879,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -893,7 +893,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -905,7 +905,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -917,7 +917,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -972,7 +972,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -986,7 +986,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1000,7 +1000,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1014,7 +1014,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1026,7 +1026,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1038,7 +1038,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1093,7 +1093,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1107,7 +1107,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1121,7 +1121,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1135,7 +1135,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1147,7 +1147,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1159,7 +1159,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1214,7 +1214,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1228,7 +1228,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1242,7 +1242,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1256,7 +1256,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1268,7 +1268,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1280,7 +1280,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1335,7 +1335,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1349,7 +1349,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1363,7 +1363,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1377,7 +1377,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1389,7 +1389,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1401,7 +1401,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1456,7 +1456,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1470,7 +1470,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1484,7 +1484,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1498,7 +1498,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1510,7 +1510,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1522,7 +1522,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1577,7 +1577,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1591,7 +1591,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1605,7 +1605,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1619,7 +1619,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1631,7 +1631,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1643,7 +1643,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1698,7 +1698,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1712,7 +1712,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1726,7 +1726,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1740,7 +1740,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1752,7 +1752,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1764,7 +1764,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1819,7 +1819,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1833,7 +1833,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1847,7 +1847,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1861,7 +1861,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1873,7 +1873,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1885,7 +1885,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1940,7 +1940,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1954,7 +1954,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1968,7 +1968,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -1982,7 +1982,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -1994,7 +1994,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2006,7 +2006,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2061,7 +2061,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2075,7 +2075,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2089,7 +2089,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2103,7 +2103,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2115,7 +2115,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2127,7 +2127,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2182,7 +2182,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2196,7 +2196,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2210,7 +2210,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2224,7 +2224,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2236,7 +2236,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2248,7 +2248,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2303,7 +2303,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2317,7 +2317,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2331,7 +2331,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2345,7 +2345,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2357,7 +2357,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2369,7 +2369,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2424,7 +2424,7 @@
         "lessons": [
             {
                 "lesson_name": "Dynamic Arrays",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-1",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2438,7 +2438,7 @@
             },
             {
                 "lesson_name": "Hash Usage",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2452,7 +2452,7 @@
             },
             {
                 "lesson_name": "Hash Implementation",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "width": "560",
                     "height": "315",
@@ -2466,7 +2466,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2478,7 +2478,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",
@@ -2490,7 +2490,7 @@
             },
             {
                 "lesson_name": "PreFix Sums",
-                "youtube_link": "https://www.youtube.com/link-bai-hoc-1-2",
+                "youtube_link": "https://www.youtube.com/watch?v=PhgtNY_-CiY",
                 "iframe": {
                     "src": "https://www.youtube.com/embed/DrKvp90X0Uo?si=DbYV-3OceiNoWujc&amp;controls=0",
                     "title": "YouTube video player",

@@ -30,9 +30,12 @@ window.addEventListener("load",function(){
         reloadSlider();
         numberTopPage.innerText = pos + 1;
     })
+    let refreshSlider = this.setInterval(()=>{next.click()},5000);
     function reloadSlider(){
         let checkLeft = topPages[pos].offsetLeft;
         console.log(checkLeft);
         topPage.style.left = -checkLeft + 'px';
+        clearInterval(refreshSlider);
+        refreshSlider = setInterval(()=>{next.click()},5000);
     }
 })
