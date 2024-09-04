@@ -3,20 +3,20 @@ window.addEventListener("load",function(){
     
     let loadBtn =document.querySelector(".load-more");
     let currentItems = 5;
+    let posts = document.querySelectorAll(".post");
     loadBtn.addEventListener("click",function(){
-        let posts = document.querySelectorAll(".post");
         if(currentItems === posts.length){
-            items = currentItems;
             for(let i = currentItems ; i > 0; i--){
-                items = i;
                 posts[i - 1].style.display = 'none';
-                console.log(posts[i-1]);
             }
-            currentItems = items;
+            for(let i = 0;i<5;i++){
+                posts[i].style.display = 'flex';
+            }
+            currentItems = 5;
             loadBtn.innerText = 'Load more'
-        }
-        item = 0
-        for(let i = currentItems; i < currentItems + 5; i++ ){
+        }else{
+            item = 0
+            for(let i = currentItems; i < currentItems + 5; i++ ){
             item = i;
             if(item === posts.length){
                 loadBtn.innerText= 'Collapse'
@@ -24,7 +24,8 @@ window.addEventListener("load",function(){
             }
             posts[i].style.display = 'flex';
         }
-        currentItems = item;  
+        currentItems = item; 
+        }
     })
 
     //Tìm kiếm tin tức

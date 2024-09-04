@@ -27,80 +27,14 @@
             referrerpolicy="no-referrer"
         />
         <script src="assets/js/blog.js"></script>
+        <script src="assets/js/load.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="content">
-            <nav class="navbar">
-                <span class="toggle-menu">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                    >
-                        <path
-                            d="M18 4.5H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M18 12H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M11 19H6"
-                            stroke="#f7f8fa"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </span>
-                <a href="#" class="logo">CodemeM</a>
-                <ul class="pc-nav">
-                    <li class="home"><a>Home</a></li>
-                    <li class="roadmap"><a href="roadmap.html">Roadmap</a></li>
-                    <li class="practice"><a>Practice</a></li>
-                    <li class="show-on-mobile separate">
-                        <a href="#!">Sign in</a>
-                    </li>
-                    <li class="show-on-mobile"><a href="#!">Sign up</a></li>
-                </ul>
-                <div class="actions">
-                    <a class="premium"><i class="fa-solid fa-crown"></i></a>
-                    <a href="#!" class="action-link">Sign in</a>
-                    <a href="#!" class="btn action-btn">Sign up</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <header class="mobile-header">
-        <!-- Overlay -->
-        <div for="menu-checkbox" class="menu-overlay"></div>
-    
-        <!-- Menu content -->
-        <div class="menu-drawer">
-            <!-- Logo -->
-            <div class="row">
-                <a href="#" class="logo">CodemeM</a>
-                <span class="btn-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </span>
-            </div>
-    
-            <!-- Navigation -->
-            <ul class="mobile-nav"></ul>
-            
-        </div>
-    </header>
+    <header class="header"></header>
+    <script>
+        load(".header", "./templates/header.html");
+    </script>
     <main>
         <div class="top">
             <h1>ALL POSTS</h1>
@@ -116,37 +50,127 @@
                 <div class="all-posts">
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/08/Gemini-AI.jpg" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">Gemini AI là gì? Tất tần tật những điều cần biết về Google Gemini</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                Google Gemini, ra mắt vào tháng 12 năm 2023 (trước đây được biết đến với tên gọi Google Bard), là một trong những bước đột phá lớn nhất của Google
                             </p>
                         </div>
                     </div>
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://digi-texx.com/wp-content/uploads/2023/04/Historical-Archives-03-1024x576.jpg" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">Vai Trò Của Lưu Trữ Dữ Liệu Trong Việc Hỗ Trợ Nghiên Cứu Phả Hệ Học</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                Phả hệ học – hay những nghiên cứu về lịch sử và nguồn gốc gia đình, đã trở nên phổ biến trong những năm gần …
                             </p>
                         </div>
                     </div> 
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/08/google-ket-hop-chatgpt.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">Tích hợp ChatGPT vào Google Search siêu dễ</a></h1>
+                            <p class="preview-text">
+                                Khi tích hợp, bạn sẽ vừa có danh sách các bài viết trả về từ Google, đồng thời có kết quả trả lời trực tiếp cho câu hỏi từ chatGPT... 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/09/fron-end-hay-back-end-1.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">Nên học Front-end hay Back-end trước?</a></h1>
+                            <p class="preview-text">
+                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/08/chat-gpt-4-la-gi.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">Chat GPT 4.0 là gì? Có gì vượt trội so với Chat GPT phiên bản cũ?</a></h1>
+                            <p class="preview-text">
+                                Với GPT-4, OpenAI đã tăng cường khả năng của mô hình trong việc xử lý các tác vụ ngôn ngữ phức tạp hơn, bao gồm phân tích, tạo nội dung, dịch thuật và thậm chí là phân tích hình ảnh.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/08/css-selector-la-gi-218x150.png" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">CSS Selector là gì? Cách sử dụng các loại CSS Selector phổ biến</a></h1>
+                            <p class="preview-text">
+                                CSS là một trong ba kiến thức nền tảng của lập trình viên Frontend bên cạnh HTML và JavaScript, giúp bạn tạo ra phong cách cho trang Web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/03/java-super-218x150.jpg" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">Khai báo phương thức overloading trong Java</a></h1>
+                            <p class="preview-text">
+                                Trong lập trình hướng đối tượng, overloading là một khái niệm quan trọng và được sử dụng rộng rãi trong ngôn ngữ lập trình Java.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2019/09/water-fall-model.png" alt="img">
+                        </div>
+                        <div class="post-content">
+                            <div class="author flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                <p class="author-name">Joseph</p>
+                            </div>
+                            <h1 class="post-title"><a href="#">Quy trình phát triển phần mềm</a></h1>
+                            <p class="preview-text">
+                                Một quy trình tốt và hợp lí luôn tạo ra những sản phẩm đạt tiêu chuẩn. Nó giúp tương tác hóa các hoạt động và yếu tố với nhau một các nhịp nhàng, đem lại hiệu quả.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post flex">
+                        <div class="img-post">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2019/07/TT1-1-218x150.png" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
@@ -161,151 +185,61 @@
                     </div>
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/02/ngon-ngu-viet-chatbot.png" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">Facebook giới thiệu LLaMA tạo siêu AI cạnh tranh với ChatGPT</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                ChatGPT thực sự đang là một hot trend công nghệ từ đầu năm 2023 cho đến nay..
                             </p>
                         </div>
                     </div>
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/07/ai-ma-nguon-mo-218x150.jpg" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">TAI Chỉ Là Hư Vô Nếu Không Có Mã Nguồn Mở</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                Trí tuệ nhân tạo đã trải qua một cuộc cách mạng lớn vào năm 2023, bắt đầu với sự ra mắt của ChatGPT của OpenAI vào cuối năm 2022.
                             </p>
                         </div>
                     </div>
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/11/prompt-engineer-la-gi-218x150.png" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">Prompt Engineer là gì? Cách viết Prompt Engineer đúng chuẩn</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                Chà, Prompt Engineer là gì, lại vừa mới đảo cánh ra một vị trí mới trong năm 2023 khi mà AI bùng nổ...
                             </p>
                         </div>
                     </div>
                     <div class="post flex">
                         <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/01/chatgpt.jpg" alt="img">
                         </div>
                         <div class="post-content">
                             <div class="author flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
                                 <p class="author-name">Joseph</p>
                             </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
+                            <h1 class="post-title"><a href="#">Chat GPT là gì? Ứng dụng tuyệt vời và cách chatGPT hoạt động</a></h1>
                             <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
-                            </p>
-                        </div>
-                    </div>
-                    <div class="post flex">
-                        <div class="img-post">
-                            <img src="assets/img/frog2.jpg" alt="img">
-                        </div>
-                        <div class="post-content">
-                            <div class="author flex">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
-                                <p class="author-name">Joseph</p>
-                            </div>
-                            <h1 class="post-title"><a href="#">The Future of Artificial Intelligent: Trends and Implications.</a></h1>
-                            <p class="preview-text">
-                                The Future of Artificial Intelligence: Trends and Implications. The Future of Artificial Intelligence: Trends and Implications
+                                ChatGPT là gì mà khiến anh em bà con không chỉ trong mà còn cả ngoài ngành phải thử ít nhất một lần? Điều gì khiến Chat GPT trở nên hot như vậy?
                             </p>
                         </div>
                     </div>
@@ -319,149 +253,62 @@
                     <h1>WEEKLY-HIGHTLIGHT</h1>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2020/12/6-kho-khan-co-the-ban-se-gap-khi-theo-hoc-nganh-cntt-2.jpg" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">6 khó khăn có thể bạn sẽ gặp khi theo học ngành CNTT</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/09/cau-truc-du-lieu-arraymap-trong-android-218x150.png" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Tìm hiểu cấu trúc dữ liệu ArrayMap trong Android</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2020/01/Â-218x150.png" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Lộ trình cho mọi lập trình viên web trong năm 2023</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/07/devops_loop.jpg" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Top 5 khóa học DevOps miễn phí “siêu xịn” cho developer</h2>
                     </div>
                 </div>
                 <div class="must-read">
                     <h1>MUST READ</h1>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/01/chatgpt.jpg" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Chat GPT là gì? Ứng dụng tuyệt vời và cách chatGPT hoạt động</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/02/ngon-ngu-viet-chatbot.png" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Facebook giới thiệu LLaMA tạo siêu AI cạnh tranh với ChatGPT</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2024/04/ios-17-5-beta-1-2.jpg" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">iOS 17.5 Beta 1 vừa được phát hành, những thay đổi nào đáng chú ý?</h2>
                     </div>
                     <div class="mini-post flex">
                         <div class="mini-img">
-                            <img src="assets/img/avatar (1).jpg" alt="img">
+                            <img src="https://topdev.vn/blog/wp-content/uploads/2023/07/ChatGPT-2.jpg" alt="img">
                         </div>
-                        <h2 class="mini-title">The Future of Artificial Intelligent</h2>
+                        <h2 class="mini-title">Dân IT có thể được ChatGPT hỗ trợ code tự động hóa như thế nào?</h2>
                     </div>
                 </div>
             </div>
         </div> 
     </main>
-    <footer>
-        <div class="content">
-            <div class="row row-top">
-                <!-- Product column -->
-                <div class="column">
-                    <!-- vì xét góc độ làm SEO thì nó sẽ đánh giá nội dung theo cấp bậc thẻ h 
-                    nên để nhấn mạnh nội dung h2 thì để thẻ này là h3 -->
-                    <h3 class="heading">Product</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="">Listing</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Property</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Agents</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Resources column -->
-                <div class="column">
-                    <h3 class="heading">Resources</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="">Blog</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Customer Stories</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Partners</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Integrations</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Company column -->
-                <div class="column">
-                    <h3 class="heading">Company</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a href="">Patnerships</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Terms of use</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Privacy</a>
-                        </li>
-                        <li class="item">
-                            <a href="">Sitemap</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Get in touch column -->
-                <div class="column">
-                    <h3 class="heading">Get in touch</h3>
-                    <p class="desc">
-                        Bạn sẽ là người dẫn đầu bằng trang web của chúng tôi.
-                    </p>
-                    <div class="social">
-                        <a href="" class="social-link">
-                            <img src="assets/icons/icons8-facebook.svg" alt="" />
-                        </a>
-                        <a href="" class="social-link">
-                            <img src="assets/icons/twitter.svg" alt="" />
-                        </a>
-                        <a href="" class="social-link">
-                            <img src="assets/icons/linkedin.svg" alt="" />
-                        </a>
-                        <a href="" class="social-link"
-                            ><img src="assets/icons/instagram.svg" alt=""
-                        /></a>
-                        <a href="" class="social-link"
-                            ><img src="assets/icons/icons8-github.svg" alt=""
-                        /></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-bottom">
-                <a href="" class="logo">CodemeM</a>
-                <p class="copyright">Copyright © 2024 Minh Nhựt và Bá Tân</p>
-            </div>
-        </div>
-        
-    </footer>
+    <footer class="footer"></footer>
+    <script>
+        load(".footer", "./templates/footer.html");
+    </script>
 </body>
 </html>
