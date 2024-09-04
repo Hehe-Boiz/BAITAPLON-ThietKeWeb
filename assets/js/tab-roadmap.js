@@ -132,9 +132,7 @@ fetch("./json/roadmap.json")
                             check.classList.add("is-success");
                             tr.classList.add("is-complete");
                         }
-                    } else {
-                        console.warn("Không tìm thấy thẻ <i> gần nhất");
-                    }
+                    } 
                 });
             });
         }

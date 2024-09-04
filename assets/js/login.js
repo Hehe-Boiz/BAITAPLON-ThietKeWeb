@@ -10,6 +10,7 @@ window.addEventListener("load", function () {
         //JS cho điện thoại
         if (document.querySelector(".no-js-on-mobile").offsetParent === null) {
             login.addEventListener("click", function () {
+                logwrapper.classList.remove("center");
                 regwrapper.classList.remove("show");
                 logwrapper.classList.add("show");
             });

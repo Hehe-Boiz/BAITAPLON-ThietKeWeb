@@ -19,6 +19,9 @@
     footer .row-top{
         gap: 150px;
     }
+    .navbar ul {
+        display: none;
+    }
 }
 
 /* Tablet & mobile */

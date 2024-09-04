@@ -1,88 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/premium.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/premium.css" />
 
-    <!-- Embed fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/fonts/Poppins.css" />
-    <link rel="stylesheet" href="assets/fonts/ITC-Bauhaus-Medium.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
-    <script src="assets/js/load.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <header class="header"></header>
+        <!-- Embed fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/fonts/Poppins.css" />
+        <link rel="stylesheet" href="assets/fonts/ITC-Bauhaus-Medium.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <script src="assets/js/load.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header class="header"></header>
         <script>
             load(".header", "./templates/header.html");
         </script>
-    <main>
-        <h1>PREMIUM</h1>
-        <div class="packets flex">
-            <div class="packet">
-                <h2>FREE</h2>
-                <span><strong>0$</strong>/Năm</span>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Thông báo nhắc nhở hằng ngày
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Mở rộng bộ nhớ lưu trữ dữ liệu
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Bổ sung thêm bài tập cùng nhiều video hướng dẫn hơn
-                </p>
-                <div class="bton flex">
-                    <button>Mua ngay</button>
+        <main>
+            <h1>PREMIUM</h1>
+            <div class="packets flex">
+                <div class="packet">
+                    <h2>FREE</h2>
+                    <span><strong>0$</strong>/Năm</span>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Thông báo nhắc nhở hằng ngày
+                    </p>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Mở rộng bộ nhớ lưu trữ dữ liệu
+                    </p>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Bổ sung thêm bài tập cùng nhiều video hướng dẫn hơn
+                    </p>
+                    <div class="bton flex">
+                        <button>Mua ngay</button>
+                    </div>
+                </div>
+                <div class="packet">
+                    <h2>PRO+</h2>
+                    <span><strong>20$</strong>/Năm</span>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Thông báo nhắc nhở hằng ngày
+                    </p>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Bộ nhớ lưu trữ dữ liệu <strong>không giới hạn</strong>
+                    </p>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Bổ sung thêm bài tập cùng nhiều video hướng dẫn hơn
+                    </p>
+                    <p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24px"
+                            viewBox="0 -960 960 960"
+                            width="24px"
+                            fill="#e8eaed"
+                        >
+                            <path
+                                d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"
+                            />
+                        </svg>
+                        Tích hợp AI hỗ trỡ học tập
+                    </p>
+                    <div class="bton flex">
+                        <button>Mua ngay</button>
+                    </div>
                 </div>
             </div>
-            <div class="packet">
-                <h2>PRO+</h2>
-                <span><strong>20$</strong>/Năm</span>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Thông báo nhắc nhở hằng ngày
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Bộ nhớ lưu trữ dữ liệu <strong>không giới hạn</strong>
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Bổ sung thêm bài tập cùng nhiều video hướng dẫn hơn
-                </p>
-                <p>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
-                    Tích hợp AI hỗ trỡ học tập
-                </p>
-                <div class="bton flex">
-                    <button>Mua ngay</button>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer"></footer>
+        </main>
+        <footer class="footer"></footer>
         <script>
             load(".footer", "./templates/footer.html");
         </script>
-</body>
+    </body>
 </html>

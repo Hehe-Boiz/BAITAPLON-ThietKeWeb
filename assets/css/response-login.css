@@ -52,6 +52,9 @@
             transform: translate(0);
         }
     }
+    .show {
+        transform: translateX(0);
+    }
 }
 @media screen and (max-width: 550px){
     .login-other{
@@ -60,4 +63,5 @@
     .login-other span {
         display: none;
     }
+    
 }
