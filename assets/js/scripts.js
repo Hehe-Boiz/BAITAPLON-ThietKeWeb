@@ -169,7 +169,6 @@ function opLog() {
 }
 opLog();
 //=============== Sau khi đăng nhập ==============
-// Đảm bảo bạn bao quanh mã sử dụng `await` với một hàm `async`
 // localStorage.clear();
 let islog = localStorage.getItem("islog");
 async function loadUserData() {

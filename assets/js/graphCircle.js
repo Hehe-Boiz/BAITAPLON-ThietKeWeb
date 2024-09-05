@@ -114,7 +114,7 @@ function graphResize() {
 
     centerX = canvas.width / 2 / scale;
     centerY = canvas.height / 2 / scale;
-    progressDraw = 0;
+    // progressDraw = 0;
     animate(70);
 }
 

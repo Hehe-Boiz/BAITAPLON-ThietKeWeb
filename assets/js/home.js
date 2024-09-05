@@ -122,7 +122,7 @@ function graphResize() {
 
     centerX = canvas.width / 2 / scale;
     centerY = canvas.height / 2 / scale;
-    progressDraw = 0;
+    // progressDraw = 0;
     animate(70);
 }
 
@@ -183,9 +183,7 @@ checks.forEach((check) => {
                 check.classList.add("is-success");
                 tr.classList.add("is-complete");
             }
-        } else {
-            console.warn("Không tìm thấy thẻ <i> gần nhất");
-        }
+        } 
     });
 });
 

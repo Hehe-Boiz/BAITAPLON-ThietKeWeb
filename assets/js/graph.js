@@ -186,12 +186,11 @@ function startAnimation() {
 
 // Khi canvas xuất hiện trong khung nhìn hàm nãy sẽ bắt đầu chạy
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            startAnimation();
-            observer.unobserve(canvas);
-        }
-    });
+    const entry = entries[0]; 
+    if (entry.isIntersecting) {
+        startAnimation();
+        observer.unobserve(canvas);
+    }
 });
 
 observer.observe(canvas);

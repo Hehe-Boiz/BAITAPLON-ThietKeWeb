@@ -140,7 +140,7 @@ window.addEventListener("load", function () {
 
         // Kiểm tra xem người dùng có tồn tại trong localStorage hoặc JSON không
         if (
-            (data && password === data.password) ||
+            (data && data.email === email && password === data.password) ||
             (userFromJSON && password === userFromJSON.password)
         ) {
             localStorage.setItem("islog", "true");

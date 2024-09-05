@@ -77,7 +77,7 @@ cardalls.forEach(function (card) {
 
 //thu phóng roadmap
 
-var scale = 1,
+let scale = 0.75,
     panning = false,
     pointX = 0,
     pointY = 0,
