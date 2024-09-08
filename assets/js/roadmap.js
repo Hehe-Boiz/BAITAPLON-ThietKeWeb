@@ -113,7 +113,7 @@ function onPointerMove(e) {
 
 function onWheel(e) {
     e.preventDefault();
-    var xs = (e.clientX - pointX) / scale,
+    let xs = (e.clientX - pointX) / scale,
         ys = (e.clientY - pointY) / scale,
         delta = e.wheelDelta ? e.wheelDelta : -e.deltaY;
     delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
